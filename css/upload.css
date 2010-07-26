@@ -1,0 +1,122 @@
+/*
+upload.css
+----------		Par Cam et M@teo21
+
+Créé le 20 mars 2009
+
+
+Description : feuille de style du module d'upload.
+
+*/
+
+
+body 
+{
+	padding: 0 10px;
+	min-width: 0;
+}
+
+.quota
+{
+	text-align: right;
+	margin-right: 35px;
+}
+
+.repertoire
+{
+	width: 98%;
+	margin: auto;
+	margin-bottom: 20px;
+	border: 1px solid #BBBBBB;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.total
+{
+	float: left;
+	margin: 20px;
+	text-align: center;
+	width:102px;
+}
+
+.total a:hover { text-decoration: none; }
+.total a:focus { border:1px solid white; }
+
+.miniature
+{
+	display: block;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	text-align: center;
+	cursor:pointer;
+}
+
+.miniature a
+{
+	display: block;
+	height: 100px;
+	width: 100px;
+}
+
+.miniature span
+{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+}
+
+.miniature img
+{
+	max-height: 100px;
+	max-width: 100px;
+}
+
+.sous_miniature
+{
+	width: 100px;
+	margin: auto;
+}
+
+.envoyer_image
+{
+	margin-left:5%;
+}
+
+.ajout
+{
+	text-align: left;
+}
+
+.voir_image
+{
+	text-align: center;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.fichier
+{
+	text-align: left;
+	margin-left: 50px;
+	padding: 10px;
+}
+
+.retour_site
+{
+	text-align: center;
+}
+
+.attention_temp
+{
+	margin-left: 40px;
+	color: red;
+}
+
+label.label_cote
+{
+	width: 250px;
+}
