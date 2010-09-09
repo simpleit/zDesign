@@ -2102,6 +2102,10 @@ h3.flow2, h4.flow2
 
 .options_valido {border:1px solid #A3C0D5;background-color:#E9F0F5;margin-bottom:10px;}
 
+#tabs_same {margin: 10px 0 0 0; width:50%; max-width: 600px; font-size: 1em;}
+#tabs_same a:link, #tabs_same a:visited, #tabs_same a:active { color: #2677C9; text-decoration: none; }
+#tabs_same a:hover { color: #C87B02; }
+
 /* Edition de tutoriels */
 .boite_a_outils {width: 180px;float: right;}
 
