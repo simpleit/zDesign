@@ -757,7 +757,6 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("../images/sp
 
 .cadre_photo table
 {
-	width: 100%;
 	margin: auto;
 }
 table.cadre_submit_quizz
@@ -787,7 +786,7 @@ table.cadre_submit_quizz
 	padding: 30px 5px;
 	margin: auto;
 	vertical-align: top;
-	width: 50%;
+	width: 1%;
 }
 
 .liste_espacee li
@@ -2246,6 +2245,13 @@ table.diff col.diff-content {width:48%;}
 	margin-right: 270px;
 }
 
+/* Page Simpleit Qui sommes nous ? */
+.bloc
+{
+	display:block;
+	width:69%;
+}
+
 /* ---------------------------------------------------------------------------------------------------------------- */
 /* ------------------------------->>> AUTOCOMPLETE JQUERY <<<------------------------------------------------------ */
 /* ---------------------------------------------------------------------------------------------------------------- */
@@ -2957,3 +2963,47 @@ table.tablesorter tbody tr.even td
 /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------->>> END OF SortTable <<<----------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+.expandable
+{
+    background:     transparent url('../images/border_arron_plus_f.png') repeat-x left bottom;
+    border-bottom : 0 none;
+}
+
+.expend span.more
+{
+    background: transparent url('../images/puce_plus.gif') no-repeat;
+    display:block;
+    height:16px;
+    line-height:16px !important;
+    overflow:hidden;
+    width:16px;
+}
+
+.addthis_toolbox .vertical
+{
+    margin-bottom: 5px;
+}
+
+.addthis_toolbox .vertical a
+{
+    position: relative;
+    display: block;
+    padding: 4px 0 4px 22px;
+    text-decoration: none;
+    color: #2677C9;
+    outline: none;
+}
+
+.addthis_toolbox .vertical a:hover
+{
+    color: #C87B02;
+}
+
+.addthis_toolbox .vertical span
+{
+    position: absolute;
+    left: 2px;
+    top: 4px;
+}
