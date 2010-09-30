@@ -398,9 +398,17 @@ input[disabled] { background-color:#DDD; cursor:default; }
 	color: #717171;
 	border: 1px solid #71A6E1;
 	padding: 2px 5px 2px 2px;
+        -moz-border-radius: 4px;
+}
+#recherche select
+{ 
+	border: 1px solid #71A6E1;
+        width:92px;
+        -moz-border-radius: 4px;
 }
 #recherche p { margin: 7px 0 0 0 }
-#recherche img.icon_avancee, #logbox img.icone_more, input[type=image] { vertical-align: middle }
+#recherche img.icon_avancee{ height:21px; margin-top:-3px }
+#recherche img.icon_avancee, #logbox img.icone_more, input[type=image] { vertical-align: middle; }
 
 .adress
 {
@@ -2109,6 +2117,11 @@ h3.flow2, h4.flow2
 .boite_a_outils {width: 180px;float: right;}
 
 .detail_tuto_edition {margin-right: 200px;}
+
+#tut_vot_ldz_img
+{
+    margin-right: 10px;
+}
 
 .tut_appreciation
 {
