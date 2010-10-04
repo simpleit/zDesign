@@ -407,7 +407,7 @@ input[disabled] { background-color:#DDD; cursor:default; }
         -moz-border-radius: 4px;
 }
 #recherche p { margin: 7px 0 0 0 }
-#recherche img.icon_avancee{ height:21px; margin-top:-3px }
+#recherche input[type=image]{ height:21px; margin-top:-3px }
 #recherche img.icon_avancee, #logbox img.icone_more, input[type=image] { vertical-align: middle; }
 
 .adress
