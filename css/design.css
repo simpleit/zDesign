@@ -2089,7 +2089,12 @@ h3.flow2, h4.flow2
 
 /* Q.C.M. */
 .qcm_liste_btut {margin-left:20px;}
-.question_qcm {border: 1px dashed black;margin-bottom: 20px;padding: 10px;}
+.question_qcm .question_header{height: 80px;width: 24px;background: transparent url("../images/tutos/ico_qcm.png") no-repeat 0 0; position:absolute; left: -21px; top: 15px;}
+.question_qcm {position: relative; color:#145AC1; background: transparent url("../images/tutos/bg_qcm.png") repeat-y top left; padding: 15px 0 15px 14px; margin-top: 20px; margin-bottom:10px;}
+.question_qcm .question {background:none;}
+.question_qcm .rmq {padding: 0; }
+.question_qcm label, .question_qcm .code, .question_qcm .code2{color:#1f1f1f;}
+
 .logo_reussite {width:60px;}
 
 #note_cmt {margin-left:35px;}
