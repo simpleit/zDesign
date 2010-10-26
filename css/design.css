@@ -417,6 +417,14 @@ input[disabled] { background-color:#DDD; cursor:default; }
 }
 /*	Speedbarre	*/
 
+
+.menuh_more{
+    padding:5px 10px;
+    clear:both;
+    display:block;
+    text-align:right;
+}
+
 ul#speedbarre
 {
 	margin: 0;
@@ -2801,7 +2809,7 @@ ul.tree li .half_checked {
 
 /* with multiple calendars */
 .ui-datepicker.ui-datepicker-multi { width:auto; }
-.ui-datepicker-multi .ui-datepicker-group { float:left; }
+.ui-datepicker-multi .ui-datepicker-group, .alignleft { float:left; }
 .ui-datepicker-multi .ui-datepicker-group table { width:95%; margin:0 auto .4em; }
 .ui-datepicker-multi-2 .ui-datepicker-group { width:50%; }
 .ui-datepicker-multi-3 .ui-datepicker-group { width:33.3%; }
@@ -2820,7 +2828,7 @@ ul.tree li .half_checked {
 .ui-datepicker-rtl .ui-datepicker-buttonpane { clear:right; }
 .ui-datepicker-rtl .ui-datepicker-buttonpane button { float: left; }
 .ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current { float:right; }
-.ui-datepicker-rtl .ui-datepicker-group { float:right; }
+.ui-datepicker-rtl .ui-datepicker-group, .alignright { float:right; }
 .ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
 .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
 
@@ -3027,4 +3035,56 @@ table.tablesorter tbody tr.even td
     position: absolute;
     left: 2px;
     top: 4px;
+}
+
+ul.onglet_tuto{
+    padding:0px;
+}
+
+.onglet_tuto li{
+    list-style: none;
+    position:relative;
+ }
+
+.onglet_tuto li>a{
+    background-image: url("../images/tutos/icos_list_tuto.png");
+    background-repeat:no-repeat;
+    padding:11px 0 0 60px;
+    display:block;
+    height:27px;
+}
+
+.onglet_tuto li>a:active,.onglet_tuto li>a:visited, .onglet_tuto li>a:link{
+    outline:medium none;
+}
+
+.onglet_tuto li a.actif{
+    background-color: #f8fafd;
+    color:#1f1f1f;
+    font-weight:bold;
+
+}
+
+#btn_tuto_hl{background-position:10px 0;}
+#btn_tuto_ev{background-position:10px -130px;}
+#btn_tuto_el{background-position:10px -262px;}
+
+h3.soft_h3{
+    background:none;
+    color:#707070;
+}
+
+.contenen{
+      overflow:auto;
+      white-space:normal;
+}
+
+.tablo_parti_tuto{
+    position:relative;
+
+}
+
+.tablo_parti_tuto .liste_cat{
+    margin:0px;
+    width:100%
 }
