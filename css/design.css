@@ -710,6 +710,9 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("../images/sp
 	-webkit-border-radius: 10px;
 	margin-bottom: 15px;
 }
+.infobox dd, .infobox dt{margin:0px; padding:0px;}
+.infobox dl{padding:10px 5px 5px 45px; background:url("/images/bg-menu.gif") repeat-x transparent; margin:0 0 5px 0; border: 1px solid #fff; position:relative;}
+.icomenu{position:absolute; top:10px; left:5px;}
 .infobox .conteneur_infobox { padding: 3px 6px;}
 .infobox h3
 {

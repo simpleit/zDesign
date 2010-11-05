@@ -132,7 +132,7 @@ html>body .information, html>body .attention, html>body .question, html>body .er
 .bleugris { color: teal; }
 .argent { color: silver; }
 .gris { color: rgb(100, 100, 100); }
-.rouge { color: red; }
+.rouge{ color: red; }
 .vertc { color: lime; }
 .jaune { color: yellow; }
 .bleu { color: blue; }

@@ -17,7 +17,7 @@
 .bleugris { color: teal; }
 .argent { color: silver; }
 .gris { color: #646464; }
-.rouge, .couleur_admin { color: red; }
+.rouge, .couleur_admin, .error_list li { color: red; }
 .vertc { color: lime; }
 .jaune { color: yellow; }
 .bleu, .couleur_modo { color: blue; }
