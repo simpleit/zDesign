@@ -3040,6 +3040,44 @@ table.tablesorter tbody tr.even td
     top: 4px;
 }
 
+#form_alert
+{
+    -moz-border-radius:20px 20px 20px 20px;
+    border:2px solid #D6D6D6;
+    margin-top:10px;
+    padding:10px;
+    width:400px;
+    background:url("../images/bg_corps_menu.png") repeat-y scroll left center #FFFFFF;
+}
+
+#form_alert select
+{
+    width: 87%;
+}
+
+#form_alert #bloc_other
+{
+    margin-top: 10px;
+}
+
+#form_alert input[type="button"]
+{
+    float:right;
+    margin:10px 15px 0 0;
+}
+
+#form_alert h5
+{
+-moz-border-radius:10px 10px 10px 10px;
+background:url("../images/homepage/bg_infobox_titre.png") repeat-x scroll center top #808080;
+color:#FFFFFF;
+margin-left:85px;
+margin-top:0;
+padding:5px 3px;
+text-align:center;
+width:225px;
+}
+
 ul.onglet_tuto{
     padding:0px;
 }
@@ -3091,3 +3129,4 @@ h3.soft_h3{
     margin:0px;
     width:100%
 }
+
