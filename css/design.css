@@ -3130,3 +3130,38 @@ h3.soft_h3{
     width:100%
 }
 
+/*Style module communication*/
+
+#comm_distrib_place_autre{
+    margin-left:123px;
+}
+#comm_error {
+    color:red;
+}
+#comm_h2_distrib{
+    margin-top: 50px;
+}
+#comm_distribPlace{
+    position:relative;
+        top:16px;
+}
+
+div.comm_pack {
+    float:left;
+}
+.comm_pack {
+    width: 33%;
+    text-align:center;
+        }
+#bloc_paper {
+    overflow: auto;
+}
+
+#comm_radio_list li{
+    display:inline;
+}
+
+/*11 ans CSS*/
+#header .header_gauche {position:relative; left:3px; top:-14px; padding: 0 0 10px 0 !important; z-index:1;}
+.stats_sites, .stats_sites *{position:relative; z-index:2;}
+
