@@ -3047,6 +3047,7 @@ table.tablesorter tbody tr.even td
     margin-top:10px;
     padding:10px;
     width:400px;
+    height: 140px;
     background:url("../images/bg_corps_menu.png") repeat-y scroll left center #FFFFFF;
 }
 
@@ -3060,7 +3061,7 @@ table.tablesorter tbody tr.even td
     margin-top: 10px;
 }
 
-#form_alert input[type="button"]
+#form_alert input[type="button"], #send_alert_submit
 {
     float:right;
     margin:10px 15px 0 0;
@@ -3132,33 +3133,41 @@ h3.soft_h3{
 
 /*Style module communication*/
 
-#comm_distrib_place_autre{
-    margin-left:123px;
+#commForm input,#commForm select,#commForm textarea{
+    margin-bottom: 3px;    
 }
-#comm_error {
-    color:red;
+#commForm input,#commForm select{
+    width: 300px;
 }
+
 #comm_h2_distrib{
     margin-top: 50px;
 }
 #comm_distribPlace{
     position:relative;
-        top:16px;
+        bottom:6px;
+}
+#comm_error {
+    color:red;
 }
 
-div.comm_pack {
-    float:left;
-}
 .comm_pack {
     width: 33%;
     text-align:center;
         }
+div.comm_pack {
+    float:left;
+}
 #bloc_paper {
     overflow: auto;
 }
 
 #comm_radio_list li{
     display:inline;
+}
+
+#comm_submit {
+    margin: 20px 0 20px 0;
 }
 
 /*11 ans CSS*/
