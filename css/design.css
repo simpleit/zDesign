@@ -3136,7 +3136,7 @@ h3.soft_h3{
 #commForm input,#commForm select,#commForm textarea{
     margin-bottom: 3px;    
 }
-#commForm input,#commForm select{
+#commForm input[type="text"],#commForm select{
     width: 300px;
 }
 
@@ -3174,3 +3174,32 @@ div.comm_pack {
 #header .header_gauche {position:relative; left:3px; top:-14px; padding: 0 0 10px 0 !important; z-index:1;}
 .stats_sites, .stats_sites *{position:relative; z-index:2;}
 
+/* Contact Module View Contact*/
+.cadre_auteur_contact
+{
+    float:none;
+    width:100%;
+    height:250px;
+}
+.cadre_auteur_contact .infobox
+{
+    width:49%;
+    height:250px;
+    max-width:550px;
+}
+.cadre_auteur_contact .infobox ul
+{
+    list-style: none !important;
+    display:block;
+    float:left;
+    padding:0 0 0 38px;
+}
+.cadre_auteur_contact ul.tel{background:url('/images/vocationaltraining/ico_tel.png') no-repeat left top;}
+.cadre_auteur_contact ul.adress{background:url('/images/contact/ico_adresse.png') no-repeat left top;width:80%;height:62px;}
+.cadre_auteur_contact ul.fax{background:url('/images/vocationaltraining/ico_fax.png') no-repeat left top;width:80%;}
+.cadre_auteur_contact ul.mail{background:url('/images/contact/ico_mail.png') no-repeat left top;width:80%;}
+.cadre_auteur_contact .infobox ul li
+{
+    margin:0 0 15px 0;
+}
+.textarea_mess_contact{width:67%;}
