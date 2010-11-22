@@ -184,11 +184,11 @@ div.code2, .citation2, .spoiler2, .spoiler2_hidden /* Contenu du code, de la cit
 {
 	border:1px solid #2C485C;
 	background-color:#E9F0F5;
-	padding:2px;
+	padding:5px;
 }
 .tab_user th
 {
-	padding:2px;
+	padding:5px;
 }
 span.console
 {

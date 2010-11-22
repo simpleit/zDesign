@@ -1213,7 +1213,7 @@ code {margin-left: 25px; font-size: 0.9em;}
 }
 .liste_messages th
 {
-	background: #808080 url("../images/homepage/bg_infobox_titre.png") repeat-x top;
+	background: #808080 url("../images/homepage/bg_infobox_titre.png") repeat-x bottom;
 	padding: 5px 3px;
 	color: #FFF;
 	text-align: center;
