@@ -180,16 +180,7 @@ div.code2, .citation2, .spoiler2, .spoiler2_hidden /* Contenu du code, de la cit
 	border:2px solid #2C485C;
 	margin: 0px auto 0px auto;
 }
-.tab_user td
-{
-	border:1px solid #2C485C;
-	background-color:#E9F0F5;
-	padding:5px;
-}
-.tab_user th
-{
-	padding:5px;
-}
+
 span.console
 {
     background-color: black;
@@ -295,11 +286,11 @@ div.code2, .citation2, .spoiler2, .spoiler2_hidden /* Contenu du code, de la cit
 {
 	border:1px solid #2C485C;
 	background-color:#E9F0F5;
-	padding:2px;
+	padding:5px;
 }
 .tab_user th
 {
-	padding:2px;
+	padding:5px;
 }
 span.console
 {
