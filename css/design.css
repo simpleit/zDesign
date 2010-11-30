@@ -3170,10 +3170,6 @@ div.comm_pack {
     margin: 20px 0 20px 0;
 }
 
-/*11 ans CSS*/
-#header .header_gauche {position:relative; left:3px; top:-14px; padding: 0 0 10px 0 !important; z-index:1;}
-.stats_sites, .stats_sites *{position:relative; z-index:2;}
-
 /* Contact Module View Contact*/
 .cadre_auteur_contact
 {
@@ -3203,3 +3199,12 @@ div.comm_pack {
     margin:0 0 15px 0;
 }
 .textarea_mess_contact{width:67%;}
+.keyboard_shortcut
+{
+    padding: 0px 3px;
+    border: 1px #c1c1ab solid;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: url('/images/designs/2/zcode/keyboard_shortcut_bg.png') repeat-x left top;
+}
