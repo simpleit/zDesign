@@ -586,8 +586,8 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("../images/sp
     float:right;
     margin-right:120px;
     position:relative;
-    bottom:15px;
-	height: 1px;
+    top:-25px;
+    height: 1px;
 }
 
 #zozor
