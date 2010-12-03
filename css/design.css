@@ -322,7 +322,7 @@ input[disabled] { background-color:#DDD; cursor:default; }
 	clear:both;
 }
 #header .header_gauche {width: 208px;float: left;padding-left: 5px; padding-top: 15px; text-align: center;}
-#header .header_droit {margin-left: 218px;position: relative; /* overflow: hidden; */}
+#header .header_droit {margin-left: 218px; position: relative; height:122px;/* overflow: hidden; */}
 
 #publicite_banniere
 {
@@ -388,10 +388,10 @@ input[disabled] { background-color:#DDD; cursor:default; }
 
 #infos_membre {margin-top: 5px; margin-left: 54px; }
 
-#popup_menu_compte ul { width: 85px; }
+#popup_menu_compte ul { width: 85px; z-index:2102;}
 #popup_menu_compte { width: 105px; }
 
-#recherche { margin: 0 20px 0 0; text-align: center; }
+#recherche { margin: 0 20px 0 0; text-align: center; z-index:2100; position: relative; }
 #recherche input#champ_recherche 
 { 
 	width: 105px;
@@ -3208,3 +3208,427 @@ div.comm_pack {
     -webkit-border-radius: 3px;
     background: url('/images/designs/2/zcode/keyboard_shortcut_bg.png') repeat-x left top;
 }
+
+/*    Speedbarre    */
+
+#speedbarre .smenu>li a, #speedbarre .smenu>li a:hover, #speedbarre .menuh,#speedbarre .menuh_content, .menu_ters, .menu_ters_content{
+    background-image: url("/images/speedbarre/bgs_speedbarre.png");
+}
+
+#speedbarre{
+    height: 27px;
+    top:95px;
+    position:relative;
+    padding:0;
+    z-index: 2000;
+}
+
+#speedbarre_expand{
+    z-index: 99999;
+}
+
+#speedbarre ul{
+    padding:0px;
+    margin:0px;
+ }
+
+#speedbarre .smenu>li{
+    float:left;
+    list-style: none;
+    height:21px;
+    padding:0;
+    margin:0;
+    position:relative;
+    z-index: 10;
+    background:url("/images/speedbarre/bg_speed.png") right 0px repeat-x;
+}
+
+#speedbarre .smenu>li a{
+    font-size:12px;
+    color:#ffffff;
+    display:block;
+    padding:3px 22px 3px 6px;
+    margin:3px 0 0 0;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    font-weight: bold;
+    height:16px;
+    background-position:right 0px;
+    background-repeat:no-repeat;
+}
+
+#speedbarre .smenu>li a:hover, #speedbarre .smenu>li .smenu_hover{
+    color:#595859;
+    padding:3px 21px 3px 5px;
+    margin-top:3px;
+    background-position:right -28px;
+    background-repeat:no-repeat;
+    border:1px solid #656565;
+    border-bottom:0px;
+    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    display:block;
+    z-index:10;
+}
+
+
+#speedbarre .smenu>li.home a{
+    padding:0px 6px 0 0;
+    width:24px;
+    height:23px;
+    background-image: url("/images/speedbarre/bg_button_hp.png") ;
+    background-position: top;
+    outline: none;
+   }
+
+#speedbarre .smenu>li.home a span{
+    display:block;
+    text-indent: -99999px;
+   }
+
+#speedbarre .smenu>li.home a:hover{
+    padding:0px 6px 0 0;
+    border:0;
+    background-image: url("/images/speedbarre/bg_button_hp.png");
+    background-position: bottom;
+    height:24px;
+    width:24px;
+}
+
+ #speedbarre .arg, #speedbarre .ard{background-image:url("/images/speedbarre/bg_arrondis_speed.png"); background-repeat:no-repeat; height:26px; z-index: 1; float:left;   }
+
+  #speedbarre .arg{background-position: 0px 0px; width:30px;}
+  #speedbarre .ard{background-position:0 -27px; width:34px; z-index:10;}
+
+
+  #speedbarre #speed_boutique{
+    background-position:center 0;
+  }
+
+#speedbarre .menuh{
+    position:absolute;
+    top:26px;
+    left:0px;
+    z-index: 4;
+    max-width:760px;
+     box-shadow: 1px 1px 12px #555;
+    -moz-box-shadow: 1px 1px 12px #555;
+    -webkit-box-shadow: 1px 1px 12px #555;
+}
+
+#speedbarre .menuh, .menu_ters{
+    background-position:0px -62px;
+    background-color:#ffffff;
+    border-radius: 0px 0px 5px 5px;
+    -moz-border-radius: 0px 0px 5px 5px;
+    border-left:1px solid #656565; border-right:1px solid #656565; border-bottom: 2px solid #656565; border-top:0px;
+}
+
+#speedbarre .menuh_content{
+    position:relative;
+    background-position:0 bottom;
+    background-repeat:repeat-x;
+    border-radius: 0px 0px 5px 5px;
+    -moz-border-radius: 0px 0px 5px 5px;
+
+}
+
+    #speedbarre .menuh h5{
+    font-size: 13px;
+    color:#1F1F1F;
+    font-weight: bold;
+    margin:0px;
+    padding:5px 10px;
+    }
+
+
+    #speedbarre .menuh dt{
+         font-weight: bold;
+    }
+
+    dl dt dd{margin:0; padding:0;}
+
+.menuh_content dl{width:242px;}
+
+.menuh_content dl, .menu_une dl{
+float:left;
+display:block;
+margin:0;
+padding:5px 10px;
+}
+
+.menuh_princi_col {
+    float:left;
+    width:242px;
+}
+
+.menu_prim dl{width:214px;}
+
+.menu_ters ul{width:190px;
+margin:0;
+list-style:inside;
+
+}
+
+.menuh_content .ico{
+position:relative;
+width:35px;
+height:35px;
+display:block;
+float:left;
+}
+
+.menuh_content dt, .menuh_content dd{
+margin-left:40px;}
+
+.menuh_content .menu_prim{
+    width:234px;
+    float:left;
+    border-right:1px solid #656565;
+    height:100%;}
+
+.menuh_content .menu_princi{
+width:522px;
+float:left;
+}
+
+.menuh_content #menuh_etude .menu_princi{
+width:596px;
+}
+.menuh_content #menuh_etude .menu_princi dl{
+    width: 273px;
+}
+.menuh_content #menuh_etude .menuh_princi_col{
+    width: 282px;
+}
+
+.menuh_content .menu_ters{
+width:210px;
+display:block;
+position:absolute;
+background-position:0 bottom;
+background-repeat:repeat-x;
+height:100%;
+left:-212px;
+top:0px;
+}
+
+.menu_ters_content{
+    padding:10px;
+    background-position:0 -62px;
+    position:relative;
+    bottom:0px;
+
+}
+
+.menu_ters ul{list-style:none;
+clear:both;}
+
+.menu_ters a.suppr{display:block;
+float:left;
+width:15px;
+}
+
+.menu_ters a.info{display:block;
+float:left;
+width:172px;
+}
+
+.menuh dt{
+    color:#707070;
+}
+
+.menuh dd{
+    position:relative;
+}
+.menuh dd a, .menuh li a{
+    display:block;
+}
+
+.menuh li a:hover, .menuh dd a:hover, .menu_ters a.info:hover{
+    background-color:#dfedfd;
+    color:#2677c9;
+    display:block;}
+
+.icoforum{
+    width:40px;
+    height:40px;
+    position:absolute;
+    right:5px;
+    top:5px;
+}
+
+.icoetude{
+position:absolute;
+top:9px;
+left:5px;
+}
+
+.enlivre{
+   position:absolute;
+   top:0px;
+   right:0px;
+   background-color:#fff;
+}
+.menuhcattuto dd a{
+    display:inline;
+}
+
+.menuhcattuto dd a:hover{
+    display:inline;
+}
+#menuh_participez{
+    width:390px;
+;}
+    #menuh_participez dl{ width:360px;}
+
+
+#menuh_boutique{
+  width:605px;
+;}
+
+#menuh_cours li{
+    margin: 0 0 5px 0;
+}
+
+#speedbarre .menuh{
+    font-family: 'Trebuchet MS', Tahoma, 'DejaVu sans','sans-serif';
+}
+#speedbarre  .produitphare{
+        width:145px;
+        float:left;
+        margin:2px 0px 2px 2px;
+        padding:40px 0px 0px 0px;
+        height:320px;
+        position:relative;
+/*        cursor:pointer;*/
+        text-align: center;
+}
+
+#speedbarre .produitphare h5{
+    font-size:12px;
+    margin-top:25px;
+}
+
+#speedbarre .menuh .menu_ters_content h5{
+    padding:0px 0px 15px 0px;
+}
+
+   #speedbarre .prixbarre, #speedbarre .apartir, #speedbarre .prix{color:#7f1717; display:block;}
+   #speedbarre .prixbarre, #speedbarre .apartir{font-size:16px;}
+   #speedbarre .prixbarre{background:url("/images/boutique/prix_barre.png") no-repeat center; font-weight: bold;}
+   #speedbarre .prix{font-size:18px; font-weight: bold;}
+
+
+
+#speedbarre .autresproduits{
+  width:148px;
+  height:176px;
+  border:1px solid #d6d6d6;
+  margin:2px;
+  float:left;
+  background:#fff;
+  position:relative;
+  cursor:pointer;
+}
+
+#speedbarre .autresproduits span{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:142px;
+    height:54px;
+    display:block;
+    text-align: center;
+    font-size:11px;
+    color:#4f4e4e;
+    padding:3px;
+    visibility: hidden;
+}
+
+#speedbarre .autresproduits:hover span{
+    background:url("/images/speedbarre/bg_autreproduit.png") repeat-x top;
+    width:142px;
+    height:54px;
+    display:block;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    visibility:visible;
+}
+
+#speedbarre .bandeauenpreco, #speedbarre .bandeaunouveau{
+   background-image: url("/images/speedbarre/bandeauxboutique.png");
+   background-repeat: no-repeat;
+}
+
+#speedbarre .bandeaupromo{
+   background-image: url("/images/speedbarre/bandeaupromo.png");
+   background-repeat: no-repeat;
+   background-position: top center;
+}
+
+#speedbarre .bandeauenpreco{background-position: left top;}
+#speedbarre .bandeaunouveau{background-position: right top;}
+#speedbarre .bandeaupromo{background-position: right top;}
+
+#speedbarre .menuh_more, .menuh_more{
+    padding:5px 10px;
+    clear:both;
+    display:block;
+    text-align:right;
+}
+
+#speedbarre .menuh_more2{
+    padding:5px 10px;
+    clear:both;
+    display:block;
+    text-align:right;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+}
+
+.produitphare .bouton_action{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+}
+
+.button_all_forums{
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+   background-color: #CDE3FC;
+   border: 1px solid #C2D2E4;
+   color: #2677C9;
+   display: block;
+   height: 16px;
+   line-height: 16px;
+   margin: 5px auto;
+   text-align: center;
+   text-shadow: 0 1px 0 #E7F0F9;
+   width: 97%;
+
+}
+
+.button_all_forums:hover{
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius:3px;
+   border-radius:3px;
+   background-color: #CDE3FC;
+   border: 1px solid #2677c9;
+   color: #2677C9;
+   display: block;
+   height: 16px;
+   line-height: 16px;
+   margin: 5px auto;
+   text-align: center;
+   text-shadow: 0 1px 0 #E7F0F9;
+   width: 97%;
+
+}
+
+
+/*  END Speedbarre    */
