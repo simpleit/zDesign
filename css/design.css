@@ -3257,7 +3257,8 @@ div.comm_pack {
     background-repeat:no-repeat;
 }
 
-#speedbarre .smenu>li a:hover, #speedbarre .smenu>li .smenu_hover{
+/*#speedbarre .smenu>li a:hover,*/
+#speedbarre .smenu>li .smenu_hover{
     color:#595859;
     padding:3px 21px 3px 5px;
     margin-top:3px;
