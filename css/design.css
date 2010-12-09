@@ -3630,6 +3630,9 @@ left:5px;
    width: 97%;
 
 }
-
-
 /*  END Speedbarre    */
+
+.strict_center_column
+{
+    min-width:50%;
+}
