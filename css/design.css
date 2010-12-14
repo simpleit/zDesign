@@ -172,7 +172,7 @@ textarea
 	height:200px;
 	padding: 0.2em;
 }
-#bientot_lien { line-height: 1.3em;}
+/*#bientot_lien { line-height: 1.3em;}*/
 html>body textarea { width: 95%; }
 #comment { width: 77%; }
 textarea.petit_textarea { width: 280px;	height: 85px; }
@@ -221,36 +221,43 @@ input[disabled] { background-color:#DDD; cursor:default; }
 {
 	padding: 0 20px 0 0;
 	float: right;
-	height: 1.45em;
 }
 
 .intersites li
 {
 	float: left;
-	background: url("../images/intersites/left_on.png") no-repeat left top;
+        background-color: #F3F9FE;
 	margin: 0 0 0 5px;
 	padding: 0 0 0 10px;
-	height:1.45em;
+
+        border-color: #B9DAFB;
+        border-style: solid solid none;
+        border-width: 1px 1px medium;
+        -moz-border-radius: 3px 3px 0 0;
+        -webkit-border-radius: 3px 3px 0 0;
 }
 
 .intersites a
 {
 	float: left;
   	display: block;
-  	background: url("../images/intersites/right_on.png") no-repeat right top;
   	padding: 2px 10px 0 0;
   	text-decoration: none;
   	color: #765;
 }
 
 .intersites a:hover { color: #000; }
-.intersites .selected { background-position: left -20px; }
+.intersites .selected {
+background-color: #A2D0FD;
+}
 
 .intersites .selected a 
 {
   	color: #333;
-  	background-position: right -20px;
-	height: 25px;
+}
+
+.intersites #speed_admin a{
+    color: #a80303;
 }
 
 .stats_sites > li {	float: left; }
@@ -2207,13 +2214,13 @@ a.infobulle:hover span
 	padding-bottom:6px;
 }
 
-.deb_date_intervention 
+.begin_contributions_date 
 {
 	padding-left: 10px;
 	padding-bottom: 6px;
 	font-weight:bold;
 }
-.fin_date_intervention 
+.end_contributions_date 
 {
 	font-weight:bold;
 	border-top: 1px solid #D1D1D1;
@@ -2244,8 +2251,8 @@ a.infobulle:hover span
 	font-weight: normal;
 }
 
-#mes_interventions ul a.suppr {padding-left: 10px;background: transparent url(../images/forum/supprimer.png) no-repeat scroll;visibility: hidden;}
-#mes_interventions li:hover {visibility: visible;}
+#my_contributions ul a.suppr {padding-left: 10px;background: transparent url(../images/forum/supprimer.png) no-repeat scroll;visibility: hidden;}
+#my_contributions li:hover {visibility: visible;}
 
 #mes_tuto_favoris ul a.suppr {padding-left: 10px;background: transparent url(../images/forum/supprimer.png) no-repeat scroll;visibility: hidden;}
 #mes_tuto_favoris li:hover {visibility: visible;}
@@ -3220,7 +3227,7 @@ div.comm_pack {
     top:95px;
     position:relative;
     padding:0;
-    z-index: 2000;
+    z-index: 1000;
 }
 
 #speedbarre_expand{
@@ -3257,7 +3264,6 @@ div.comm_pack {
     background-repeat:no-repeat;
 }
 
-/*#speedbarre .smenu>li a:hover,*/
 #speedbarre .smenu>li .smenu_hover{
     color:#595859;
     padding:3px 21px 3px 5px;
@@ -3313,9 +3319,10 @@ div.comm_pack {
     left:0px;
     z-index: 4;
     max-width:760px;
-     box-shadow: 1px 1px 12px #555;
-    -moz-box-shadow: 1px 1px 12px #555;
-    -webkit-box-shadow: 1px 1px 12px #555;
+    font-family: 'Trebuchet MS', Tahoma, 'DejaVu sans','sans-serif';
+     box-shadow: 1px 2px 12px #555;
+    -moz-box-shadow: 1px 2px 12px #555;
+    -webkit-box-shadow: 1px 2px 12px #555;
 }
 
 #speedbarre .menuh, .menu_ters{
@@ -3323,7 +3330,7 @@ div.comm_pack {
     background-color:#ffffff;
     border-radius: 0px 0px 5px 5px;
     -moz-border-radius: 0px 0px 5px 5px;
-    border-left:1px solid #656565; border-right:1px solid #656565; border-bottom: 2px solid #656565; border-top:0px;
+    border-left:2px solid #656565; border-right:2px solid #656565; border-bottom: 3px solid #656565; border-top:0px;
 }
 
 #speedbarre .menuh_content{
@@ -3343,45 +3350,36 @@ div.comm_pack {
     padding:5px 10px;
     }
 
+    #speedbarre .menuh h6,#speedbarre .menuh h6 a{
+    color: #707070;
+    font-size: 12px;
+}
 
-    #speedbarre .menuh dt{
-         font-weight: bold;
-    }
-
-    dl dt dd{margin:0; padding:0;}
-
-.menuh_content dl{width:242px;}
-
-.menuh_content dl, .menu_une dl{
-float:left;
-display:block;
-margin:0;
-padding:5px 10px;
+.menuh_content{
+    padding-bottom: 2px;
 }
 
 .menuh_princi_col {
     float:left;
-    width:242px;
+    width:256px;
 }
 
-.menu_prim dl{width:214px;}
-
 .menu_ters ul{width:190px;
-margin:0;
-list-style:inside;
+    margin:0;
+    list-style:inside;
 
 }
 
 .menuh_content .ico{
-position:relative;
-width:35px;
-height:35px;
-display:block;
-float:left;
+    position:relative;
+    width:35px;
+    height:35px;
+    display:block;
+    float:left;
 }
 
-.menuh_content dt, .menuh_content dd{
-margin-left:40px;}
+#speedbarre .menuh ul, .menuh h6{
+    margin: 0 0 0 40px;}
 
 .menuh_content .menu_prim{
     width:234px;
@@ -3390,29 +3388,43 @@ margin-left:40px;}
     height:100%;}
 
 .menuh_content .menu_princi{
-width:522px;
-float:left;
+    width:522px;
+    float:left;
 }
 
-.menuh_content #menuh_etude .menu_princi{
-width:596px;
+.menuh_content #menuh_study .menu_princi{
+    width:596px;
 }
-.menuh_content #menuh_etude .menu_princi dl{
-    width: 273px;
-}
-.menuh_content #menuh_etude .menuh_princi_col{
+
+.menuh_content #menuh_study .menuh_princi_col{
     width: 282px;
 }
 
+#speedbarre .menuh_list_category {
+    padding: 3px 10px;
+}
+
+#speedbarre .menu_princi .menuh_list_category {
+    width: 252px;
+}
+#speedbarre .menu_princi li {
+    display:inline;
+}
+
+.menuh .menu_prim li{
+    display:block;
+    position:relative;
+}
+
 .menuh_content .menu_ters{
-width:210px;
-display:block;
-position:absolute;
-background-position:0 bottom;
-background-repeat:repeat-x;
-height:100%;
-left:-212px;
-top:0px;
+    width:210px;
+    display:block;
+    position:absolute;
+    background-position:0 bottom;
+    background-repeat:repeat-x;
+    height:100%;
+    left:-212px;
+    top:0px;
 }
 
 .menu_ters_content{
@@ -3420,37 +3432,47 @@ top:0px;
     background-position:0 -62px;
     position:relative;
     bottom:0px;
-
 }
 
+#speedbar_expand li{
+    list-style:none;
+}
+
+.menu_ters{
+    box-shadow: -6px 1px 12px #555;
+    -moz-box-shadow: -6px 1px 12px #555;
+    -webkit-box-shadow: -6px 1px 12px #555;
+    border-right: 1px solid #656565;
+}
 .menu_ters ul{list-style:none;
-clear:both;}
+    clear:both;}
 
 .menu_ters a.suppr{display:block;
-float:left;
-width:15px;
+    float:left;
+    width:15px;
 }
 
 .menu_ters a.info{display:block;
-float:left;
-width:172px;
+    float:left;
+    width:172px;
 }
 
-.menuh dt{
-    color:#707070;
-}
-
-.menuh dd{
-    position:relative;
-}
-.menuh dd a, .menuh li a{
+.menuh li a{
     display:block;
 }
 
-.menuh li a:hover, .menuh dd a:hover, .menu_ters a.info:hover{
+.menuh li a:hover, .menu_ters a.info:hover{
     background-color:#dfedfd;
     color:#2677c9;
     display:block;}
+
+#create_tutorials_button{
+    text-align: right;
+}
+
+#find_training{
+    margin: 15px 0 0 40px;
+}
 
 .icoforum{
     width:40px;
@@ -3460,54 +3482,48 @@ width:172px;
     top:5px;
 }
 
-.icoetude{
-position:absolute;
-top:9px;
-left:5px;
+#speedbarre #my_contributions ul, #speedbarre #my_favorites_tutorials ul{margin:0;}
+
+.ico_study{
+    position:absolute;
+    top:9px;
+    left:5px;
 }
 
-.enlivre{
-   position:absolute;
-   top:0px;
-   right:0px;
-   background-color:#fff;
+.in_book{
+    position:absolute;
+    top:0px;
+    right:0px;
+    background-color:#fff;
 }
-.menuhcattuto dd a{
+.menuhcattuto li a{
     display:inline;
 }
 
-.menuhcattuto dd a:hover{
+.menuhcattuto li a:hover{
     display:inline;
 }
-#menuh_participez{
+#menuh_collaborate{
     width:390px;
 ;}
-    #menuh_participez dl{ width:360px;}
 
-
-#menuh_boutique{
-  width:605px;
+#menuh_shop{
+    width:605px;
 ;}
 
-#menuh_cours li{
-    margin: 0 0 5px 0;
+
+#speedbarre  .flagship_products{
+    width:145px;
+    float:left;
+    margin:2px 0px 2px 2px;
+    padding:40px 0px 0px 0px;
+    height:320px;
+    position:relative;
+    /*        cursor:pointer;*/
+    text-align: center;
 }
 
-#speedbarre .menuh{
-    font-family: 'Trebuchet MS', Tahoma, 'DejaVu sans','sans-serif';
-}
-#speedbarre  .produitphare{
-        width:145px;
-        float:left;
-        margin:2px 0px 2px 2px;
-        padding:40px 0px 0px 0px;
-        height:320px;
-        position:relative;
-/*        cursor:pointer;*/
-        text-align: center;
-}
-
-#speedbarre .produitphare h5{
+#speedbarre .flagship_products h5{
     font-size:12px;
     margin-top:25px;
 }
@@ -3516,14 +3532,14 @@ left:5px;
     padding:0px 0px 15px 0px;
 }
 
-   #speedbarre .prixbarre, #speedbarre .apartir, #speedbarre .prix{color:#7f1717; display:block;}
-   #speedbarre .prixbarre, #speedbarre .apartir{font-size:16px;}
+   #speedbarre .prixbarre, #speedbarre .min_price, #speedbarre .price{color:#7f1717; display:block;}
+   #speedbarre .prixbarre, #speedbarre .min_price{font-size:16px;}
    #speedbarre .prixbarre{background:url("/images/boutique/prix_barre.png") no-repeat center; font-weight: bold;}
-   #speedbarre .prix{font-size:18px; font-weight: bold;}
+   #speedbarre .price{font-size:18px; font-weight: bold;}
 
 
 
-#speedbarre .autresproduits{
+#speedbarre .other_products{
   width:148px;
   height:176px;
   border:1px solid #d6d6d6;
@@ -3534,7 +3550,7 @@ left:5px;
   cursor:pointer;
 }
 
-#speedbarre .autresproduits span{
+#speedbarre .other_products span{
     position:absolute;
     bottom:0px;
     left:0px;
@@ -3548,7 +3564,7 @@ left:5px;
     visibility: hidden;
 }
 
-#speedbarre .autresproduits:hover span{
+#speedbarre .other_products:hover span{
     background:url("/images/speedbarre/bg_autreproduit.png") repeat-x top;
     width:142px;
     height:54px;
@@ -3559,20 +3575,20 @@ left:5px;
     visibility:visible;
 }
 
-#speedbarre .bandeauenpreco, #speedbarre .bandeaunouveau{
+#speedbarre .headband_preorder, #speedbarre .bandeaunouveau{
    background-image: url("/images/speedbarre/bandeauxboutique.png");
    background-repeat: no-repeat;
 }
 
-#speedbarre .bandeaupromo{
+#speedbarre .headband_discount{
    background-image: url("/images/speedbarre/bandeaupromo.png");
    background-repeat: no-repeat;
    background-position: top center;
 }
 
-#speedbarre .bandeauenpreco{background-position: left top;}
+#speedbarre .headband_preorder{background-position: left top;}
 #speedbarre .bandeaunouveau{background-position: right top;}
-#speedbarre .bandeaupromo{background-position: right top;}
+#speedbarre .headband_discount{background-position: right top;}
 
 #speedbarre .menuh_more, .menuh_more{
     padding:5px 10px;
@@ -3591,7 +3607,7 @@ left:5px;
     right:0px;
 }
 
-.produitphare .bouton_action{
+.flagship_products .bouton_action{
     position:absolute;
     bottom:0px;
     left:0px;
@@ -3601,34 +3617,32 @@ left:5px;
     -moz-border-radius: 3px 3px 3px 3px;
     -webkit-border-radius:3px;
     border-radius:3px;
-   background-color: #CDE3FC;
-   border: 1px solid #C2D2E4;
-   color: #2677C9;
-   display: block;
-   height: 16px;
-   line-height: 16px;
-   margin: 5px auto;
-   text-align: center;
-   text-shadow: 0 1px 0 #E7F0F9;
-   width: 97%;
-
+    background-color: #CDE3FC;
+    border: 1px solid #C2D2E4;
+    color: #2677C9;
+    display: block;
+    height: 16px;
+    line-height: 16px;
+    margin: 5px auto;
+    text-align: center;
+    text-shadow: 0 1px 0 #E7F0F9;
+    width: 97%;
 }
 
 .button_all_forums:hover{
     -moz-border-radius: 3px 3px 3px 3px;
     -webkit-border-radius:3px;
-   border-radius:3px;
-   background-color: #CDE3FC;
-   border: 1px solid #2677c9;
-   color: #2677C9;
-   display: block;
-   height: 16px;
-   line-height: 16px;
-   margin: 5px auto;
-   text-align: center;
-   text-shadow: 0 1px 0 #E7F0F9;
-   width: 97%;
-
+    border-radius:3px;
+    background-color: #CDE3FC;
+    border: 1px solid #2677c9;
+    color: #2677C9;
+    display: block;
+    height: 16px;
+    line-height: 16px;
+    margin: 5px auto;
+    text-align: center;
+    text-shadow: 0 1px 0 #E7F0F9;
+    width: 97%;
 }
 /*  END Speedbarre    */
 
