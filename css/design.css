@@ -2242,6 +2242,20 @@ a.infobulle:hover span
 	opacity: 0.85;
 	color: #000;
 }
+
+#tooltip.tooltip_in_book
+{
+	position: absolute;
+	z-index: 3000;
+	border: 1px solid #B9DAFB;
+	background-color: #dfedfd;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 3px;
+	opacity: 0.95;
+	color: #2677c9;
+}
 #tooltip h3 
 {
 	font-size:1em;
