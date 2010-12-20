@@ -48,7 +48,7 @@
   padding-left: 25px;
   list-style: none;
   color: #fff;
-  background: url(/sfDoctrinePlugin/images/error.png) no-repeat 4px 4px;
+  background: url(/sfDoctrinePlugin/images/designs/christmas/error.png) no-repeat 4px 4px;
 }
 
 #sf_admin_container tr:hover
@@ -138,45 +138,45 @@
 #sf_admin_container ul li a
 {
   padding-left: 20px;
-  background: url(/sfDoctrinePlugin/images/default.png) no-repeat 0 0;
+  background: url(/sfDoctrinePlugin/images/designs/christmas/default.png) no-repeat 0 0;
   color: #000000; 
 }
 
 #sf_admin_container ul li.sf_admin_action_new a
 {
-  background: url(/sfDoctrinePlugin/images/new.png) no-repeat 0 0;
+  background: url(/sfDoctrinePlugin/images/designs/christmas/new.png) no-repeat 0 0;
 }
 
 #sf_admin_container ul li.sf_admin_action_delete a
 {
-  background: url(/sfDoctrinePlugin/images/delete.png) no-repeat 0 0;
+  background: url(/sfDoctrinePlugin/images/designs/christmas/delete.png) no-repeat 0 0;
 }
 
 #sf_admin_container ul li.sf_admin_action_list a
 {
-  background: url(/sfDoctrinePlugin/images/list.png) no-repeat 0 0;
+  background: url(/sfDoctrinePlugin/images/designs/christmas/list.png) no-repeat 0 0;
 }
 
 #sf_admin_container ul li.sf_admin_action_edit a
 {
-  background: url(/sfDoctrinePlugin/images/edit.png) no-repeat 0 0;
+  background: url(/sfDoctrinePlugin/images/designs/christmas/edit.png) no-repeat 0 0;
 }
 
 #sf_admin_container ul li.sf_admin_action_asc a
 {
-  background: url(/sfDoctrinePlugin/images/asc.png) no-repeat 0 0;
+  background: url(/sfDoctrinePlugin/images/designs/christmas/asc.png) no-repeat 0 0;
 }
 
 #sf_admin_container ul li.sf_admin_action_desc a
 {
-  background: url(/sfDoctrinePlugin/images/desc.png) no-repeat 0 0;
+  background: url(/sfDoctrinePlugin/images/designs/christmas/desc.png) no-repeat 0 0;
 }
 
 #sf_admin_container .notice
 {
   margin: 4px 0;
   padding: 4px 4px 4px 30px;
-  background: url(/sfDoctrinePlugin/images/tick.png) no-repeat 10px 4px;
+  background: url(/sfDoctrinePlugin/images/designs/christmas/tick.png) no-repeat 10px 4px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: #ffc;
@@ -186,7 +186,7 @@
 {
   margin: 4px 0;
   padding: 4px 4px 4px 30px;
-  background: url(/sfDoctrinePlugin/images/error.png) no-repeat 10px 4px;
+  background: url(/sfDoctrinePlugin/images/designs/christmas/error.png) no-repeat 10px 4px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: #f33;
@@ -289,7 +289,7 @@
 
 .sf_admin_list th
 {
-	background: #808080 url("../images/homepage/bg_infobox_titre.png") repeat-x bottom;
+	background: #808080 url("/images/designs/christmas/homepage/bg_infobox_titre.png") repeat-x bottom;
 	padding: 5px 3px;
 	color: #FFF;
 	text-align: center;

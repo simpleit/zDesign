@@ -13,8 +13,10 @@ Description : feuille de style du module d'upload.
 body 
 {
 	padding: 0 10px;
+	background:white;
 	min-width: 0;
 }
+
 
 .quota
 {
@@ -27,7 +29,7 @@ body
 	width: 98%;
 	margin: auto;
 	margin-bottom: 20px;
-	border: 1px solid #BBBBBB;
+	border: 2px solid #e6f6e4;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 }
@@ -51,8 +53,9 @@ body
 	overflow: hidden;
 	text-align: center;
 	cursor:pointer;
+	background:transparent;
 }
-
+.dossier {background:white;}
 .miniature a
 {
 	display: block;
@@ -66,7 +69,9 @@ body
 	vertical-align: middle;
 	width: 100px;
 	height: 100px;
+
 	text-align: center;
+	background:white;
 }
 
 .miniature img

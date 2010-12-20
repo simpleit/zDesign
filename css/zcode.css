@@ -1,4 +1,14 @@
 /* zCode */
+.keyboard_shortcut {
+padding:0 3px;
+border:1px #c1c1ab solid;
+
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+
+background:url('/images/designs/christmas/zcode/keyboard_shortcut_bg.png') repeat-x left top;}
+
 
 .fl, .flot_gauche { float: left; } /*.flot_gauche sert pour le zCode */
 .fr, .flot_droite { float: right;} /*.flot_droite sert pour le zCode */
@@ -7,20 +17,21 @@
 .dinline{ display: inline; }
 .dblock{ display: block; }
 
-.orange, .couleur_valid  { color: #EC7600; }
+.orange{color:orange;} .couleur_valid  { color: #faae4b; }
 .noir { color: black; }
 .marron { color: maroon; }
-.vertf, .couleur_newser  { color: green; }
+.vertf {color:green;} .couleur_newser  { color: #98c958; }
 .olive { color: olive; }
 .marine { color: navy; }
 .violet { color: purple; }
 .bleugris { color: teal; }
 .argent { color: silver; }
 .gris { color: #646464; }
-.rouge, .couleur_admin, .error_list li { color: red; }
+.rouge{color:red;} 
+.couleur_admin { color: #f08a87; }
 .vertc { color: lime; }
 .jaune { color: yellow; }
-.bleu, .couleur_modo { color: blue; }
+.bleu{color:blue;} .couleur_modo { color: #77bee3; }
 .rose { color: fuchsia; }
 .turquoise { color: aqua; }
 .blanc { color: white; }
@@ -94,11 +105,11 @@
 	background-repeat: no-repeat;
 	padding: 4px 0 4px 50px;
 }
-.erreur     {color: #BE0B0B;background-image: url('../images/zcode/zcode_erreur.png');}
-.erreur2     {color: #145AC1;background-image: url('../images/zcode/zcode_erreur.png');}
-.question   {color: #145AC1;background-image: url('../images/zcode/zcode_question.png');}
-.attention  {color: #DA5E0F;background-image: url('../images/zcode/zcode_attention.png');}
-.information{color: #7D9B0A;background-image: url('../images/zcode/zcode_info.png');}
+.erreur     {color: #BE0B0B;background-image: url('/images/designs/christmas/zcode/zcode_erreur.png');}
+.erreur2     {color: #145AC1;background-image: url('/images/designs/christmas/zcode/zcode_erreur.png');}
+.question   {color: #145AC1;background-image: url('/images/designs/christmas/zcode/zcode_question.png');}
+.attention  {color: #DA5E0F;background-image: url('/images/designs/christmas/zcode/zcode_attention.png');}
+.information{color: #7D9B0A;background-image: url('/images/designs/christmas/zcode/zcode_info.png');}
 
 .information, .attention, .question, .erreur
 {
@@ -132,7 +143,7 @@ div.code2, .citation2, .spoiler2, .spoiler2_hidden /* Contenu du code, de la cit
 	overflow: auto;
 }
 
-.message .code2 {width: 600px;}
+.message .code2 {width: 95%;}
 .boite_message .code2, div#prev_final_texte .code2 {width: 640px;}
 
 @media screen {
@@ -180,7 +191,16 @@ div.code2, .citation2, .spoiler2, .spoiler2_hidden /* Contenu du code, de la cit
 	border:2px solid #2C485C;
 	margin: 0px auto 0px auto;
 }
-
+.tab_user td
+{
+	border:1px solid #2C485C;
+	background-color:#E9F0F5;
+	padding:2px;
+}
+.tab_user th
+{
+	padding:2px;
+}
 span.console
 {
     background-color: black;
@@ -196,11 +216,11 @@ span.console
 	background-repeat: no-repeat;
 	padding: 4px 0 4px 50px;
 }
-.erreur     {color: #BE0B0B;background-image: url('../images/zcode/zcode_erreur.png');}
-.erreur2     {color: #145AC1;background-image: url('../images/zcode/zcode_erreur.png');}
-.question   {color: #145AC1;background-image: url('../images/zcode/zcode_question.png');}
-.attention  {color: #DA5E0F;background-image: url('../images/zcode/zcode_attention.png');}
-.information{color: #7D9B0A;background-image: url('../images/zcode/zcode_info.png');}
+.erreur     {color: #BE0B0B;background-image: url('/images/designs/christmas/zcode/zcode_erreur.png');}
+.erreur2     {color: #145AC1;background-image: url('/images/designs/christmas/zcode/zcode_erreur.png');}
+.question   {color: #145AC1;background-image: url('/images/designs/christmas/zcode/zcode_question.png');}
+.attention  {color: #DA5E0F;background-image: url('/images/designs/christmas/zcode/zcode_attention.png');}
+.information{color: #7D9B0A;background-image: url('/images/designs/christmas/zcode/zcode_info.png');}
 
 .information, .attention, .question, .erreur
 {
@@ -286,11 +306,11 @@ div.code2, .citation2, .spoiler2, .spoiler2_hidden /* Contenu du code, de la cit
 {
 	border:1px solid #2C485C;
 	background-color:#E9F0F5;
-	padding:5px;
+	padding:2px;
 }
 .tab_user th
 {
-	padding:5px;
+	padding:2px;
 }
 span.console
 {
