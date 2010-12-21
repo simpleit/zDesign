@@ -397,7 +397,8 @@ input[disabled] { background-color:#DDD; cursor:default; }
 #logbox a:hover { color: #036f00 }
 #logbox .new_mp {font-size:12px;  background: url("/images/designs/christmas/logbox_mp.gif") no-repeat right top;}
 
-#logbox .no_mp  {padding-top:5px; font-size:1pt; background: url("/images/designs/christmas/logbox_mp.gif") no-repeat right -32px;}
+#logbox .no_mp  {padding-top:5px;  background: url("/images/designs/christmas/logbox_mp.gif") no-repeat right -32px;}
+#logbox .no_mp a{width:50px;height:50px;font-size:1px;}
 #logbox p {	margin: 7px 0 0 55px; line-height: 135%;}
 #logbox p.bloc_inscription, #logbox p.bloc_connexion
 {
@@ -785,6 +786,12 @@ width:172px;
 }
 
 #speedbarre #my_contributions ul, #speedbarre #my_favorites_tutorials ul{margin:0;}
+#my_contributions ul a.suppr{
+    background:url("../images/forum/supprimer.png") no-repeat scroll 0 0 transparent;
+    visibility: hidden;
+    padding-left:10px;
+}
+
 
 .ico_study{
 position:absolute;
@@ -3640,4 +3647,43 @@ table.tablesorter tbody tr.even td
     position: absolute;
     left: 2px;
     top: 4px;
+}
+
+/*Style module communication*/
+
+#commForm input,#commForm select,#commForm textarea{
+    margin-bottom: 3px;
+}
+#commForm input[type="text"],#commForm select{
+    width: 300px;
+}
+
+#comm_h2_distrib{
+    margin-top: 50px;
+}
+#comm_distribPlace{
+    position:relative;
+        bottom:6px;
+}
+#comm_error {
+    color:red;
+}
+
+.comm_pack {
+    width: 33%;
+    text-align:center;
+        }
+div.comm_pack {
+    float:left;
+}
+#bloc_paper {
+    overflow: auto;
+}
+
+#comm_radio_list li{
+    display:inline;
+}
+
+#comm_submit {
+    margin: 20px 0 20px 0;
 }
