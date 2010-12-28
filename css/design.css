@@ -9,7 +9,7 @@ Description : feuille de style du site reprenant notamment l'ensemble des ancien
 /* ---------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------->>> CSS DES BALISES GENERIQUES <<<---------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------- */
-body 
+body
 {
 	margin: 0;
 	padding: 0;
@@ -20,7 +20,7 @@ body
 	min-width: 1000px;
 }
 
-h1 
+h1
 {
 	color: #1877D5;
 	padding-left: 30px;
@@ -77,15 +77,15 @@ hr
 	border-bottom: 1px solid #CCC;
     margin-top: 20px;
 	margin-bottom: 20px;
-	
+
 }
 
 hr.clearehr
 {
-	border: 0; 
-	clear: both; 
+	border: 0;
+	clear: both;
 	margin: 0;
-	padding: 0; 
+	padding: 0;
 	visibility: hidden;
 }
 
@@ -144,7 +144,7 @@ fieldset.connexion2
         width: 40%;
 }
 
-.boutique_review_sdz legend a 
+.boutique_review_sdz legend a
 {
 	color:#ffffff;
 }
@@ -226,7 +226,7 @@ input[disabled] { background-color:#DDD; cursor:default; }
 	list-style: none;
 }
 
-.stats_sites 
+.stats_sites
 {
 	padding: 0 0 0 20px;
 	height: 1.45em;
@@ -249,7 +249,7 @@ input[disabled] { background-color:#DDD; cursor:default; }
 .intersites li
 {
 	float: left;
-	
+
 	margin: 0 0 0 5px;
 	padding: 0 0 0 10px;
 	height:1.45em;
@@ -268,7 +268,7 @@ input[disabled] { background-color:#DDD; cursor:default; }
 .intersites a:hover { color: #FFF; }
 .intersites .selected { background-position: left -20px; }
 
-.intersites .selected a 
+.intersites .selected a
 {
   	color: #FFF;
   	background-position: right -20px;
@@ -349,11 +349,11 @@ input[disabled] { background-color:#DDD; cursor:default; }
 
 #publicite_banniere
 {
-	position:absolute; 
-	left:50%; 
-	height:80px; 
-	width:468px; 
-	margin-left:-380px; 
+	position:absolute;
+	left:50%;
+	height:80px;
+	width:468px;
+	margin-left:-380px;
 	top:17px;
 }
 
@@ -367,8 +367,8 @@ input[disabled] { background-color:#DDD; cursor:default; }
 	padding: 8px 10px;
 	margin: 5px 20px 0 0;
 }
-#logbox .avatar_membre 
-{ 
+#logbox .avatar_membre
+{
 	max-width: 45px;
     max-height: 45px;
 	border: 2px solid white;
@@ -383,7 +383,7 @@ input[disabled] { background-color:#DDD; cursor:default; }
 }
 #logbox #mp_box a
 {
-	display: block;	
+	display: block;
 	padding: 15px 0 0 0;
 	text-align: center;
 	font-weight: bold;
@@ -420,8 +420,8 @@ input[disabled] { background-color:#DDD; cursor:default; }
 
 #recherche { position:relative;
 z-index:1001; margin: 93px 20px 0 0; text-align: center; }
-#recherche input#champ_recherche 
-{ 
+#recherche input#champ_recherche
+{
 	width: 105px;
 	color: #717171;
 	border: 1px solid #6f0013;
@@ -429,7 +429,7 @@ z-index:1001; margin: 93px 20px 0 0; text-align: center; }
         -moz-border-radius: 4px;
 }
 #recherche select
-{ 
+{
 	border: 1px solid #6f0013;
         width:92px;
         -moz-border-radius: 4px;
@@ -476,7 +476,7 @@ z-index:1001; margin: 93px 20px 0 0; text-align: center; }
 
 
 
-/*	
+/*
 
 
 .menuh_more{
@@ -494,7 +494,7 @@ ul#speedbarre
 	height: 27px;
 	background: url("/images/designs/christmas/designs/2/speedbarre/bg_left_speed.png") no-repeat left 95px;
 }
-ul#speedbarre li 
+ul#speedbarre li
 {
 	float: left;
 	color: #FFF;
@@ -502,7 +502,7 @@ ul#speedbarre li
 	letter-spacing: 1px;
 	font-weight: bold;
 }
-ul#speedbarre li a 
+ul#speedbarre li a
 {
 	display: block;
 	line-height: 1.2em;
@@ -521,7 +521,7 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("/images/desi
    Speedbarre    */
 
 #speedbarre .smenu>li a, #speedbarre .smenu>li a:hover, #speedbarre .menuh,#speedbarre .menuh_content, .menu_ters, .menu_ters_content{
-  
+
 }
 #speedbarre .smenu>li a, #speedbarre .smenu>li a:hover{
     background-image: url("/images/designs/christmas/speedbarre/arrow_xmas_.png");
@@ -557,7 +557,7 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("/images/desi
 }
 
 #speedbarre .smenu>li a{
-    
+
     color:#ffffff;
     display:block;
 	font-variant: small-caps;
@@ -570,27 +570,27 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("/images/desi
 
 }
 
-#speedbarre .smenu>li a:hover, #speedbarre .smenu>li .smenu_hover{  
+#speedbarre .smenu>li a:hover, #speedbarre .smenu>li .smenu_hover{
     color:#ffffff;
     display:block;
 	font-variant: small-caps;
 	text-align:center;
 /*    width:90px;*/
-	
+
     margin:3px 0 0 0;
     letter-spacing: 1px;
     height:30px;
 	background:  url("/images/designs/christmas/hover.gif") no-repeat center -11px;
     padding: 3px 22px 3px 13px;
- 
+
 }
 
 
 #speedbarre .smenu>li.home a{
     padding:0px 6px 0 0;
     width:24px;
-    height:23px;
-    background: url("/images/designs/christmas/speedbarre/bg_button_hp.png") top;
+    height:30px;
+    background: url("/images/designs/christmas/speedbarre/bg_button_hp.png") no-repeat top;
    }
 
 #speedbarre .smenu>li.home a span{
@@ -599,11 +599,8 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("/images/desi
    }
 
 #speedbarre .smenu>li.home a:hover{
-    padding:0px 6px 0 0;
-    height:24px;
-    width:24px;
     border:0;
-    background: url("/images/designs/christmas/speedbarre/bg_button_hp2.png") top;
+    background: url("/images/designs/christmas/speedbarre/bg_button_hp2.png") no-repeat top;
 }
 
  #speedbarre .arg, #speedbarre .ard{background-image:url("/images/designs/christmas/speedbarre/bg_arrondis_speed.png"); background-repeat:no-repeat; height:26px; z-index: 1; float:left;   }
@@ -627,7 +624,7 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("/images/desi
 
 #speedbarre .menuh, .menu_ters{
 
-   
+
      background: #FFF url("/images/designs/christmas/bg_corps_menu.png") no-repeat bottom right;
     border-radius: 0px 0px 5px 5px;
     -moz-border-radius: 0px 0px 5px 5px;
@@ -686,11 +683,11 @@ float:left;
 .menuh_content .menu_prim{
     width:234px;
     float:left;
-    border-right:1px solid #bbe0e6; 
+    border-right:1px solid #bbe0e6;
     height:100%;}
 
 .menuh_content .menu_princi{
-width:524px;
+width:525px;
 float:left;
 }
 
@@ -974,6 +971,20 @@ left:5px;
 
 }
 
+.speedbarre_arrow {
+    bottom: -7px;
+    display: block;
+    height: 16px;
+    margin: 3px 0;
+    padding: 3px 0;
+    position: absolute;
+    right: 0;
+    width: 20px;
+    cursor: pointer;
+}
+
+
+
 
 /*  END Speedbarre    */
 
@@ -981,7 +992,7 @@ left:5px;
 #menu
 {
     float:left;
-	width: 172px;	
+	width: 172px;
 	color: #707070;
 }
 .ml
@@ -999,9 +1010,9 @@ left:5px;
 	margin: 0;
 	padding: 25px 0 0 15px;
 	background: url("/images/designs/christmas/header_menus.png") no-repeat;
-	color: #EBEBEB; 
+	color: #EBEBEB;
 	font-size: 1em;
-}	
+}
 .box_menu .corpsmenu
 {
 	width: 164px;
@@ -1032,7 +1043,7 @@ left:5px;
 
 .liste_cours_menu {display: block;margin-left: 38px;}
 
-.barre_msg 
+.barre_msg
 {
 	border: solid 2px;
 	padding: 9px;
@@ -1045,7 +1056,7 @@ left:5px;
 	margin-right:10px;
 }
 .button_connexion
-{	
+{
     width: 150px;
 	background: url("/images/designs/christmas/bg_footer.png") repeat;
 	margin: 33px 0 18px;
@@ -1090,7 +1101,7 @@ left:5px;
 
 .contenu
 {
-	padding: 123px 20px;	
+	padding: 123px 20px;
 }
 
 #corps {margin-left: 195px;}
@@ -1247,7 +1258,7 @@ color:#222222;
 .conteneur_infobox textarea{margin-top:20px;}
 .infobox h3
 {
-	
+
 	font-size: 1em;
 	height: 29px;
 	margin: 0;
@@ -1302,7 +1313,7 @@ color:#222222;
 {
 	font-size: 1em;
 	color: black;
-	margin: 0;		
+	margin: 0;
 }
 
 .cadre_photo table
@@ -1314,18 +1325,18 @@ table.cadre_submit_quizz
         width: 50%;
         margin: 20px 25%;
 }
-.pauto90 
+.pauto90
 {
         width: 90%;
         padding: auto;
 }
-.p5px 
+.p5px
 {
         width: 90%;
         padding: 5px;
 }
 
-.pautof 
+.pautof
 {
         padding: auto;
         float: right;
@@ -1438,7 +1449,7 @@ img.petite_icone_news {	float: left; margin: 0 0 0 18px; }
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	text-align: center; 
+	text-align: center;
 	margin: 0 auto;
 	width: 70%;
 }
@@ -1447,14 +1458,14 @@ img.petite_icone_news {	float: left; margin: 0 0 0 18px; }
 #evenements table td { background-color: #F8FAFD; border-bottom: 1px solid #E2E2E2; text-align: center; }
 #evenements table th, #big_calendar th {background: #B7DEFD url("/images/designs/christmas/bg_grosse_cat.png") repeat-x bottom; color: #fff;}
 
-#big_calendar th a {color:#FFF;} 
-#evenements th a {color:#FFF;} 
+#big_calendar th a {color:#FFF;}
+#evenements th a {color:#FFF;}
 
 #corps #evenements td.event a { color: #FFF }
 #corps #evenements td.event .eventslist a { color: #2677C9 }
 #evenements .eventslist {
 	position: absolute;
-	visibility: hidden; 
+	visibility: hidden;
 	width: 150px;
 	background-color: #D2E3F4;
 	opacity: .9;
@@ -1503,16 +1514,16 @@ p.margin_petite_icone strong a:hover {color: #C87B02;}
 	margin-top: 10px;
 }
 
-.solve 
-{ 
-	background: none; 
-	border: none; 
-	color: #FFFFFF; 
-	cursor: pointer; 
+.solve
+{
+	background: none;
+	border: none;
+	color: #FFFFFF;
+	cursor: pointer;
 }
 
 
-a.bouton_action, .bouton_action 
+a.bouton_action, .bouton_action
 {
 	width: 145px;
 	height: 22px;
@@ -1677,7 +1688,7 @@ acronym
 #message_0, #message_1, #message_2 /* Tous les messages */
 {
 	position: absolute;
-	left: 50%; 
+	left: 50%;
 	top: 50%;
 	width: 400px;
 	height: 150px;
@@ -1687,7 +1698,7 @@ acronym
 #message_token /* message token */
 {
 	position: absolute;
-	left: 50%; 
+	left: 50%;
 	top: 50%;
 	width: 400px;
 	height: 400px;
@@ -1807,14 +1818,14 @@ td .pseudo_membre {background:#FFF;}
 
 	background: #F8FAFD url("/images/designs/christmas/homepage/bg_infobox_titre.png") repeat-x bottom;
 }
-.liste_cat 
+.liste_cat
 {
 	width: 98%;
 	margin: auto;
 	margin-top: 0px;
 	border-collapse: collapse;
 	border: 1px solid #48b6c0;
-	
+
 }
 
 .liste_cat tr:hover
@@ -1844,8 +1855,8 @@ td .pseudo_membre {background:#FFF;}
 td.nom_forum { padding-left: 15px; }
 .espace_postit td {height: 15px;}
 
-.sous_cat td 
-{	 
+.sous_cat td
+{
 	color: #333;
 	border: 1px solid #48b6c0;
 	background:#ecf6f9;
@@ -1854,7 +1865,7 @@ td.nom_forum { padding-left: 15px; }
 	padding: 3px;
 }
 
-.sous_cat .dernier_msg  {border-right: 1px solid #48b6c0;}  
+.sous_cat .dernier_msg  {border-right: 1px solid #48b6c0;}
 .ligne_impaire td {	background-color: #e8f3f6;}
 
 /* Forums */
@@ -1865,10 +1876,10 @@ td.nom_forum { padding-left: 15px; }
 
 .dernier_msg
 {
-	font-size: 0.85em; 	   
+	font-size: 0.85em;
 	font-style: italic;
 	padding: 2px 2px 2px 5px;
-}		   
+}
 .message_edite
 {
 	margin-top: 15px;
@@ -1965,11 +1976,11 @@ p.sujet_alerte
 }
 
 /* Calendrier */
-#big_calendar 
+#big_calendar
 {
-	text-align: center; 
-	border-spacing: 1px; 
-	font-size: 1.0em; 
+	text-align: center;
+	border-spacing: 1px;
+	font-size: 1.0em;
 	margin: auto;
 	border-collapse: collapse;
 	border: 1px solid #C7D6E0;
@@ -1989,7 +2000,7 @@ p.sujet_alerte
 #big_calendar .eventslist { height: 85px; }
 
 /* Descriptif des évènements */
-ul.evt-infos 
+ul.evt-infos
 {
 	border:1px solid #A3C0D5;
 	background-color:#E9F0F5;
@@ -2184,7 +2195,7 @@ li.evt-infos { padding: 0; margin: 2px;}
 #corps .onglets_boutique ul {margin:0;padding:10px 10px 0;list-style:none;}
 #corps .onglets_boutique li {vertical-align:baseline; float:left;background:url("/images/designs/christmas/tutos/bg_onglets.png") no-repeat left -28px;margin:0 3px 0 0;padding:0 0 0 21px;}
 #corps .onglets_boutique li img {vertical-align:baseline;}
-#corps .onglets_boutique a 
+#corps .onglets_boutique a
 {
 	float:left;
 	display:block;
@@ -2433,7 +2444,7 @@ label.label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 	margin: 10px 0 7px 0;
 	width: 95%;
 }
-.code_parse_final 
+.code_parse_final
 {
 	max-height: 500px;
 	overflow: auto;
@@ -2453,7 +2464,7 @@ label.label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 .boutons{margin-right: 20px;cursor: pointer;}
 .boutons_zform, .zform {margin-left: 150px;}
 .boutons_zform img {border: 1px #f8fafd solid;}
-.boutons_zform img:hover, .element:hover 
+.boutons_zform img:hover, .element:hover
 {
 		border-top: 1px #e3e7ec solid;
 		border-left: 1px #e3e7ec solid;
@@ -2474,7 +2485,7 @@ label.label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 .lien_autobackup {float: right;	margin-right: 3em;}
 
 /* Extra CSS pour la zForm */
-.zform_menu 
+.zform_menu
 {
 	cursor: pointer;
 	display:none;
@@ -2510,7 +2521,7 @@ label.label_cote /* Les labels sont placés sur une "colonne" à gauche  */
       display: none;
       position: absolute;
 }
-         
+
 
 #liste_code
 {
@@ -2523,7 +2534,7 @@ label.label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 
 div[id^="recent_"]
 {
-	color:brown;	
+	color:brown;
 	border: 1px #f8fafd solid;
 }
 
@@ -2557,7 +2568,7 @@ hr.bas_onglets {border: 0;	margin-bottom:30px;}
 
 #corps .onglets_tutos ul {margin:0;padding:10px 10px 0;list-style:none;}
 #corps .onglets_tutos li {float:left;background:url("/images/designs/christmas/tutos/bg_onglets.png") no-repeat left -28px;margin:0 3px 0 0;padding:0 0 0 21px;}
-#corps .onglets_tutos a 
+#corps .onglets_tutos a
 {
 	float:left;
 	display:block;
@@ -2654,7 +2665,7 @@ hr.bas_onglets {border: 0;	margin-bottom:30px;}
 {
         max-height: 150px;
         overflow-y: auto;
-}   
+}
 h3.flow
 {
     background: #808080 url("/images/designs/christmas/homepage/bg_infobox_light.png") repeat-x top;
@@ -2763,9 +2774,9 @@ h3.flow2, h4.flow2
 a.infobulle { position: relative; }
 a.infobulle span { display: none; }
 a.infobulle:hover { z-index: 900; }
-a.infobulle:hover span 
-{ 
-    display: inline; 
+a.infobulle:hover span
+{
+    display: inline;
     position: absolute;
     top: 25px;
     left: 30px;
@@ -2774,10 +2785,10 @@ a.infobulle:hover span
     -moz-border-radius: 10px;
     background: #F6F8FC;
     padding: 6px;
-    width: 200px;    
+    width: 200px;
 }
 
-.corps_inter 
+.corps_inter
 {
 	background:#FFF url(/images/designs/christmas/bg_corps_menu.png) repeat-y scroll left center;
 	border-color:#bbe0e6;
@@ -2788,7 +2799,7 @@ a.infobulle:hover span
 	width:164px;
 	white-space: nowrap;
 }
-.corps_inter ul 
+.corps_inter ul
 {
 	list-style-type:none;
 	padding: 0px;
@@ -2801,13 +2812,13 @@ a.infobulle:hover span
 	padding-bottom:6px;
 }
 
-.deb_date_intervention 
+.deb_date_intervention
 {
 	padding-left: 10px;
 	padding-bottom: 6px;
 	font-weight:bold;
 }
-.fin_date_intervention 
+.fin_date_intervention
 {
 	font-weight:bold;
 	border-top: 1px solid #D1D1D1;
@@ -2815,8 +2826,8 @@ a.infobulle:hover span
 	padding-left: 10px;
 	padding-top: 6px;
 }
- 
-#tooltip 
+
+#tooltip
 {
 	position: absolute;
 	z-index: 3000;
@@ -2844,7 +2855,7 @@ a.infobulle:hover span
 	color: #2677c9;
 }
 
-#tooltip h3 
+#tooltip h3
 {
 	font-size:1em;
 	margin: 0;
@@ -2896,7 +2907,7 @@ table.diff col.diff-content {width:48%;}
 /* ---------------------------------------------------------------------------------------------------------------- */
 /* ------------------------------->>> AUTOCOMPLETE JQUERY <<<------------------------------------------------------ */
 /* ---------------------------------------------------------------------------------------------------------------- */
-.ac_results 
+.ac_results
 {
 	padding: 0px;
 	border: 1px solid #2568B1;
@@ -2910,7 +2921,7 @@ table.diff col.diff-content {width:48%;}
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 }
-.ac_results ul 
+.ac_results ul
 {
 	width: 100%;
 	list-style-position: outside;
@@ -2918,7 +2929,7 @@ table.diff col.diff-content {width:48%;}
 	padding: 0;
 	margin: 0;
 }
-.ac_results li 
+.ac_results li
 {
 	margin: 0px;
 	padding: 2px 5px;
@@ -2932,7 +2943,7 @@ table.diff col.diff-content {width:48%;}
 	line-height: 16px;
 	overflow: hidden;
 }
-.ac_loading 
+.ac_loading
 {
 	background: #A8DFFC url('/images/designs/christmas/loading_petit.gif') right center no-repeat;
     opacity: .8;
@@ -2954,7 +2965,7 @@ table.diff col.diff-content {width:48%;}
 #TB_overlay { position: fixed; z-index:100; top: 0px; left: 0px; height:100%; width:100%; }
 .TB_overlayMacFFBGHack { background: url(/images/designs/christmas/designs/2/jquery/macFFBgHack.png) repeat; }
 .TB_overlayBG { background-color:#000; filter:alpha(opacity=75); -moz-opacity: 0.75; opacity: 0.75; }
-#TB_window 
+#TB_window
 {
     position: fixed;
     background: #FFF;
@@ -2966,7 +2977,7 @@ table.diff col.diff-content {width:48%;}
     top:50%;
     left:50%;
 }
-#TB_window img#TB_Image 
+#TB_window img#TB_Image
 {
     display:block;
     margin: 15px 0 0 15px;
@@ -3019,7 +3030,7 @@ table.diff col.diff-content {width:48%;}
 /** IE6 HACK **/
 * html #TB_overlay, * html #TB_HideSelect
 {position: absolute;height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');}
-* html #TB_window, * html #TB_load 
+* html #TB_window, * html #TB_load
 {position: absolute;margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');}
 /* ---------------------------------------------------------------------------------------------------------------- */
 /* -------------------->>> END OF THICKBOX CSS DEFINITION <<<------------------------------------------------------ */
@@ -3408,7 +3419,7 @@ ul.tree li .half_checked {
 .ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
 .ui-datepicker .ui-datepicker-title select { float:left; font-size:1em; margin:1px 0; }
 .ui-datepicker select.ui-datepicker-month-year {width: 100%;}
-.ui-datepicker select.ui-datepicker-month, 
+.ui-datepicker select.ui-datepicker-month,
 .ui-datepicker select.ui-datepicker-year { width: 49%;}
 .ui-datepicker .ui-datepicker-title select.ui-datepicker-year { float: right; }
 .ui-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
@@ -3459,7 +3470,7 @@ ul.tree li .half_checked {
 ----------------------------------*/
 .ui-dialog { position: relative; padding: .2em; width: 300px; }
 .ui-dialog .ui-dialog-titlebar { padding: .5em .3em .3em 1em; position: relative;  }
-.ui-dialog .ui-dialog-title { float: left; margin: .1em 0 .2em; } 
+.ui-dialog .ui-dialog-title { float: left; margin: .1em 0 .2em; }
 .ui-dialog .ui-dialog-titlebar-close { position: absolute; right: .3em; top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height: 18px; }
 .ui-dialog .ui-dialog-titlebar-close span { display: block; margin: 1px; }
 .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus { padding: 0; }
@@ -3649,6 +3660,8 @@ table.tablesorter tbody tr.even td
     top: 4px;
 }
 
+
+
 /*Style module communication*/
 
 #commForm input,#commForm select,#commForm textarea{
@@ -3686,4 +3699,9 @@ div.comm_pack {
 
 #comm_submit {
     margin: 20px 0 20px 0;
+}
+
+.speedbar_on_click, a.speedbar_on_click:hover{
+    background-image: url("/images/designs/christmas/speedbarre/arrow_xmas_.png") !important;
+    background-position: right -10px !important;
 }
