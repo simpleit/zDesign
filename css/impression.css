@@ -132,7 +132,7 @@ html>body .information, html>body .attention, html>body .question, html>body .er
 .bleugris { color: teal; }
 .argent { color: silver; }
 .gris { color: rgb(100, 100, 100); }
-.rouge { color: red; }
+.rouge{ color: red; }
 .vertc { color: lime; }
 .jaune { color: yellow; }
 .bleu { color: blue; }
@@ -319,22 +319,22 @@ span.console {
 
 .information:before
 {
-	content:url('/images/designs/christmas/zcode/zcode_info.png');
+	content:url('../images/zcode/zcode_info.png');
 }
 
 .erreur:before
 {
-	content:url('/images/designs/christmas/zcode/zcode_erreur.png');
+	content:url('../images/zcode/zcode_erreur.png');
 }
 
 .attention:before
 {
-	content:url('/images/designs/christmas/zcode/zcode_attention.png');
+	content:url('../images/zcode/zcode_attention.png');
 }
 
 .question:before
 {
-	content:url('/images/designs/christmas/zcode/zcode_question.png');
+	content:url('../images/zcode/zcode_question.png');
 }
 
 .spoiler3
