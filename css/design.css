@@ -3524,8 +3524,24 @@ div.comm_pack {
 ;}
 
 #menuh_shop{
-    width:605px;
+    width:609px;
 ;}
+
+#menuh_shop .buy{
+    display: block;
+    width: 74px;
+    margin: 10px 2px 0 2px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.discount_product_high{
+    width: 98px;
+    float: left;
+    position:relative;
+    text-align: center;
+}
 
 
 #speedbarre  .flagship_products{
@@ -3678,3 +3694,6 @@ div.comm_pack {
 {
     min-width:50%;
 }
+
+input.button_submit, a.link_contextual{background:url("/images/designs/2/buttoncut.png") repeat-x left -99px !important;border:0px !important;color:white;height:17px;padding:3px 10px;}
+input.button_submit:hover, a.link_contextual:hover{background:url("/images/designs/2/buttoncut.png") repeat-x left -124px !important;}
