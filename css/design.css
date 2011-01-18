@@ -322,7 +322,7 @@ background-color: #A2D0FD;
 
 #header
 {
-	height: 122px;
+	height: 100px;
 	/* overflow: hidden; */
 	background: #79B6FC url("../images/bg_header.png") repeat-x top;
 	margin-top:1.5em;
@@ -398,27 +398,58 @@ background-color: #A2D0FD;
 #popup_menu_compte ul { width: 85px; z-index:2102;}
 #popup_menu_compte { width: 105px; }
 
-#recherche { margin: 0 20px 0 0; text-align: center; z-index:2100; position: relative; }
-#recherche input#champ_recherche 
-{ 
-	width: 105px;
+
+/** CSS Employments **/
+#field_employment_search
+{
 	color: #717171;
 	border: 1px solid #71A6E1;
 	padding: 2px 5px 2px 2px;
         -moz-border-radius: 4px;
 }
-#recherche select
-{ 
-	border: 1px solid #71A6E1;
-        width:92px;
-        -moz-border-radius: 4px;
+
+
+#search_bar {
+    background-image: url("/images/designs/2/speedbarre/speed_barre_decoupe.png");
+    background-position: 0 -58px;
+    float: left;
+    height: 29px;
+    padding-right: 10px;
+    position: absolute;
+    right: 0;
+    width: 321px;
 }
-#recherche p { margin: 7px 0 0 0 }
+#recherche { margin: 0 0 0 20px; text-align: center; z-index:2100; position: relative; }
+#recherche input#champ_recherche { 
+	width: 126px;
+	color: #717171;
+	border: 1px solid #b9b9be;
+	padding: 2px 5px 2px 2px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+        height:15px;
+        float:left;
+        margin:2px 8px 0 0;
+}
+#recherche select{ 
+	border: 1px solid #b9b9be;
+        width:90px;
+        padding: 0px 1px 1px 2px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+        background-color: #fff;
+        font-size:13px;
+        float:left;
+        margin:2px 8px 0 0;
+
+}
+#recherche p { margin: 2px 0 0; float:left;}
 #recherche input[type=image]{ height:22px; margin-top:-3px }
 #recherche img.icon_avancee, #logbox img.icone_more, input[type=image] { vertical-align: middle; }
 
-.adress
-{
+.adress{
 	width: 30%;
 	height: 100px;
 }
@@ -579,6 +610,7 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("../images/sp
 	padding: 15px 10px;
 	background: url("../images/bg_debut_contenu.png") repeat-x top;
 	background-position: left -20px;
+        clear: left;
 }
 
 #corps {margin-left: 212px;}
@@ -595,13 +627,14 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("../images/sp
     margin-right:120px;
     height: 1px;
     position:relative;
-    top:-31px;
-    right:-23px;
+    top:-8px;
+    right:-20px;
 }
 
 #zozor
 {
     position:absolute;
+    z-index:100;
 }
 
 #arrow_border_error
@@ -2110,15 +2143,77 @@ h3.flow2, h4.flow2
 /* Q.C.M. */
 .qcm_liste_btut {margin-left:20px;}
 .question_qcm .question_header{height: 80px;width: 24px;background: transparent url("../images/tutos/ico_qcm.png") no-repeat 0 0; position:absolute; left: -21px; top: 15px;}
-.question_qcm {position: relative; color:#145AC1; background: transparent url("../images/tutos/bg_qcm.png") repeat-y top left; padding: 15px 0 15px 14px; margin-top: 20px; margin-bottom:10px;}
+.question_qcm {position: relative; color:#145AC1; background: transparent url("../images/tutos/bg_qcm.png") repeat-y top left; padding: 15px 0 15px 14px; margin: 20px 0 10px 21px;}
 .question_qcm .question {background:none;}
-.question_qcm .rmq {padding: 0; }
+/*.question_qcm .rmq {padding: 0; }*/
 .question_qcm label, .question_qcm .code, .question_qcm .code2{color:#1f1f1f;}
 
 .logo_reussite {width:60px;}
 
 #note_cmt {margin-left:35px;}
 #retour_cours {text-align:center;margin-top:30px;}
+
+/* Correction Q.C.M */
+.question_qcm h5{
+    font-size:13px;
+    font-weight: bold;
+    margin:0;
+    padding:0;
+}
+
+.reps>li{
+    display:block;
+}
+
+ul.reps, ul.reps>li, ul.reps_qcm{
+    list-style:none;
+    margin:0;
+    color:#1f1f1f;
+    padding:0;
+}
+
+ul.reps>li,li.rep_true, li.rep_false{
+    padding:11px 12px 10px 0;
+}
+
+.question_qcm p{
+    margin:0;
+    padding-left:10px;
+}
+
+.reps_qcm{
+    border-top:1px solid #cccccc;
+    border-bottom:1px solid #cccccc;
+}
+
+.rep_true, .rep_false{width:45%; display:block; float: left; margin-right:10px;}
+.rep_false{ border-right:1px solid #cccccc;}
+.rep_true p{color:#11a001;}
+.rep_false p{color:#d91717;}
+
+.reps .question{color:#145AC1;}
+
+.question_qcm .question_header_f, .question_qcm .question_header_t  {
+    height:80px;
+    left:-21px;
+    position:absolute;
+    top:15px;
+    width:24px;
+}
+
+.question_qcm .question_header_f{
+    background:url("/images/designs/2/tutos/qcm_faux2.png") no-repeat scroll 0 0 transparent;
+}
+
+.question_qcm .question_header_t{
+    background:url("/images/designs/2/tutos/qcm_vrai2.png") no-repeat scroll 0 0 transparent;
+}
+
+#note_cmt #note{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
 
 /* Liste des tutos classés par catégorie */
 .tutos_cats_tableau {width:40%;}
@@ -3193,6 +3288,168 @@ div.comm_pack {
     margin: 20px 0 20px 0;
 }
 
+
+/* JOB MODULE*/
+.interlabel{margin:0 0 3px 0;} /* Classe permettant les interlignes entre les input de formulaire */
+.interlabel input{width:287px;margin:0;}
+.interlabel input[type="checkbox"]{width:20px;}
+.interlabel select{width:287px;margin:0;text-align:left;}
+.interlabel .infomore
+{
+	color:#005F00;
+}
+.content_middle{
+    width:auto;
+}
+.content_right{width:298px; float:right;margin:0 0 0 10px;}
+.content_right .infobox p{padding:5px 5px 5px 16px;background:url("/images/bg-menu.gif") repeat-x transparent; margin:1px 0 3px 0; border: 1px solid #fff; position:relative;}
+label.label_cote_mini{width:100px !important;}
+
+input.button_submit, a.link_contextual{background:url("/images/designs/2/buttoncut.png") repeat-x left -99px !important;border:0px !important;color:white;height:23px;padding:3px 10px;}
+input.button_submit:hover, a.link_contextual:hover{background:url("/images/designs/2/buttoncut.png") repeat-x left -124px !important;}
+a.link_contextual{margin:0 0 15px 0;padding:0 0 6px 0;display:block;font-weight:bold;height:19px;width:100%;max-width:200px;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+span.textlink{display:block;padding-top:4px;}
+span.arrowlink{display:block;height:19px;width:30px;margin:0 5px 0 0px;float:left;background:url("/images/designs/2/buttoncut.png") no-repeat left -151px !important;}
+
+.job_type{line-height:22px;padding:1px 5px;color:#FFFFFF;text-shadow:0px 1px 0 #282828;font-weight:bold;margin:0;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+a.job_type{color:#FFFFFF;}
+.last_jobs{width:55px;float:left;margin-right:5px;height:35px;}
+.top_companies{width:95px;float:left;margin-right:5px;height:45px;text-align:center;}
+.top_companies img{margin-top:8px;}
+.last_jobs .job_type{min_width:25px;display:block;text-align:center;line-height:16px;margin:3px 5px;}
+.radius-bottom-block{border-bottom-releft-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;}
+div.button_link_jobapplication {margin:15px 0;display:block;height:39px;width:100%;}
+
+div.button_link_jobapplication a.leftlink {float:left;display:block;background:url("/images/designs/2/buttoncut.png") repeat-x left -175px !important;height:39px;width:5px;}
+div.button_link_jobapplication a.rightlink {float:right;display:block;background:url("/images/designs/2/buttoncut.png") repeat-x right -213px !important;height:39px;width:5px;}
+div.button_link_jobapplication a.centerlink {display:block;background:url("/images/designs/2/buttoncut.png") repeat-x left -251px !important;height:39px;width:100px;margin:auto;width:288px;}
+div.button_link_jobapplication a.centerlink span.textlink{padding:8px 0 0 16px;color:#000000;font-size:15px;}
+div.button_link_jobapplication a.centerlink span.already{}
+div.button_link_jobapplication a.centerlink span.arrowlink{float:right;height:30px;width:47px;max-width:550px;background:url("/images/designs/2/buttoncut.png") no-repeat left -410px !important;margin:3px -3px 0 0;}
+
+div.button_link_jobapplication:hover a.leftlink{background:url("/images/designs/2/buttoncut.png") repeat-x left -289px !important;}
+div.button_link_jobapplication:hover a.rightlink{background:url("/images/designs/2/buttoncut.png") repeat-x right -327px !important;}
+div.button_link_jobapplication:hover a.centerlink{background:url("/images/designs/2/buttoncut.png") repeat-x left -365px !important;}
+
+div.serach_bar_job{margin-bottom:20px;position:relative;background:url('/images/designs/2/buttoncut.png') repeat-x left -1519px;height:29px;padding:13px 10px 0 10px;}
+div.serach_bar_job_border_left{background:url('/images/designs/2/buttoncut.png') white no-repeat left -471px; width:4px; height:90px; position:absolute; bottom:0; left:0; z-index:2;}
+div.serach_bar_job_border_right{background:url('/images/designs/2/buttoncut.png') white no-repeat -5px -473px; width:4px; height:90px; position:absolute; bottom:-2px; right:0;}
+
+.label_cote_no_in_form{clear:none !important;width:110px !important;}
+.lister_job{height:120px;padding:8px;background:url('/images/designs/2/buttoncut.png')  repeat-x  left -1976px;border:1px solid #FFFFFF;border-bottom:1px solid #FAFAFA;}
+.lister_job2{background:url('/images/designs/2/buttoncut.png') #FAFAFA repeat-x  left -1976px;border-top:1px solid #FAFAFA;border-bottom:1px solid white;}
+.lister_job:hover{border:1px solid #F5B325;}
+.element_job{height:60px;}
+.element_job h4{font-style:normal;}
+.element_job img{margin:0 10px 0 0;padding:4px 0;}
+.lister_job span.date{float:right;margin-right:2px;text-align:right;}
+.element_job div{float:left;width:38%;padding-top:10px;}
+.element_job div span{font-weight:bold;}
+.lister_job .link_contextual{width:140px;margin:7px 0 0 8px;padding-left:15px;}
+.lister_job .link_contextual .textlink{padding-left:25px;}
+.lister_job .link_contextual .arrowlink{height:25px;float:right;background:url("/images/designs/2/buttoncut.png") no-repeat left -66px !important;}
+
+div.backbutton a.leftlink {float:left;display:block;background:url("/images/designs/2/buttoncut.png") repeat-x -28px -532px !important;height:30px;width:5px;}
+div.backbutton a.rightlink {float:right;display:block;background:url("/images/designs/2/buttoncut.png") repeat-x -38px -532px !important;height:30px;width:5px;}
+div.backbutton a.centerlink {display:block;background:url("/images/designs/2/buttoncut.png") repeat-x left -593px !important;height:30px;width:192px;margin:auto;margin-bottom:10px;}
+div.backbutton a.centerlink span.textlink{text-align:left;padding:5px 0 0 0;color:#000000;font-size:13px;color:#FFFFFF;font-weight:bold;}
+div.backbutton a.centerlink span.already{}
+div.backbutton a.centerlink span.arrowlink{float:left;height:25px;width:35px;max-width:550px;background:url("/images/designs/2/buttoncut.png") no-repeat -20px -493px !important;margin:3px 0 0 -3px;}
+
+div.backbutton:hover a.leftlink{background:url("/images/designs/2/buttoncut.png") repeat-x -12px -532px !important;}
+div.backbutton:hover a.rightlink{background:url("/images/designs/2/buttoncut.png") repeat-x -69px -532px !important;}
+div.backbutton:hover a.centerlink{background:url("/images/designs/2/buttoncut.png") repeat-x left -561px !important;}
+div.backbutton:hover a.centerlink span.arrowlink{background:url("/images/designs/2/buttoncut.png") no-repeat -20px -460px !important;}
+div.backbutton:hover a.centerlink span.textlink{color:#000000;}
+
+a.corpsmenu, a.corpsmenu span{display:block;}
+a.corpsmenu .link{color:#2677C9;}
+a.corpsmenu .link:hover{color:#C87B02;}
+
+.admin_list{list-style:none;padding:0 0 0 15px;margin:0 0 10px 0;}
+.admin_list li{list-style:none;text-indent:0;display:inline;}
+.admin_list li a{padding:8px 10px 8px 20px;}
+.admin_edit{background:url("/Templates/images/designs/2/forum/editer.png") no-repeat left center;}
+.admin_delete{background:url("/Templates/images/designs/2/forum/supprimer.png") no-repeat left center;}
+
+.button_job_select{width:140px;text-align:center;padding:2px 8px;}
+
+.paginate{width:auto;float:right;}
+.paginate a, .paginate span{height:22px;min-width:20px;padding:0 1px;line-height:22px;display:block;float:left;text-align:center;margin:0 2px;border:1px solid #F8F8F8;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+.paginate a.previous{background:url('/Templates/images/designs/2/fleche_gauche.png') no-repeat center center}
+.paginate a.next{background:url('/Templates/images/designs/2/fleche_droite.png') no-repeat center center}
+
+a.remove_filter{float:left;display:block;margin-bottom:5px;height:18px;line-height:19px;text-align:center;margin-right:8px;font-size:12px;color:#000000;background:url("/images/designs/2/buttoncut.png") #E9E9E9 no-repeat right 1px;padding: 0px 23px 0px 5px;font-weight:normal;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+a.remove_filter_job_type{color:#FFFFFF;font-weight:bold;}
+
+.jobtypes1{background-color:#EEA327 !important;}
+.jobtypes2{background-color:#A1BCFF !important;}
+.jobtypes3{background-color:#04A17C !important;}
+.jobtypes4{background-color:#E6753C !important;}
+.jobtypes5{background-color:#D44284 !important;}
+.jobtypes6{background-color:#D6A600 !important;}
+.jobtypes7{background-color:#237600 !important;}
+.jobtypes8{background-color:#4F5FD4 !important;}
+
+
+
+
+
+
+
+
+
+/* Go button */
+.button_go_search
+{
+    background:url('/images/designs/2/speedbarre/speed_barre_decoupe.png') #646464 left -116px no-repeat !important;
+    width:27px;
+    height:22px;
+    color:white !important;
+    border:0px solid #7B7B7B !important;
+    border-bottom:1px solid #7B7B7B !important;
+    font-size:12px;
+    float:left;
+    margin-top:1px;
+    padding-bottom:1px;
+}
+
+.button_more_search
+{
+    font-weight:bold;
+    padding:0 3px;
+    color:white !important;
+    font-size:20px;
+    margin:-1px 0 0 2px;
+    float:right;
+
+}
+
+
+/* Membres */
+span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
+{
+	width:160px;
+	clear:left;
+	float:left;
+	text-align:left;
+	margin-left:15px;
+        font-weight:bold;
+}
+
+/* For form : design sdz*/
+#sf_admin_container th a, #sf_admin_container th a:hover, .liste_cat th.whity a, .liste_cat th.whity a:hover{color:#FFFFFF;}
+.liste_cat th.whity{text-align:left;}
+.sous_cat_search:hover {background:#F1FAFD;}
+.verticalcenter td{vertical-align:middle !important;}
+.keyword_button{background:#F8FAFD;border:2px solid #E3E7EC;padding:5px;border-radius: 5px; -moz-border-radius: 5px;}
+
+
 /* Contact Module View Contact*/
 .cadre_auteur_contact
 {
@@ -3222,6 +3479,7 @@ div.comm_pack {
     margin:0 0 15px 0;
 }
 .textarea_mess_contact{width:67%;}
+
 .keyboard_shortcut
 {
     padding: 0px 3px;
@@ -3232,6 +3490,7 @@ div.comm_pack {
     background: url('/images/designs/2/zcode/keyboard_shortcut_bg.png') repeat-x left top;
 }
 
+
 /*    Speedbarre    */
 
 #speedbarre .smenu>li a, #speedbarre .smenu>li a:hover, #speedbarre .menuh,#speedbarre .menuh_content, .menu_ters, .menu_ters_content{
@@ -3239,10 +3498,10 @@ div.comm_pack {
 }
 
 #speedbarre{
-    height: 27px;
-    top:95px;
-    position:relative;
-    padding:0;
+    background-image: url("/images/designs/2/speedbarre/speed_barre_decoupe.png");
+    position: relative;
+    height: 29px;
+    padding: 0 0 0 218px;
     z-index: 1000;
 }
 
@@ -3255,15 +3514,22 @@ div.comm_pack {
     margin:0px;
  }
 
+ #speedbarre ul.smenu{
+     position: absolute;
+}
 #speedbarre .smenu>li{
-    float:left;
-    list-style: none;
-    height:21px;
-    padding:0;
-    margin:0;
-    position:relative;
+    background: url("/images/designs/2/speedbarre/speed_barre_decoupe.png") no-repeat scroll 0 -87px transparent;
+    float: left;
+    height: 29px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: relative;
     z-index: 10;
-    background:url("/images/speedbarre/bg_speed.png") right 0px repeat-x;
+}
+
+#speedbarre .smenu>li.home{
+    background: inherit;
 }
 
 #speedbarre .smenu>li a{
@@ -3272,8 +3538,6 @@ div.comm_pack {
     display:block;
     padding:3px 22px 3px 6px;
     margin:3px 0 0 0;
-    font-variant: small-caps;
-    letter-spacing: 1px;
     font-weight: bold;
     height:16px;
     background-position:right 0px;
@@ -3293,6 +3557,7 @@ div.comm_pack {
     -webkit-border-radius: 5px 5px 0px 0px;
     display:block;
     z-index:10;
+    height:19px;
 }
 
 
@@ -3319,20 +3584,21 @@ div.comm_pack {
     width:24px;
 }
 
- #speedbarre .arg, #speedbarre .ard{background-image:url("/images/speedbarre/bg_arrondis_speed.png"); background-repeat:no-repeat; height:26px; z-index: 1; float:left;   }
+ #speedbarre .arg, #speedbarre .ard{
+    background-image: url("/images/designs/2/speedbarre/speed_barre_decoupe.png");
+    background-repeat: no-repeat;
+    float: left;
+    height: 29px;
+    z-index: 1;
+ }
 
   #speedbarre .arg{background-position: 0px 0px; width:30px;}
-  #speedbarre .ard{background-position:0 -27px; width:34px; z-index:10;}
-
-
-  #speedbarre #speed_boutique{
-    background-position:center 0;
-  }
+  #speedbarre .ard{background-position:0 -29px; width:27px; z-index:10;}
 
 #speedbarre .menuh{
     position:absolute;
-    top:26px;
-    left:0px;
+    top:29px;
+    left:218px;
     z-index: 4;
     max-width:760px;
     font-family: 'Trebuchet MS', Tahoma, 'DejaVu sans','sans-serif';
@@ -3688,6 +3954,45 @@ div.comm_pack {
     width: 20px;
     cursor: pointer;
 }
+
+/* Job Speedbarre*/
+#menuh_job{
+    padding-bottom:20px;
+}
+
+#speedbarre #menuh_job h6{
+    margin: 8px 0 8px 5px;
+}
+
+#menuh_job .menuh_list_category a.corpsmenu{
+
+    border-color: #D6D6D6;
+    border-style: solid;
+    border-width: 0 0 1px;
+    height: 45px;
+    margin: 0 auto 0;
+    padding: 4px 2px;
+}
+
+#menuh_job .menuh_princi_col{
+    width:253px;
+    margin-right: 10px;
+}
+
+#menuh_job .menu_princi {
+    width: 535px;
+}
+
+.menuh_list_category_job{
+    border-color: #D6D6D6;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+}
+
+#speedbarre #menuh_job .menu_princi .menuh_list_category{
+    width:253px;
+
+}
 /*  END Speedbarre    */
 
 .strict_center_column
@@ -3695,5 +4000,5 @@ div.comm_pack {
     min-width:50%;
 }
 
-input.button_submit, a.link_contextual{background:url("/images/designs/2/buttoncut.png") repeat-x left -99px !important;border:0px !important;color:white;height:17px;padding:3px 10px;}
-input.button_submit:hover, a.link_contextual:hover{background:url("/images/designs/2/buttoncut.png") repeat-x left -124px !important;}
+div.discount_product_high span a.link_contextual{background:url("/images/designs/2/buttoncut.png") repeat-x left -99px !important;border:0px !important;color:white;height:17px;padding:3px 10px;}
+div.discount_product_high span a.link_contextual:hover{background:url("/images/designs/2/buttoncut.png") repeat-x left -124px !important;}
