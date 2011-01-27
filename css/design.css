@@ -277,7 +277,7 @@ background-color: #A2D0FD;
 .popup_menu ul
 {
 	position: absolute;
-	z-index: 100;
+	z-index: 1001;
 	list-style-type: none;
 	display: none;
 	padding: 0;
@@ -2145,7 +2145,7 @@ h3.flow2, h4.flow2
 .question_qcm .question_header{height: 80px;width: 24px;background: transparent url("../images/tutos/ico_qcm.png") no-repeat 0 0; position:absolute; left: -21px; top: 15px;}
 .question_qcm {position: relative; color:#145AC1; background: transparent url("../images/tutos/bg_qcm.png") repeat-y top left; padding: 15px 0 15px 14px; margin: 20px 0 10px 21px;}
 .question_qcm .question {background:none;}
-/*.question_qcm .rmq {padding: 0; }*/
+.question_qcm .rmq {padding: 0 0 0 10px; }
 .question_qcm label, .question_qcm .code, .question_qcm .code2{color:#1f1f1f;}
 
 .logo_reussite {width:60px;}
@@ -2172,6 +2172,10 @@ ul.reps, ul.reps>li, ul.reps_qcm{
     padding:0;
 }
 
+ul.reps_qcm ul{
+    padding:11px 0 0 28px;
+}
+
 ul.reps>li,li.rep_true, li.rep_false{
     padding:11px 12px 10px 0;
 }
@@ -2187,6 +2191,7 @@ ul.reps>li,li.rep_true, li.rep_false{
 }
 
 .rep_true, .rep_false{width:45%; display:block; float: left; margin-right:10px;}
+.rep_is_good {width:90%;}
 .rep_false{ border-right:1px solid #cccccc;}
 .rep_true p{color:#11a001;}
 .rep_false p{color:#d91717;}
@@ -3960,18 +3965,8 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     padding-bottom:20px;
 }
 
-#speedbarre #menuh_job h6{
-    margin: 8px 0 8px 5px;
-}
-
-#menuh_job .menuh_list_category a.corpsmenu{
-
-    border-color: #D6D6D6;
-    border-style: solid;
-    border-width: 0 0 1px;
-    height: 45px;
-    margin: 0 auto 0;
-    padding: 4px 2px;
+#menuh_job .menu_princi {
+    width: 535px;
 }
 
 #menuh_job .menuh_princi_col{
@@ -3979,8 +3974,12 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     margin-right: 10px;
 }
 
-#menuh_job .menu_princi {
-    width: 535px;
+#speedbarre #menuh_job .menu_princi .menuh_list_category{
+    width:253px;
+}
+
+#speedbarre #menuh_job h6{
+    margin: 8px 0 8px 5px;
 }
 
 .menuh_list_category_job{
@@ -3989,11 +3988,49 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     border-width: 1px 0 0 0;
 }
 
-#speedbarre #menuh_job .menu_princi .menuh_list_category{
-    width:253px;
-
+#menuh_job .menuh_list_category a.corpsmenu{
+    border-color: #D6D6D6;
+    border-style: solid;
+    border-width: 0 0 1px;
+    height: 45px;
+    margin: 0 auto 0;
+    padding: 4px 2px;
 }
-/*  END Speedbarre    */
+
+#menuh_job a:hover{
+    color: #2677C9;
+}
+
+#menuh_job .job_title{
+    margin: 1px 0 0 60px;
+}
+
+#menuh_job .job_title:hover{
+    background-color: #DFEDFD;
+}
+
+/* END Speedbarre */
+
+/* Wall */
+.wall{
+    width: 90%;
+/*    display: none;*/
+}
+
+.wall .code_parse_final {
+    max-height: 182px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#wall_date{
+    margin:0;
+}
+
+#wall_show{
+    background-color: #FFF;
+}
+/* END Wall */
 
 .strict_center_column
 {
@@ -4002,3 +4039,10 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 
 div.discount_product_high span a.link_contextual{background:url("/images/designs/2/buttoncut.png") repeat-x left -99px !important;border:0px !important;color:white;height:17px;padding:3px 10px;}
 div.discount_product_high span a.link_contextual:hover{background:url("/images/designs/2/buttoncut.png") repeat-x left -124px !important;}
+
+
+/* Google A/B Testing */
+.ABtesting{display:block;width:409px;height:164px;background:url('/images/static/btn_autopromo_xhtml_2.png') center center no-repeat;margin:20px auto 0 auto;}
+.ABtestinglink{display:block;padding:132px 0 0 122px;font-size:16px;color:#2677C9 !important;}
+.ABtestinglink:hover{text-decoration:underline;}
+.ABtesting:hover{text-decoration:underline;color:#2677C9 !important;}
