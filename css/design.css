@@ -1899,6 +1899,10 @@ label.label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 }
 
 /* zForm */
+#corps label.center_label_cote
+{
+    line-height:23px;
+}
 #corps label.label_cote
 {
 	float: left;
@@ -2153,6 +2157,16 @@ h3.flow2, h4.flow2
 #note_cmt {margin-left:35px;}
 #retour_cours {text-align:center;margin-top:30px;}
 
+/* Creation d'un Q.C.M */
+
+.add_qcm_possible_answer_input{
+    width: 50%;
+}
+
+.add_qcm_possible_answer_label, .add_qcm_possible_answer_input{
+    margin: 2px 0;
+}
+
 /* Correction Q.C.M */
 .question_qcm h5{
     font-size:13px;
@@ -2242,6 +2256,8 @@ ul.reps>li,li.rep_true, li.rep_false{
 .boite_a_outils {width: 180px;float: right;}
 
 .detail_tuto_edition {margin-right: 200px;}
+
+
 
 #tut_vot_ldz_img
 {
@@ -3295,8 +3311,11 @@ div.comm_pack {
 
 
 /* JOB MODULE*/
+#connection_form .error_list{list-style:none;margin-top:0;padding-left:10px;}
+#connection_form .error_list li{list-style:none;}
 .interlabel{margin:0 0 3px 0;} /* Classe permettant les interlignes entre les input de formulaire */
 .interlabel input{width:287px;margin:0;}
+.interlabel input.min{width:200px;margin:0;}
 .interlabel input[type="checkbox"]{width:20px;}
 .interlabel select{width:287px;margin:0;text-align:left;}
 .interlabel .infomore
