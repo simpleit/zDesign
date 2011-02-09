@@ -322,39 +322,47 @@ background-color: #A2D0FD;
 
 #header
 {
-	height: 100px;
+	height: 93px;
 	/* overflow: hidden; */
 	background: #79B6FC url("../images/bg_header.png") repeat-x top;
 	margin-top:1.5em;
 	clear:both;
 }
-#header .header_gauche {width: 208px;float: left;padding-left: 5px; padding-top: 15px; text-align: center;}
+#header .header_gauche {width: 208px;float: left;padding-left: 5px; padding-top: 8px; text-align: center;}
 #header .header_droit {margin-left: 218px; position: relative; height:122px;/* overflow: hidden; */}
 
-#publicite_banniere
+#publicite_header
 {
-	position:absolute; 
-	left:50%; 
-	height:80px; 
+    height : 76px; /* taille du header */
+    margin : 0 300px 0 0;
+    padding-top : 17px;
+}
+
+#publicite_banniere
+{ 
+	height:60px;
 	width:468px; 
-	margin-left:-380px; 
-	top:17px;
+	margin : 0 auto;
 }
 
 /*	Recherche et logbox	*/
 
 #logbox
 {
-	width: 230px;
+	width: 260px;
 	height: 50px;
-	background: #7EBAFC url("../images/bg_logbox.png") no-repeat;
-	padding: 8px 10px;
-	margin: 14px 20px 0 0;
+        background: #7EBAFC;
+        -moz-border-radius : 10px; /* pour mozilla */
+        -webkit-border-radius: 10px; /* pour safari et chrome */
+        border-radius: 10px 10px;
+        border : #9bc8fa 1px solid;
+	padding: 7px 9px; /* + 1px avec la bordure*/
+	margin: 14px 10px 0 0;
 }
 #logbox .avatar_membre 
 { 
 	max-width: 45px;
-    max-height: 45px;
+        max-height: 45px;
 	border: 2px solid #99CCFD;
 	float: left;
 }
@@ -379,17 +387,19 @@ background-color: #A2D0FD;
 #logbox a:hover { color: #FFF }
 #logbox .new_mp {background: url("../images/logbox_mp.png") no-repeat right top;}
 #logbox .no_mp  {background: url("../images/logbox_mp.png") no-repeat right -32px;}
-#logbox p {	margin: 7px 0 0 55px; line-height: 135%;}
-#logbox p.bloc_inscription, #logbox p.bloc_connexion
+
+#logbox div.bloc_inscription, #logbox div.bloc_connexion
 {
 	font-size: 0.8em;
 	color: #D3E9FF;
 	width: 48%;
 	padding: 5px 0 0 5px;
+        margin: 7px 0 0 55px;
+        line-height: 135%;
 }
-#logbox p.bloc_inscription a, #logbox p.bloc_connexion a { color: #D3E9FF }
-#logbox p.bloc_inscription { float: left; margin: 0 }
-#logbox p.bloc_connexion { margin: 0 0 0 51% }
+#logbox div.bloc_inscription a, #logbox div.bloc_connexion a { color: #D3E9FF }
+#logbox div.bloc_inscription { float: left; margin: 0 }
+#logbox div.bloc_connexion { margin: 0 0 0 51% }
 #logbox a strong.liens_invites {font-size: 1.5em;color: #174A86;}
 #logbox a:hover strong.liens_invites { color: #C87B02 }
 
@@ -410,18 +420,18 @@ background-color: #A2D0FD;
 
 
 #search_bar {
-    background-image: url("/images/designs/2/speedbarre/speed_barre_decoupe.png");
+    background-image: url("../images/speedbarre/speed_barre_decoupe.png");
     background-position: 0 -58px;
     float: left;
     height: 29px;
-    padding-right: 10px;
+    padding-right: 5px;
     position: absolute;
     right: 0;
-    width: 321px;
+    width: 326px;
 }
 #recherche { margin: 0 0 0 20px; text-align: center; z-index:2100; position: relative; }
 #recherche input#champ_recherche { 
-	width: 126px;
+	width: 119px;
 	color: #717171;
 	border: 1px solid #b9b9be;
 	padding: 2px 5px 2px 2px;
@@ -430,7 +440,7 @@ background-color: #A2D0FD;
 	-webkit-border-radius: 4px;
         height:15px;
         float:left;
-        margin:2px 8px 0 0;
+        margin:2px 7px 0 1px;
 }
 #recherche select{ 
 	border: 1px solid #b9b9be;
@@ -445,7 +455,7 @@ background-color: #A2D0FD;
         margin:2px 8px 0 0;
 
 }
-#recherche p { margin: 2px 0 0; float:left;}
+#recherche p { margin: 2px 0 0; float:right;}
 #recherche input[type=image]{ height:22px; margin-top:-3px }
 #recherche img.icon_avancee, #logbox img.icone_more, input[type=image] { vertical-align: middle; }
 
@@ -528,6 +538,7 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("../images/sp
 	border-width: 0 2px 2px 2px;
 	padding: 4px 2px;
 }
+
 .box_menu .corpsmenu p, .box_menu .corpsmenu ul, .box_menu .corpsmenu dl { margin: 0; }
 .box_menu .corpsmenu ul, .box_menu .corpsmenu dl {list-style-type: none;padding: 0;}
 .box_menu .corpsmenu ul li, #menu_sondage .question_sd, .box_menu .corpsmenu dd {border-bottom: 1px solid #D1D1D1;padding: 5px;}
@@ -753,7 +764,7 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("../images/sp
 	margin-bottom: 15px;
 }
 .infobox dd, .infobox dt{margin:0px; padding:0px;}
-.infobox dl{padding:10px 5px 5px 45px; background:url("/images/bg-menu.gif") repeat-x transparent; margin:0 0 5px 0; border: 1px solid #fff; position:relative;}
+.infobox dl{padding:10px 5px 5px 45px; background:url("../../images/bg-menu.gif") repeat-x transparent; margin:0 0 5px 0; border: 1px solid #fff; position:relative;}
 .icomenu{position:absolute; top:10px; left:5px;}
 .infobox .conteneur_infobox { padding: 3px 6px;}
 .infobox h3
@@ -1090,6 +1101,20 @@ a.bouton_action_petit {font-size: 0.85em;}
 .taille_news {width: 70%; float: left;}
 .auteur_date_commentaires {font-size: 0.85em;margin-bottom: 11px;}
 .commentaires_news {color: #666; float: right;}
+
+#news_accroche{
+    float: left;
+    width:386px;
+    height:inherit;
+    margin: 0 8px 0 0;
+}
+
+#news_accroche + p{
+    margin: 0;
+}
+#news_accroche + p + br{
+    clear: both;
+}
 
 /* Cadres */
 /*Bouton acueillant des images de dimensions maximum 150x150 px et 100x100 px*/
@@ -2221,11 +2246,11 @@ ul.reps>li,li.rep_true, li.rep_false{
 }
 
 .question_qcm .question_header_f{
-    background:url("/images/designs/2/tutos/qcm_faux2.png") no-repeat scroll 0 0 transparent;
+    background:url("../images/tutos/qcm_faux2.png") no-repeat scroll 0 0 transparent;
 }
 
 .question_qcm .question_header_t{
-    background:url("/images/designs/2/tutos/qcm_vrai2.png") no-repeat scroll 0 0 transparent;
+    background:url("../images/tutos/qcm_vrai2.png") no-repeat scroll 0 0 transparent;
 }
 
 #note_cmt #note{
@@ -3326,14 +3351,14 @@ div.comm_pack {
     width:auto;
 }
 .content_right{width:298px; float:right;margin:0 0 0 10px;}
-.content_right .infobox p{padding:5px 5px 5px 16px;background:url("/images/bg-menu.gif") repeat-x transparent; margin:1px 0 3px 0; border: 1px solid #fff; position:relative;}
+.content_right .infobox p{padding:5px 5px 5px 16px;background:url("../../images/bg-menu.gif") repeat-x transparent; margin:1px 0 3px 0; border: 1px solid #fff; position:relative;}
 label.label_cote_mini{width:100px !important;}
 
-input.button_submit, a.link_contextual{background:url("/images/designs/2/buttoncut.png") repeat-x left -99px !important;border:0px !important;color:white;height:23px;padding:3px 10px;}
-input.button_submit:hover, a.link_contextual:hover{background:url("/images/designs/2/buttoncut.png") repeat-x left -124px !important;}
+input.button_submit, a.link_contextual{background:url("../images/buttoncut.png") repeat-x left -99px !important;border:0px !important;color:white;height:23px;padding:3px 10px;}
+input.button_submit:hover, a.link_contextual:hover{background:url("../images/buttoncut.png") repeat-x left -124px !important;}
 a.link_contextual{margin:0 0 15px 0;padding:0 0 6px 0;display:block;font-weight:bold;height:19px;width:100%;max-width:200px;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
 span.textlink{display:block;padding-top:4px;}
-span.arrowlink{display:block;height:19px;width:30px;margin:0 5px 0 0px;float:left;background:url("/images/designs/2/buttoncut.png") no-repeat left -151px !important;}
+span.arrowlink{display:block;height:19px;width:30px;margin:0 5px 0 0px;float:left;background:url("../images/buttoncut.png") no-repeat left -151px !important;}
 
 .job_type{line-height:22px;padding:1px 5px;color:#FFFFFF;text-shadow:0px 1px 0 #282828;font-weight:bold;margin:0;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
 a.job_type{color:#FFFFFF;}
@@ -3349,24 +3374,24 @@ a.job_type{color:#FFFFFF;}
 	-webkit-border-bottom-right-radius: 10px;}
 div.button_link_jobapplication {margin:15px 0;display:block;height:39px;width:100%;}
 
-div.button_link_jobapplication a.leftlink {float:left;display:block;background:url("/images/designs/2/buttoncut.png") repeat-x left -175px !important;height:39px;width:5px;}
-div.button_link_jobapplication a.rightlink {float:right;display:block;background:url("/images/designs/2/buttoncut.png") repeat-x right -213px !important;height:39px;width:5px;}
-div.button_link_jobapplication a.centerlink {display:block;background:url("/images/designs/2/buttoncut.png") repeat-x left -251px !important;height:39px;width:100px;margin:auto;width:288px;}
+div.button_link_jobapplication a.leftlink {float:left;display:block;background:url("../images/buttoncut.png") repeat-x left -175px !important;height:39px;width:5px;}
+div.button_link_jobapplication a.rightlink {float:right;display:block;background:url("../images/buttoncut.png") repeat-x right -213px !important;height:39px;width:5px;}
+div.button_link_jobapplication a.centerlink {display:block;background:url("../images/buttoncut.png") repeat-x left -251px !important;height:39px;width:100px;margin:auto;width:288px;}
 div.button_link_jobapplication a.centerlink span.textlink{padding:8px 0 0 16px;color:#000000;font-size:15px;}
 div.button_link_jobapplication a.centerlink span.already{}
-div.button_link_jobapplication a.centerlink span.arrowlink{float:right;height:30px;width:47px;max-width:550px;background:url("/images/designs/2/buttoncut.png") no-repeat left -410px !important;margin:3px -3px 0 0;}
+div.button_link_jobapplication a.centerlink span.arrowlink{float:right;height:30px;width:47px;max-width:550px;background:url("../images/buttoncut.png") no-repeat left -410px !important;margin:3px -3px 0 0;}
 
-div.button_link_jobapplication:hover a.leftlink{background:url("/images/designs/2/buttoncut.png") repeat-x left -289px !important;}
-div.button_link_jobapplication:hover a.rightlink{background:url("/images/designs/2/buttoncut.png") repeat-x right -327px !important;}
-div.button_link_jobapplication:hover a.centerlink{background:url("/images/designs/2/buttoncut.png") repeat-x left -365px !important;}
+div.button_link_jobapplication:hover a.leftlink{background:url("../images/buttoncut.png") repeat-x left -289px !important;}
+div.button_link_jobapplication:hover a.rightlink{background:url("../images/buttoncut.png") repeat-x right -327px !important;}
+div.button_link_jobapplication:hover a.centerlink{background:url("../images/buttoncut.png") repeat-x left -365px !important;}
 
-div.serach_bar_job{margin-bottom:20px;position:relative;background:url('/images/designs/2/buttoncut.png') repeat-x left -1519px;height:29px;padding:13px 10px 0 10px;}
-div.serach_bar_job_border_left{background:url('/images/designs/2/buttoncut.png') white no-repeat left -471px; width:4px; height:90px; position:absolute; bottom:0; left:0; z-index:2;}
-div.serach_bar_job_border_right{background:url('/images/designs/2/buttoncut.png') white no-repeat -5px -473px; width:4px; height:90px; position:absolute; bottom:-2px; right:0;}
+div.serach_bar_job{margin-bottom:20px;position:relative;background:url('../images/buttoncut.png') repeat-x left -1519px;height:29px;padding:13px 10px 0 10px;}
+div.serach_bar_job_border_left{background:url('../images/buttoncut.png') white no-repeat left -471px; width:4px; height:90px; position:absolute; bottom:0; left:0; z-index:2;}
+div.serach_bar_job_border_right{background:url('../images/buttoncut.png') white no-repeat -5px -473px; width:4px; height:90px; position:absolute; bottom:-2px; right:0;}
 
 .label_cote_no_in_form{clear:none !important;width:110px !important;}
-.lister_job{height:120px;padding:8px;background:url('/images/designs/2/buttoncut.png')  repeat-x  left -1976px;border:1px solid #FFFFFF;border-bottom:1px solid #FAFAFA;}
-.lister_job2{background:url('/images/designs/2/buttoncut.png') #FAFAFA repeat-x  left -1976px;border-top:1px solid #FAFAFA;border-bottom:1px solid white;}
+.lister_job{height:120px;padding:8px;background:url('../images/buttoncut.png')  repeat-x  left -1976px;border:1px solid #FFFFFF;border-bottom:1px solid #FAFAFA;}
+.lister_job2{background:url('../images/buttoncut.png') #FAFAFA repeat-x  left -1976px;border-top:1px solid #FAFAFA;border-bottom:1px solid white;}
 .lister_job:hover{border:1px solid #F5B325;}
 .element_job{height:60px;}
 .element_job h4{font-style:normal;}
@@ -3376,19 +3401,19 @@ div.serach_bar_job_border_right{background:url('/images/designs/2/buttoncut.png'
 .element_job div span{font-weight:bold;}
 .lister_job .link_contextual{width:140px;margin:7px 0 0 8px;padding-left:15px;}
 .lister_job .link_contextual .textlink{padding-left:25px;}
-.lister_job .link_contextual .arrowlink{height:25px;float:right;background:url("/images/designs/2/buttoncut.png") no-repeat left -66px !important;}
+.lister_job .link_contextual .arrowlink{height:25px;float:right;background:url("../images/buttoncut.png") no-repeat left -66px !important;}
 
-div.backbutton a.leftlink {float:left;display:block;background:url("/images/designs/2/buttoncut.png") repeat-x -28px -532px !important;height:30px;width:5px;}
-div.backbutton a.rightlink {float:right;display:block;background:url("/images/designs/2/buttoncut.png") repeat-x -38px -532px !important;height:30px;width:5px;}
-div.backbutton a.centerlink {display:block;background:url("/images/designs/2/buttoncut.png") repeat-x left -593px !important;height:30px;width:192px;margin:auto;margin-bottom:10px;}
+div.backbutton a.leftlink {float:left;display:block;background:url("../images/buttoncut.png") repeat-x -28px -532px !important;height:30px;width:5px;}
+div.backbutton a.rightlink {float:right;display:block;background:url("../images/buttoncut.png") repeat-x -38px -532px !important;height:30px;width:5px;}
+div.backbutton a.centerlink {display:block;background:url("../images/buttoncut.png") repeat-x left -593px !important;height:30px;width:192px;margin:auto;margin-bottom:10px;}
 div.backbutton a.centerlink span.textlink{text-align:left;padding:5px 0 0 0;color:#000000;font-size:13px;color:#FFFFFF;font-weight:bold;}
 div.backbutton a.centerlink span.already{}
-div.backbutton a.centerlink span.arrowlink{float:left;height:25px;width:35px;max-width:550px;background:url("/images/designs/2/buttoncut.png") no-repeat -20px -493px !important;margin:3px 0 0 -3px;}
+div.backbutton a.centerlink span.arrowlink{float:left;height:25px;width:35px;max-width:550px;background:url("../images/buttoncut.png") no-repeat -20px -493px !important;margin:3px 0 0 -3px;}
 
-div.backbutton:hover a.leftlink{background:url("/images/designs/2/buttoncut.png") repeat-x -12px -532px !important;}
-div.backbutton:hover a.rightlink{background:url("/images/designs/2/buttoncut.png") repeat-x -69px -532px !important;}
-div.backbutton:hover a.centerlink{background:url("/images/designs/2/buttoncut.png") repeat-x left -561px !important;}
-div.backbutton:hover a.centerlink span.arrowlink{background:url("/images/designs/2/buttoncut.png") no-repeat -20px -460px !important;}
+div.backbutton:hover a.leftlink{background:url("../images/buttoncut.png") repeat-x -12px -532px !important;}
+div.backbutton:hover a.rightlink{background:url("../images/buttoncut.png") repeat-x -69px -532px !important;}
+div.backbutton:hover a.centerlink{background:url("../images/buttoncut.png") repeat-x left -561px !important;}
+div.backbutton:hover a.centerlink span.arrowlink{background:url("../images/buttoncut.png") no-repeat -20px -460px !important;}
 div.backbutton:hover a.centerlink span.textlink{color:#000000;}
 
 a.corpsmenu, a.corpsmenu span{display:block;}
@@ -3431,7 +3456,7 @@ a.remove_filter_job_type{color:#FFFFFF;font-weight:bold;}
 /* Go button */
 .button_go_search
 {
-    background:url('/images/designs/2/speedbarre/speed_barre_decoupe.png') #646464 left -116px no-repeat !important;
+    background:url('../images/speedbarre/speed_barre_decoupe.png') #646464 left -116px no-repeat !important;
     width:27px;
     height:22px;
     color:white !important;
@@ -3449,9 +3474,10 @@ a.remove_filter_job_type{color:#FFFFFF;font-weight:bold;}
     padding:0 3px;
     color:white !important;
     font-size:20px;
-    margin:-1px 0 0 2px;
+    margin:-1px 4px 0 2px;
     float:right;
-
+    display : block;
+    width : 13px;
 }
 
 
@@ -3494,10 +3520,10 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     float:left;
     padding:0 0 0 38px;
 }
-.cadre_auteur_contact ul.tel{background:url('/images/vocationaltraining/ico_tel.png') no-repeat left top;}
-.cadre_auteur_contact ul.adress{background:url('/images/contact/ico_adresse.png') no-repeat left top;width:80%;height:62px;}
-.cadre_auteur_contact ul.fax{background:url('/images/vocationaltraining/ico_fax.png') no-repeat left top;width:80%;}
-.cadre_auteur_contact ul.mail{background:url('/images/contact/ico_mail.png') no-repeat left top;width:80%;}
+.cadre_auteur_contact ul.tel{background:url('../../images/vocationaltraining/ico_tel.png') no-repeat left top;}
+.cadre_auteur_contact ul.adress{background:url('../../images/contact/ico_adresse.png') no-repeat left top;width:80%;height:62px;}
+.cadre_auteur_contact ul.fax{background:url('../../images/vocationaltraining/ico_fax.png') no-repeat left top;width:80%;}
+.cadre_auteur_contact ul.mail{background:url('../../images/contact/ico_mail.png') no-repeat left top;width:80%;}
 .cadre_auteur_contact .infobox ul li
 {
     margin:0 0 15px 0;
@@ -3511,18 +3537,18 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
-    background: url('/images/designs/2/zcode/keyboard_shortcut_bg.png') repeat-x left top;
+    background: url('../images/zcode/keyboard_shortcut_bg.png') repeat-x left top;
 }
 
 
 /*    Speedbarre    */
 
 #speedbarre .smenu>li a, #speedbarre .smenu>li a:hover, #speedbarre .menuh,#speedbarre .menuh_content, .menu_ters, .menu_ters_content{
-    background-image: url("/images/speedbarre/bgs_speedbarre.png");
+    background-image: url("../../images/speedbarre/bgs_speedbarre.png");
 }
 
 #speedbarre{
-    background-image: url("/images/designs/2/speedbarre/speed_barre_decoupe.png");
+    background-image: url("../images/speedbarre/speed_barre_decoupe.png");
     position: relative;
     height: 29px;
     padding: 0 0 0 218px;
@@ -3542,7 +3568,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
      position: absolute;
 }
 #speedbarre .smenu>li{
-    background: url("/images/designs/2/speedbarre/speed_barre_decoupe.png") no-repeat scroll 0 -87px transparent;
+    background: url("../images/speedbarre/speed_barre_decoupe.png") no-repeat scroll 0 -87px transparent;
     float: left;
     height: 29px;
     list-style: none outside none;
@@ -3562,7 +3588,6 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     display:block;
     padding:3px 22px 3px 6px;
     margin:3px 0 0 0;
-    font-weight: bold;
     height:16px;
     background-position:right 0px;
     background-repeat:no-repeat;
@@ -3589,7 +3614,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     padding:0px 6px 0 0;
     width:24px;
     height:23px;
-    background-image: url("/images/speedbarre/bg_button_hp.png") ;
+    background-image: url("../../images/speedbarre/bg_button_hp.png") ;
     background-position: top;
     outline: none;
    }
@@ -3602,14 +3627,14 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 #speedbarre .smenu>li.home a:hover{
     padding:0px 6px 0 0;
     border:0;
-    background-image: url("/images/speedbarre/bg_button_hp.png");
+    background-image: url("../../images/speedbarre/bg_button_hp.png");
     background-position: bottom;
     height:24px;
     width:24px;
 }
 
  #speedbarre .arg, #speedbarre .ard{
-    background-image: url("/images/designs/2/speedbarre/speed_barre_decoupe.png");
+    background-image: url("../images/speedbarre/speed_barre_decoupe.png");
     background-repeat: no-repeat;
     float: left;
     height: 29px;
@@ -3763,11 +3788,16 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     width:172px;
 }
 
-.menuh li a{
+.menuh li a, .box_menu .corpsmenu .liste_cours_menu a{
     display:block;
 }
 
-.menuh li a:hover, .menu_ters a.info:hover{
+.box_menu .corpsmenu .liste_cours_menu li{
+    border-bottom : none;
+    padding : 0px;
+}
+
+.menuh li a:hover, .menu_ters a.info:hover, .liste_cours_menu li a:hover{
     background-color:#dfedfd;
     color:#2677c9;
     display:block;}
@@ -3856,7 +3886,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 
    #speedbarre .prixbarre, #speedbarre .min_price, #speedbarre .price{color:#7f1717; display:block;}
    #speedbarre .prixbarre, #speedbarre .min_price{font-size:16px;}
-   #speedbarre .prixbarre{background:url("/images/boutique/prix_barre.png") no-repeat center; font-weight: bold;}
+   #speedbarre .prixbarre{background:url("../../images/boutique/prix_barre.png") no-repeat center; font-weight: bold;}
    #speedbarre .price{font-size:18px; font-weight: bold;}
 
 
@@ -3887,7 +3917,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 }
 
 #speedbarre .other_products:hover span{
-    background:url("/images/speedbarre/bg_autreproduit.png") repeat-x top;
+    background:url("../../images/speedbarre/bg_autreproduit.png") repeat-x top;
     width:142px;
     height:54px;
     display:block;
@@ -3898,12 +3928,12 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 }
 
 #speedbarre .headband_preorder, #speedbarre .bandeaunouveau{
-   background-image: url("/images/speedbarre/bandeauxboutique.png");
+   background-image: url("../../images/speedbarre/bandeauxboutique.png");
    background-repeat: no-repeat;
 }
 
 #speedbarre .headband_discount{
-   background-image: url("/images/speedbarre/bandeaupromo.png");
+   background-image: url("../../images/speedbarre/bandeaupromo.png");
    background-repeat: no-repeat;
    background-position: top center;
 }
@@ -4056,12 +4086,12 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     min-width:50%;
 }
 
-div.discount_product_high span a.link_contextual{background:url("/images/designs/2/buttoncut.png") repeat-x left -99px !important;border:0px !important;color:white;height:17px;padding:3px 10px;}
-div.discount_product_high span a.link_contextual:hover{background:url("/images/designs/2/buttoncut.png") repeat-x left -124px !important;}
+div.discount_product_high span a.link_contextual{background:url("../images/buttoncut.png") repeat-x left -99px !important;border:0px !important;color:white;height:17px;padding:3px 10px;}
+div.discount_product_high span a.link_contextual:hover{background:url("../images/buttoncut.png") repeat-x left -124px !important;}
 
 
 /* Google A/B Testing */
-.ABtesting{display:block;width:409px;height:164px;background:url('/images/static/btn_autopromo_xhtml_2.png') center center no-repeat;margin:20px auto 0 auto;}
+.ABtesting{display:block;width:409px;height:164px;background:url('../../images/static/btn_autopromo_xhtml_2.png') center center no-repeat;margin:20px auto 0 auto;}
 .ABtestinglink{display:block;padding:132px 0 0 122px;font-size:16px;color:#2677C9 !important;}
 .ABtestinglink:hover{text-decoration:underline;}
 .ABtesting:hover{text-decoration:underline;color:#2677C9 !important;}
