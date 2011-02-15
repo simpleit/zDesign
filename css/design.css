@@ -3856,13 +3856,6 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     -webkit-border-radius: 5px;
 }
 
-.discount_product_high{
-    width: 98px;
-    float: left;
-    position:relative;
-    text-align: center;
-}
-
 
 #speedbarre  .flagship_products{
     width:145px;
@@ -3884,10 +3877,16 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     padding:0px 0px 15px 0px;
 }
 
-   #speedbarre .prixbarre, #speedbarre .min_price, #speedbarre .price{color:#7f1717; display:block;}
-   #speedbarre .prixbarre, #speedbarre .min_price{font-size:16px;}
-   #speedbarre .prixbarre{background:url("../../images/boutique/prix_barre.png") no-repeat center; font-weight: bold;}
-   #speedbarre .price{font-size:18px; font-weight: bold;}
+#speedbarre .prixbarre{display:block;}
+#speedbarre .min_price{font-weight : normal;}
+#speedbarre .prixbarre, #speedbarre .min_price{font-size:14px; color:#7f1717;}
+#speedbarre .prixbarre{background:url("../../images/boutique/prix_barre.png") no-repeat center; font-weight: bold;}
+#speedbarre .price
+{
+   color:#7f1717;
+   font-size:18px;
+   font-weight : bold;
+}
 
 
 
@@ -3932,15 +3931,8 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
    background-repeat: no-repeat;
 }
 
-#speedbarre .headband_discount{
-   background-image: url("../../images/speedbarre/bandeaupromo.png");
-   background-repeat: no-repeat;
-   background-position: top center;
-}
-
 #speedbarre .headband_preorder{background-position: left top;}
 #speedbarre .bandeaunouveau{background-position: right top;}
-#speedbarre .headband_discount{background-position: right top;}
 
 #speedbarre .menuh_more, .menuh_more{
     padding:5px 10px;
@@ -4085,10 +4077,6 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 {
     min-width:50%;
 }
-
-div.discount_product_high span a.link_contextual{background:url("../images/buttoncut.png") repeat-x left -99px !important;border:0px !important;color:white;height:17px;padding:3px 10px;}
-div.discount_product_high span a.link_contextual:hover{background:url("../images/buttoncut.png") repeat-x left -124px !important;}
-
 
 /* Google A/B Testing */
 .ABtesting{display:block;width:409px;height:164px;background:url('../../images/static/btn_autopromo_xhtml_2.png') center center no-repeat;margin:20px auto 0 auto;}
