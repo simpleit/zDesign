@@ -1576,7 +1576,7 @@ li.evt-infos { padding: 0; margin: 2px;}
 }
 .bouton_boutique .image_objet
 {
-    height: 170px;
+    height: 171px;
     width: 330px;
     background: #79B6FC url("../images/boutique/bg_objet_boutique.png") repeat-x top;
     display: table-cell;
@@ -3787,13 +3787,19 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     width:172px;
 }
 
-.menuh li a, .box_menu .corpsmenu .liste_cours_menu a{
+.menuh li a{
     display:block;
+}
+
+.box_menu .corpsmenu .liste_cours_menu a{
+    display:block;
+    
 }
 
 .box_menu .corpsmenu .liste_cours_menu li{
     border-bottom : none;
     padding : 0px;
+    position : relative;
 }
 
 .menuh li a:hover, .menu_ters a.info:hover, .liste_cours_menu li a:hover{
@@ -3825,11 +3831,13 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     left:5px;
 }
 
-.in_book{
+.in_book
+{
     position:absolute;
     top:0px;
     right:0px;
     background-color:#fff;
+    display : block;
 }
 .menuhcattuto li a{
     display:inline;
@@ -3879,12 +3887,13 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 #speedbarre .prixbarre{display:block;}
 #speedbarre .min_price{font-weight : normal;}
 #speedbarre .prixbarre, #speedbarre .min_price{font-size:14px; color:#7f1717;}
-#speedbarre .prixbarre{background:url("../../images/boutique/prix_barre.png") no-repeat center; font-weight: bold;}
+#speedbarre .prixbarre{background:url("../images/boutique/soldes/old.png") no-repeat center; font-weight: bold;}
 #speedbarre .price
 {
    color:#7f1717;
    font-size:18px;
    font-weight : bold;
+   margin-top : 10px;
 }
 
 
