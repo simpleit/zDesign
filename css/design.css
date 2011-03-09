@@ -1911,8 +1911,12 @@ label.label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 /*End of Pygmentise*/
 
 /* Spoiler */
-.spoiler3 {	visibility: hidden; }
-.spoiler3_hidden { display: none; }
+.spoiler3 {	visibility: visible; }
+.spoiler3_hidden { display: block; }
+.spoiler_hidden a, .spoiler a
+{
+    visibility : hidden;
+}
 
 
 .supprimer_adresse
@@ -2084,7 +2088,7 @@ hr.bas_onglets {border: 0;	margin-bottom:30px;}
 
 #menu_pub_tuto {position:relative;z-index:100;text-align: center;}
 
-#menu_ajout_cours {width:100%;text-align:right;padding-top:15px;padding-bottom:5px;}
+#menu_ajout_cours {width:100%;text-align:right;padding-top:5px;padding-bottom:5px;line-height : 23px;}
 
 .auteur_date .avatar {margin-right:5px;}
 .scrollable {overflow: auto;max-height: 400px;}
@@ -2273,7 +2277,7 @@ ul.reps>li,li.rep_true, li.rep_false{
 
 .options_valido {border:1px solid #A3C0D5;background-color:#E9F0F5;margin-bottom:10px;}
 
-#tabs_same {margin: 10px 0 0 0; width:50%; max-width: 600px; font-size: 1em;}
+#tabs_same {float: left; margin: 10px 0 0 0; width:50%; max-width: 600px; font-size: 1em;}
 #tabs_same a:link, #tabs_same a:visited, #tabs_same a:active { color: #2677C9; text-decoration: none; }
 #tabs_same a:hover { color: #C87B02; }
 
@@ -3787,6 +3791,15 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     width:172px;
 }
 
+.menuh li a, .box_menu .corpsmenu .liste_cours_menu a, #menu_ajout_cours a{
+    display:block;
+}
+
+.box_menu .corpsmenu .liste_cours_menu li, #menu_ajout_cours li{
+    border-bottom : none;
+    padding : 0px;
+}
+
 .menuh li a{
     display:block;
 }
@@ -3802,7 +3815,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     position : relative;
 }
 
-.menuh li a:hover, .menu_ters a.info:hover, .liste_cours_menu li a:hover{
+.menuh li a:hover, .menu_ters a.info:hover, .liste_cours_menu li a:hover, #menu_ajout_cours li a:hover{
     background-color:#dfedfd;
     color:#2677c9;
     display:block;}
@@ -3887,11 +3900,11 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 #speedbarre .prixbarre{display:block;}
 #speedbarre .min_price{font-weight : normal;}
 #speedbarre .prixbarre, #speedbarre .min_price{font-size:14px; color:#7f1717;}
-#speedbarre .prixbarre{background:url("../images/boutique/soldes/old.png") no-repeat center; font-weight: bold;}
+.prixbarre{background:url("../images/boutique/soldes/old.png") no-repeat center; font-weight: bold;}
 #speedbarre .price
 {
    color:#7f1717;
-   font-size:18px;
+   font-size:14px;
    font-weight : bold;
    margin-top : 10px;
 }
