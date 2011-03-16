@@ -111,3 +111,33 @@ ul#speedbarre li a
 #header{
 	_margin-top:-7px;
 }
+#TB_iframeContent
+{
+        _margin-bottom:1px;
+}
+
+
+/* IE Debug */
+.header_droit, .header_droit *{_posiution:relative;_z-index:2100;}
+.popup_menu ul{_z-index:2100;}
+#section_recherche{_position:static;_z-index:0;}
+
+#speedbarre {_background-image:url("/images/speedbarre/bg_speed.png");_background-repeat:repeat-x;_background-positon:top center;_margin-top:-10px;_height:27px;}
+#search_bar{_height:27px;}
+#speedbarre ul.smenu {_padding-top:6px;}
+#speedbarre ul.smenu li{_display:inline;_padding:0px 12px;_height:27px;}
+#speedbarre ul.smenu li a{_padding-top:8px;}
+#speedbarre ul.smenu li a span{_color:white;}
+#speedbarre ul.smenu li:hover{_background:white;}
+#speedbarre ul.smenu li:hover a:hover{_color:#616160;}
+#speedbarre .arg{_position:relative;}
+#speedbarre .ard{_position:relative;_float:none;_display:inline;}
+.box_menu .corpsmenu ul li{_border:0px solid gray;_padding:10px 0;}
+#header{_margin-top:19px;_border:0;}
+.onglets_tutos{_width:400px;border:0px;}
+
+#logbox{_width:280px !important;}
+#speedbarre ul.smenu{_position:none;}
+
+.in_book{_position:relative;_float:right;top:-13px;}
+/* End IE Debug */

@@ -120,3 +120,15 @@ label.label_cote
 {
 	width: 250px;
 }
+
+#actionUpload
+{
+    position: relative;
+}
+
+#multi_delete
+{
+    position: absolute;
+    top: -30px;
+    right: 0;
+}
