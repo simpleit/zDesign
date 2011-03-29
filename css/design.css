@@ -137,7 +137,7 @@ fieldset.connexion2
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-    height: 280px;
+    height: 350px;
 }
 .tab_co
 {
@@ -2714,7 +2714,7 @@ ul.tree li .half_checked {
 .ui-widget .ui-widget { font-size: 1em; }
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Lucida Grande, Lucida Sans, Arial, sans-serif; font-size: 1em; }
 .ui-widget-content { border: 1px solid #a6c9e2; background: #fcfdfd url(../images/jquery/ui-bg_inset-hard_100_fcfdfd_1x100.png) 50% bottom repeat-x; color: #222222; }
-.ui-widget-content a { color: #222222; }
+.ui-widget-content a:link, .ui-widget-content a:visited, .ui-widget-content a:active { color: #2677C9; }
 .ui-widget-header { border: 1px solid #4297d7; background: #5c9ccc url(../images/jquery/ui-bg_gloss-wave_55_5c9ccc_500x100.png) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
 .ui-widget-header a { color: #ffffff; }
 
