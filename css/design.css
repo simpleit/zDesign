@@ -2233,9 +2233,16 @@ ul.reps>li,li.rep_true, li.rep_false{
     border-bottom:1px solid #cccccc;
 }
 
-.rep_true, .rep_false{width:45%; display:block; float: left; margin-right:10px;}
 .rep_is_good {width:90%;}
-.rep_false{ border-right:1px solid #cccccc;}
+.indic_true_rep {
+    background : url("../images/tutos/fleche.png") no-repeat;
+    float: left;
+    width: 20px; /* 10px for margin-right equivalent */
+    height: 29px;
+}
+.question_qcm .rep_true .indic_true_rep + h5 + p {
+    padding-left: 30px;
+}
 .rep_true p{color:#11a001;}
 .rep_false p{color:#d91717;}
 
