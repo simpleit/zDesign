@@ -41,7 +41,7 @@ div.fctli li
 }
 
 #acces_rapide, #entete, #speedbarre, #menu, #arbre, #pied_de_page, .barre_msg, .barre_att, .intersites, .stats_sites, .header_gauche, .header_droit, .onglets_tutos, #footer, #tuto_details,
-.cadre_auteur_date .conteneur_infobox img, .liens_bas_tuto, .printnone /* On vire ce qui sert à rien */
+.cadre_auteur_date .conteneur_infobox img, .addthis_toolbox, .liens_bas_tuto, .printnone /* On vire ce qui sert à rien */
 {
 	display: none;
 }

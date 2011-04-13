@@ -519,7 +519,7 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("../images/sp
 {
 	margin-left: 20px;
 }
-.box_menu h5
+.box_menu > h5
 {
 	width: 187px;
 	height: 21px;
@@ -541,13 +541,14 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("../images/sp
 
 .box_menu .corpsmenu p, .box_menu .corpsmenu ul, .box_menu .corpsmenu dl { margin: 0; }
 .box_menu .corpsmenu ul, .box_menu .corpsmenu dl {list-style-type: none;padding: 0;}
-.box_menu .corpsmenu ul li, #menu_sondage .question_sd, .box_menu .corpsmenu dd {border-bottom: 1px solid #D1D1D1;padding: 5px;}
+.box_menu .menu_section, #menu_sondage .question_sd, .box_menu .corpsmenu dd {border-bottom: 1px solid #D1D1D1;padding: 5px;}
 .box_menu .corpsmenu dt { padding: 5px 5px 0 5px; margin: 0 }
 .box_menu .corpsmenu dd { padding-top: 0; margin: 0; color: #5B9DE0;}
 .box_menu .corpsmenu ul li.last_idem_liste {border: 0;}
 #formations_similaires ul li, #my_contributions ul li{border-bottom:0;padding:2px 0;}
 
-.menu_cours_section {color: #707070;}
+.box_menu .liste_cours_menu h5 {margin:0; background : none; padding: 0;}
+.box_menu .liste_cours_menu h5 > a {font-size: 1.2em; color: #707070;}
 
 .img_etu_similaires
 {
@@ -3177,7 +3178,7 @@ table.tablesorter tbody tr.even td
     border-bottom : 0 none;
 }
 
-.expend span.more
+.expend span.more, .moreexpend
 {
     background: transparent url('../images/puce_plus.gif') no-repeat;
     display:block;
@@ -3357,7 +3358,7 @@ div.comm_pack {
 	color:#005F00;
 }
 .content_middle{
-    width:auto;
+    margin-right:298px;
 }
 .content_right{width:298px; float:right;margin:0 0 0 10px;}
 .content_right .infobox p{padding:5px 5px 5px 16px;background:url("../../images/bg-menu.gif") repeat-x transparent; margin:1px 0 3px 0; border: 1px solid #fff; position:relative;}
@@ -3386,17 +3387,36 @@ div.button_link_jobapplication {margin:15px 0;display:block;height:39px;width:10
 div.button_link_jobapplication a.leftlink {float:left;display:block;background:url("../images/buttoncut.png") repeat-x left -175px !important;height:39px;width:5px;}
 div.button_link_jobapplication a.rightlink {float:right;display:block;background:url("../images/buttoncut.png") repeat-x right -213px !important;height:39px;width:5px;}
 div.button_link_jobapplication a.centerlink {display:block;background:url("../images/buttoncut.png") repeat-x left -251px !important;height:39px;width:100px;margin:auto;width:288px;}
-div.button_link_jobapplication a.centerlink span.textlink{padding:8px 0 0 16px;color:#000000;font-size:15px;}
+div.button_link_jobapplication a.centerlink span.textlink{padding:8px 0 0 3px;color:#000000;font-size:15px;}
 div.button_link_jobapplication a.centerlink span.already{}
-div.button_link_jobapplication a.centerlink span.arrowlink{float:right;height:30px;width:47px;max-width:550px;background:url("../images/buttoncut.png") no-repeat left -410px !important;margin:3px -3px 0 0;}
+div.button_link_jobapplication a.centerlink span.arrowlink{float:right;height:30px;width:33px;max-width:550px;background:url("../images/buttoncut.png") no-repeat right -410px !important;margin:3px -3px 0 0;}
 
 div.button_link_jobapplication:hover a.leftlink{background:url("../images/buttoncut.png") repeat-x left -289px !important;}
 div.button_link_jobapplication:hover a.rightlink{background:url("../images/buttoncut.png") repeat-x right -327px !important;}
 div.button_link_jobapplication:hover a.centerlink{background:url("../images/buttoncut.png") repeat-x left -365px !important;}
 
+.content_middle div.button_link_jobapplication{float: right;margin:0;width: 290px;}
+.content_middle div.button_link_jobapplication a.centerlink{width: 280px;}
+
 div.serach_bar_job{margin-bottom:20px;position:relative;background:url('../images/buttoncut.png') repeat-x left -1519px;height:29px;padding:13px 10px 0 10px;}
 div.serach_bar_job_border_left{background:url('../images/buttoncut.png') white no-repeat left -471px; width:4px; height:90px; position:absolute; bottom:0; left:0; z-index:2;}
 div.serach_bar_job_border_right{background:url('../images/buttoncut.png') white no-repeat -5px -473px; width:4px; height:90px; position:absolute; bottom:-2px; right:0;}
+
+
+div.button_link_job_search_result{float: left;width: 178px;}
+div.button_link_job_search_result a.leftlink {float:left;display:block;background:url("../images/buttoncut.png") repeat-x left -661px !important;height:39px;width:5px;}
+div.button_link_job_search_result a.rightlink {float:right;display:block;background:url("../images/buttoncut.png") repeat-x right -623px !important;height:39px;width:5px;}
+div.button_link_job_search_result a.centerlink {display:block;background:url("../images/buttoncut.png") repeat-x left -699px !important;height:39px;margin:auto;width:168px;}
+div.button_link_job_search_result a.centerlink span.textlink{padding:9px 0 0 16px;color:#FFFFFF;font-size:13px;text-shadow: 0 1px 0 #454545;}
+div.button_link_job_search_result:hover a.centerlink span.textlink{color:#000000; text-shadow:none;}
+div.button_link_job_search_result a.centerlink span.already{}
+div.button_link_job_search_result a.centerlink span.arrowlink{height:30px;width:33px;max-width:550px;background:url("../images/buttoncut.png") no-repeat left -742px !important; margin: 3px 0 0 -2px;}
+
+div.button_link_job_search_result:hover a.leftlink{background:url("../images/buttoncut.png") repeat-x left -289px !important;}
+div.button_link_job_search_result:hover a.rightlink{background:url("../images/buttoncut.png") repeat-x right -327px !important;}
+div.button_link_job_search_result:hover a.centerlink{background:url("../images/buttoncut.png") repeat-x left -365px !important;}
+
+
 
 .label_cote_no_in_form{clear:none !important;width:110px !important;}
 .lister_job{height:120px;padding:8px;background:url('../images/buttoncut.png')  repeat-x  left -1976px;border:1px solid #FFFFFF;border-bottom:1px solid #FAFAFA;}
@@ -3405,12 +3425,17 @@ div.serach_bar_job_border_right{background:url('../images/buttoncut.png') white 
 .element_job{height:60px;}
 .element_job h4{font-style:normal;}
 .element_job img{margin:0 10px 0 0;padding:4px 0;}
-.lister_job span.date{float:right;margin-right:2px;text-align:right;}
+.lister_job span.date, .lister_headline span.date{float:right;margin-right:2px;text-align:right;}
 .element_job div{float:left;width:38%;padding-top:10px;}
 .element_job div span{font-weight:bold;}
-.lister_job .link_contextual{width:140px;margin:7px 0 0 8px;padding-left:15px;}
-.lister_job .link_contextual .textlink{padding-left:25px;}
-.lister_job .link_contextual .arrowlink{height:25px;float:right;background:url("../images/buttoncut.png") no-repeat left -66px !important;}
+.lister_job .link_contextual, .lister_headline .link_contextual{width:140px;margin:7px 0 0 8px;padding-left:15px;}
+.lister_job .link_contextual .textlink, .lister_headline .link_contextual .textlink{padding-left:25px;}
+.lister_job .link_contextual .arrowlink, .lister_headline .link_contextual .arrowlink{height:25px;float:right;background:url("../images/buttoncut.png") no-repeat left -66px !important;}
+.lister_headline{-moz-box-shadow:inset 0px -1px white;-webkit-box-shadow: inset 0px -1px white;box-shadow: inset 0px -1px white;height:120px;padding:8px;background:#EBF4FF;border:1px solid #FFFFFF;border-bottom:1px solid #71a6e1;}
+
+.bloc_headline{margin-bottom:10px;padding: 0 0 15px;background:url("../images/bg_debut_contenu.png") repeat-x scroll left bottom transparent}
+
+.fieldset_apply_info{background: url('/images/designs/2/zcode/zcode_info_bleu.png') no-repeat scroll #F8FAFD 5px 50%; padding-left:39px;margin:0px;border: solid 1px #71a6e1}
 
 div.backbutton a.leftlink {float:left;display:block;background:url("../images/buttoncut.png") repeat-x -28px -532px !important;height:30px;width:5px;}
 div.backbutton a.rightlink {float:right;display:block;background:url("../images/buttoncut.png") repeat-x -38px -532px !important;height:30px;width:5px;}
@@ -3434,6 +3459,7 @@ a.corpsmenu .link:hover{color:#C87B02;}
 .admin_list li a{padding:8px 10px 8px 20px;}
 .admin_edit{background:url("/Templates/images/designs/2/forum/editer.png") no-repeat left center;}
 .admin_delete{background:url("/Templates/images/designs/2/forum/supprimer.png") no-repeat left center;}
+.admin_candidature{background:url("/Templates/images/designs/2/job/ico_candidature.png") no-repeat left center;}
 
 .button_job_select{width:140px;text-align:center;padding:2px 8px;}
 
@@ -3444,6 +3470,10 @@ a.corpsmenu .link:hover{color:#C87B02;}
 
 a.remove_filter{float:left;display:block;margin-bottom:5px;height:18px;line-height:19px;text-align:center;margin-right:8px;font-size:12px;color:#000000;background:url("/images/designs/2/buttoncut.png") #E9E9E9 no-repeat right 1px;padding: 0px 23px 0px 5px;font-weight:normal;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
 a.remove_filter_job_type{color:#FFFFFF;font-weight:bold;}
+
+span.tag_bar{float:left;display:block;margin-bottom:5px;height:18px;line-height:19px;text-align:center;margin-right:8px;font-size:12px;color:#000000;background:#E9E9E9;padding: 0px 5px 0px 5px;font-weight:normal;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+#tags_bar_search span.job_type{color:#FFFFFF !important;font-weight:bold;float:left;display:block;margin-bottom:5px;height:18px;line-height:19px;text-align:center;margin-right:8px;font-size:12px;background:#E9E9E9;padding: 0px 5px 0px 5px;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+
 
 .jobtypes1{background-color:#EEA327 !important;}
 .jobtypes2{background-color:#A1BCFF !important;}
@@ -3801,7 +3831,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     display:block;
 }
 
-.box_menu .corpsmenu .liste_cours_menu li, #menu_ajout_cours li{
+#menu_ajout_cours li{
     border-bottom : none;
     padding : 0px;
 }
@@ -4111,4 +4141,11 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 .ABtestinglink{display:block;padding:132px 0 0 122px;font-size:16px;color:#2677C9 !important;}
 .ABtestinglink:hover{text-decoration:underline;}
 .ABtesting:hover{text-decoration:underline;color:#2677C9 !important;}
+
+
+
+
+.rssLogoMin{background: url("../images/rss_mini.png") no-repeat center center;width:26px;height:16px;display:block;float:left;}
+
+.question_qcm div.console div.syntax{color:#FFFFFF !important;}
 
