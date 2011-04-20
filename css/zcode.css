@@ -46,7 +46,7 @@
 
 .arial { font-family: Arial, serif; }
 .times { font-family: Times, serif; }
-.courrier { font-family: 'DejaVu Sans Mono', Courier, monospace; }
+.courier, .courrier { font-family: 'DejaVu Sans Mono', Courier, monospace; }
 .impact { font-family: Impact, serif; }
 .geneva { font-family: Geneva, serif; }
 .optima { font-family: Optima, serif; }
