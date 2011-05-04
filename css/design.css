@@ -547,8 +547,8 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("../images/sp
 .box_menu .corpsmenu ul li.last_idem_liste {border: 0;}
 #formations_similaires ul li, #my_contributions ul li{border-bottom:0;padding:2px 0;}
 
+.box_menu .liste_cours_menu h5 > a, .box_menu .liste_cours_menu h5 {font-size: 1em; color: #707070;}
 .box_menu .liste_cours_menu h5 {margin:0; background : none; padding: 0;}
-.box_menu .liste_cours_menu h5 > a {font-size: 1.2em; color: #707070;}
 
 .img_etu_similaires
 {
