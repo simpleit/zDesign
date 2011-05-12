@@ -2292,7 +2292,7 @@ ul.reps>li,li.rep_true, li.rep_false{
 /* Edition de tutoriels */
 .boite_a_outils {width: 180px;float: right;}
 
-.detail_tuto_edition {margin-right: 200px;}
+.detail_tuto_edition {margin-right: 200px; padding-bottom: 10px;}
 
 
 
@@ -3028,7 +3028,7 @@ ul.tree li .half_checked {
 .ui-dialog .ui-dialog-title { float: left; margin: .1em 0 .2em; } 
 .ui-dialog .ui-dialog-titlebar-close { position: absolute; right: .3em; top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height: 18px; }
 .ui-dialog .ui-dialog-titlebar-close span { display: block; margin: 1px; }
-.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus { padding: 0; }
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus, .no_padding { padding: 0; }
 .ui-dialog .ui-dialog-content { border: 0; padding: .5em 1em; background: none; overflow: auto; zoom: 1; }
 .ui-dialog .ui-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; background-image: none; margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
 .ui-dialog .ui-dialog-buttonpane button { float: right; margin: .5em .4em .5em 0; cursor: pointer; padding: .2em .6em .3em .6em; line-height: 1.4em; width:auto; overflow:visible; }
@@ -4142,10 +4142,270 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 .ABtestinglink:hover{text-decoration:underline;}
 .ABtesting:hover{text-decoration:underline;color:#2677C9 !important;}
 
-
-
-
 .rssLogoMin{background: url("../images/rss_mini.png") no-repeat center center;width:26px;height:16px;display:block;float:left;}
 
 .question_qcm div.console div.syntax{color:#FFFFFF !important;}
 
+.msdn *
+{
+    margin:0px;
+    padding:0px;
+}
+
+.msdn
+{
+    padding: 0;
+    background: #FAFAFA;
+    margin-bottom: -120px;
+    padding-bottom: 20px;
+    min-height: 525px;
+}
+
+.msdn .ms_forum
+{
+    margin-top: 0px;
+}
+
+.ms_baniere , .ms_logo , .ms_onglets , .ms_selected, .ms_sites_liens, .ms_banniere_bottomfleche
+{
+    background-image: url("../../images/microsoft/microsoft.png");
+}
+
+.ms_descriptif, .ms_banniere_bottom_texte
+{
+    text-shadow: 0 1px 0 #d9f1fc;
+}
+
+.msdn .ms_baniere
+{
+    background-position: 0 -766px;
+    height: 116px;
+    background-repeat: repeat-x;
+    position: relative;
+}
+
+.msdn .ms_logo
+{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    height: 96px;
+    background-repeat: no-repeat;
+    display: block;
+    height: 70px;
+    width: 200px;
+    text-indent : -1999px;
+}
+
+.msdn .ms_descriptif
+{
+    position: absolute;
+    left: 470px;
+    height: 75px;
+    max-width: 425px;
+    _width : 425px;
+    top: 25px;
+    text-align: justify;
+}
+
+.msdn .ms_onglets
+{
+    background-position: 0 -910px;
+    height: 42px;
+    background-repeat: repeat-x;
+    padding-left: 30px;
+}
+
+.msdn .ms_onglets ul
+{
+    padding-top: 5px;
+    margin: 0px;
+}
+
+.msdn .ms_onglets ul li
+{
+    list-style-type: none;
+    display: inline;
+}
+
+.msdn .ms_onglets ul li a
+{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    float: left;
+    font-size:16px;
+    color: #5e5656;
+    text-shadow: #f0f0f0 0px -1px 1px;
+    margin-right: 25px;
+}
+
+.msdn .ms_onglets ul li .ms_selected
+{
+    background-position: 0 -882px;
+    background-repeat: no-repeat;
+    border: 1px solid #f8f8f8;
+    border-bottom: none;
+    font-size: bold;
+    color: #000;
+    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+}
+
+.msdn .ms_corps
+{
+    margin: 0;
+    padding: 10px;
+}
+
+.msdn .ms_cours
+{
+    background-image: url("../../images/microsoft/microsoft_courbe.png");
+    background-position: right -8px;
+    background-repeat: no-repeat;
+    min-height: 406px;
+    padding: 20px 0;
+    position: relative;
+    top: -7px;
+    z-index: 999;
+}
+
+.msdn .ms_section
+{
+    width : 1000px;
+    float : left;
+}
+
+.msdn .ms_categorie
+{
+    font-size : 13px;
+    color : #000000;
+    width : 270px;
+    float : left;
+    margin : 8px 10px;
+    padding-left : 10px;
+}
+
+.msdn .ms_inactive
+{
+    color: #000000;
+    padding: 10px 20px;
+}
+
+.msdn .ms_categorie a
+{
+    display: block;
+    color: #000000;
+    padding: 10px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+}
+
+.msdn .ms_categorie a:hover
+{
+    background-color: #CDE3FC;
+}
+
+.msdn a:hover .ms_categorie_titre:first-child
+{
+    color:#c87b02;
+}
+
+.msdn .ms_categorie .ms_ico
+{
+    float:left;
+}
+
+.msdn .ms_categorie .ms_description
+{
+    margin-left : 60px;
+    display: block;
+}
+
+.msdn .ms_categorie_titre
+{
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+}
+
+.msdn .ms_banniere_bottom
+{
+    height : 45px;
+    margin-top : 65px;
+}
+
+.msdn .ms_sites_liens
+{
+    background-position: 0 -127px;
+    background-repeat: repeat-x;
+    max-width: 550px;
+    _width : 550px;
+    height : 45px;
+    position: relative;
+    left: 0;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.msdn .ms_banniere_bottom_texte
+{
+    margin: 12px 10px 0 0;
+    float:left;
+    display: block;
+}
+
+.msdn .ms_banniere_bottom a
+{
+    float: left;
+    margin-right : 10px;
+}
+
+.msdn .ms_banniere_bottomfleche
+{
+    background-position: 0 -172px;
+    background-repeat: no-repeat;
+    position : absolute;
+    right: -25px;
+    top: 0;
+    height: 45px;
+    width: 25px;
+}
+
+.msdn table
+{
+    width: 98%;
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+.msdn .ms_forum th
+{
+    padding-bottom : 5px;
+}
+
+.msdn .ms_sujet
+{
+    font-size: 11px;
+    text-align: left;
+}
+
+.msdn .ms_forum li
+{
+    list-style-type: none;
+}
+
+.msdn .ms_forum_titresuj
+{
+    font-size: 13px;
+}
+
+.msdn tfoot .pagination_recherche
+{
+    text-align: right;
+    border: none;
+    margin: 25px;
+}
