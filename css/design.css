@@ -2190,7 +2190,8 @@ h3.flow2, h4.flow2
 /* Creation d'un Q.C.M */
 
 .add_qcm_possible_answer_input{
-    width: 50%;
+    width : 50%;
+    height: 1.2em;
 }
 
 .add_qcm_possible_answer_label, .add_qcm_possible_answer_input{
@@ -3395,7 +3396,7 @@ div.button_link_jobapplication:hover a.leftlink{background:url("../images/button
 div.button_link_jobapplication:hover a.rightlink{background:url("../images/buttoncut.png") repeat-x right -327px !important;}
 div.button_link_jobapplication:hover a.centerlink{background:url("../images/buttoncut.png") repeat-x left -365px !important;}
 
-.content_middle div.button_link_jobapplication{float: right;margin:0;width: 290px;}
+.content_middle div.button_link_jobapplication{float: right;margin:0;width: 288px;}
 .content_middle div.button_link_jobapplication a.centerlink{width: 280px;}
 
 div.serach_bar_job{margin-bottom:20px;position:relative;background:url('../images/buttoncut.png') repeat-x left -1519px;height:29px;padding:13px 10px 0 10px;}
@@ -3403,7 +3404,7 @@ div.serach_bar_job_border_left{background:url('../images/buttoncut.png') white n
 div.serach_bar_job_border_right{background:url('../images/buttoncut.png') white no-repeat -5px -473px; width:4px; height:90px; position:absolute; bottom:-2px; right:0;}
 
 
-div.button_link_job_search_result{float: left;width: 178px;}
+div.button_link_job_search_result{float: left;width: 170px;}
 div.button_link_job_search_result a.leftlink {float:left;display:block;background:url("../images/buttoncut.png") repeat-x left -661px !important;height:39px;width:5px;}
 div.button_link_job_search_result a.rightlink {float:right;display:block;background:url("../images/buttoncut.png") repeat-x right -623px !important;height:39px;width:5px;}
 div.button_link_job_search_result a.centerlink {display:block;background:url("../images/buttoncut.png") repeat-x left -699px !important;height:39px;margin:auto;width:168px;}
@@ -4443,9 +4444,9 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 
 .tutorial_wanted .bloc_headline .headline
 {
-    -moz-box-shadow: inset 0 1px #FAFAFA;
-    -webkit-box-shadow: inset 0 1px #FAFAFA;
-    box-shadow: inset 0 1px #FAFAFA;
+    -moz-box-shadow: inset 0 1px #FAFAFA, inset 0 -1px #FAFAFA;
+    -webkit-box-shadow: inset 0 1px #FAFAFA, inset 0 -1px #FAFAFA;
+    box-shadow: inset 0 1px #FAFAFA, inset 0 -1px #FAFAFA;
     text-shadow: 0px 1px white;
     min-height: 90px;
     padding: 8px;
