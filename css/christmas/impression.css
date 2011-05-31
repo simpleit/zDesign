@@ -2,12 +2,12 @@
 impression.css
 --------------		Par M@teo21
 
-Créé le 11 Octobre 2005
+CrÃ©Ã© le 11 Octobre 2005
 
 
-Description : feuille de style destinée aux imprimantes.
+Description : feuille de style destinÃ©e aux imprimantes.
 Elle supprime les menus et ne conserve qu'un corps de page
-dépouillé, idéal pour l'impression.
+dÃ©pouillÃ©, idÃ©al pour l'impression.
 
 */
 
@@ -41,7 +41,7 @@ div.fctli li
 }
 
 #acces_rapide, #entete, #speedbarre, #menu, #arbre, #pied_de_page, .barre_msg, .barre_att, .intersites, .stats_sites, .header_gauche, .header_droit, .onglets_tutos, #footer, #tuto_details,
-.cadre_auteur_date .conteneur_infobox img, .addthis_toolbox, .liens_bas_tuto, .printnone /* On vire ce qui sert à rien */
+.cadre_auteur_date .conteneur_infobox img, .liens_bas_tuto, .printnone /* On vire ce qui sert Ã  rien */
 {
 	display: none;
 }
@@ -98,12 +98,12 @@ h1
 	color: #2C485C;
 }
 
-/* On ne peut pas afficher les icônes zCode : information, question, attention et erreur
-car ce sont des images de fond. Pour y remédier, on emploie... LA RUSE ! :D
-Elle consiste ici à insérer l'image en CSS avec le pseudo-élément :before.
-Défauts : ça ne marche pas sous IE, et la présentation n'est pas la même qu'à l'affichage.
-Avantages : ça permet de garder l'icône à l'impression et, surtout, de conserver la
-possibilité d'avoir des icônes différentes pour chaque design */
+/* On ne peut pas afficher les icÃ´nes zCode : information, question, attention et erreur
+car ce sont des images de fond. Pour y remÃ©dier, on emploie... LA RUSE ! :D
+Elle consiste ici Ã  insÃ©rer l'image en CSS avec le pseudo-Ã©lÃ©ment :before.
+DÃ©fauts : Ã§a ne marche pas sous IE, et la prÃ©sentation n'est pas la mÃªme qu'Ã  l'affichage.
+Avantages : Ã§a permet de garder l'icÃ´ne Ã  l'impression et, surtout, de conserver la
+possibilitÃ© d'avoir des icÃ´nes diffÃ©rentes pour chaque design */
 
 
 .souligne { text-decoration: underline; }
@@ -112,8 +112,8 @@ possibilité d'avoir des icônes différentes pour chaque design */
 .gras { font-weight:bold; }
 
 
-/* Petit arrangement CSS pour une diff�rence entre IE et Firefox. On r�tablit en fait la
-hauteur en auto (par d�faut), et on utilise min-height pour d�finir une hauteur minimale
+/* Petit arrangement CSS pour une diffï¿½rence entre IE et Firefox. On rï¿½tablit en fait la
+hauteur en auto (par dï¿½faut), et on utilise min-height pour dï¿½finir une hauteur minimale
 sous Firefox et autres navigateurs comprenant le CSS 2. */
 html>body .information, html>body .attention, html>body .question, html>body .erreur
 {
@@ -132,7 +132,7 @@ html>body .information, html>body .attention, html>body .question, html>body .er
 .bleugris { color: teal; }
 .argent { color: silver; }
 .gris { color: rgb(100, 100, 100); }
-.rouge{ color: red; }
+.rouge { color: red; }
 .vertc { color: lime; }
 .jaune { color: yellow; }
 .bleu { color: blue; }
@@ -289,7 +289,7 @@ div.code2, .citation2, .spoiler2, .spoiler2_hidden /* Contenu du code, de la cit
 
 
 
-h3, .conteneur_infobox h3 /* Balise sémantique "Sous-titre 1" */
+h3, .conteneur_infobox h3 /* Balise sÃ©mantique "Sous-titre 1" */
 {
 	font-size:1.5em;
 	margin: 0;
@@ -299,7 +299,7 @@ h3, .conteneur_infobox h3 /* Balise sémantique "Sous-titre 1" */
 	background: transparent;
 }
 
-h4 /* Balise sémantique "Sous-titre 2" */
+h4 /* Balise sÃ©mantique "Sous-titre 2" */
 {
 	font-weight:bold;
 	font-size:1.2em;
@@ -418,7 +418,7 @@ span.console {
 
 
 
-/* Empêcher le code de dépasser sur la droite de la feuille à l'impression : force le retour à la ligne.
+/* EmpÃªcher le code de dÃ©passer sur la droite de la feuille Ã  l'impression : force le retour Ã  la ligne.
 Marche dans la plupart des cas, mais pas 100% des cas */
 
 .code2 .linenos
@@ -430,4 +430,5 @@ Marche dans la plupart des cas, mais pas 100% des cas */
 {	
 	white-space: normal;
 }
+
 

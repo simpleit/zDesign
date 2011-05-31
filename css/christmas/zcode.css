@@ -1,0 +1,335 @@
+/* zCode */
+.keyboard_shortcut {
+padding:0 3px;
+border:1px #c1c1ab solid;
+
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+
+background:url('../images/zcode/keyboard_shortcut_bg.png') repeat-x left top;}
+
+
+.fl, .flot_gauche { float: left; } /*.flot_gauche sert pour le zCode */
+.fr, .flot_droite { float: right;} /*.flot_droite sert pour le zCode */
+
+.dnone{ display: none; }
+.dinline{ display: inline; }
+.dblock{ display: block; }
+
+.orange{color:orange;} .couleur_valid  { color: #faae4b; }
+.noir { color: black; }
+.marron { color: maroon; }
+.vertf {color:green;} .couleur_newser  { color: #98c958; }
+.olive { color: olive; }
+.marine { color: navy; }
+.violet { color: purple; }
+.bleugris { color: teal; }
+.argent { color: silver; }
+.gris { color: #646464; }
+.rouge{color:red;} 
+.couleur_admin { color: #f08a87; }
+.vertc { color: lime; }
+.jaune { color: yellow; }
+.bleu{color:blue;} .couleur_modo { color: #77bee3; }
+.rose { color: fuchsia; }
+.turquoise { color: aqua; }
+.blanc { color: white; }
+
+.bg_orange { color: #EC7600; background-color: #EC7600; }
+.bg_noir { color: black; background-color: black; }
+.bg_marron { color: maroon; background-color: maroon; }
+.bg_vertf { color: green; background-color: green; }
+.bg_olive { color: olive; background-color: olive; }
+.bg_marine { color: navy; background-color: navy; }
+.bg_violet { color: purple; background-color: purple; }
+.bg_bleugris { color: teal; background-color: teal; }
+.bg_argent { color: silver; background-color: silver; }
+.bg_gris { color: #646464; background-color: #646464; }
+.bg_rouge { color: red; background-color: red; }
+.bg_vertc { color: lime; background-color: lime; }
+.bg_jaune { color: yellow; background-color: yellow; }
+.bg_bleu { color: blue; background-color: blue; }
+.bg_rose { color: fuchsia; background-color: fuchsia; }
+.bg_turquoise { color: aqua; background-color: aqua; }
+.bg_blanc { color: white; background-color: white; }
+
+
+.arial { font-family: Arial, serif; }
+.times { font-family: Times, serif; }
+.courrier { font-family: 'DejaVu Sans Mono', Courier, monospace; }
+.impact { font-family: Impact, serif; }
+.geneva { font-family: Geneva, serif; }
+.optima { font-family: Optima, serif; }
+
+.ttpetit { font-size: xx-small; }
+.tpetit { font-size: x-small; }
+.petit { font-size: small; }
+.gros { font-size: large; }
+.tgros { font-size: x-large; }
+.ttgros { font-size: xx-large; }
+.fontsize_09 { font-size: 0.9em; }
+.fontsize_08 { font-size: 0.8em; }
+
+.vcentre { vertical-align: middle !important; }
+
+.centre { text-align: center; }
+.gauche { text-align: left; }
+.droite { text-align: right; }
+.justifie { text-align: justify; }
+
+.souligne { text-decoration: underline; }
+.barre { text-decoration: line-through; }
+.italique { font-style: italic; }
+.gras { font-weight:bold; }
+
+.liste_i { list-style-type: lower-roman; }
+.liste_I { list-style-type: upper-roman; }
+.liste_a { list-style-type: lower-latin; }
+.liste_A { list-style-type: upper-latin; }
+.liste_1 { list-style-type: decimal; }
+.liste_rectangle { list-style-type: square; }
+.liste_cercle { list-style-type: circle; }
+.liste_disque { list-style-type: disc; }
+
+.clearer { clear: both; }
+.clearer_right { clear: right; }
+.clearer_left { clear: left; }
+
+.margin_1em { margin: 1em; }
+
+
+.rmq /* Style des "remarques" : information, erreur, question et attention */
+{
+	background-position: left;
+	background-repeat: no-repeat;
+	padding: 4px 0 4px 50px;
+}
+.erreur     {color: #BE0B0B;background-image: url('../images/zcode/zcode_erreur.png');}
+.erreur2     {color: #145AC1;background-image: url('../images/zcode/zcode_erreur.png');}
+.question   {color: #145AC1;background-image: url('../images/zcode/zcode_question.png');}
+.attention  {color: #DA5E0F;background-image: url('../images/zcode/zcode_attention.png');}
+.information{color: #7D9B0A;background-image: url('../images/zcode/zcode_info.png');}
+
+.information, .attention, .question, .erreur
+{
+	height:30px; /* On fixe la hauteur, que IE interprÃ¨te comme une "hauteur minimale" */
+	text-align:left;
+}
+/* Petit arrangement CSS pour une diffÃ©rence entre IE et Firefox. On rÃ©tablit en fait la hauteur en auto (par dÃ©faut), et on utilise min-height pour dÃ©finir une hauteur minimale sous Firefox et autres navigateurs comprenant le CSS 2. */
+html>body .information, html>body .attention, html>body .question, html>body .erreur, html>body .erreur2
+{
+	height:auto;
+	min-height:30px;
+}
+
+.flot_gauche, .flot_droite { margin:1em; }
+
+span.code, span.citation, span.spoiler, span.spoiler_hidden /* Titre du code, de la citation et du spoiler */
+{
+	font-weight: bold;
+	display:block;
+	margin-left: 40px;
+}
+
+div.code2, .citation2, .spoiler2, .spoiler2_hidden /* Contenu du code, de la citation et du spoiler */
+{
+	border:2px solid #DEE5F0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #F6F8FC;
+	padding: 8px;
+	overflow: auto;
+}
+
+.message .code2 {width: 95%;}
+.boite_message .code2, div#prev_final_texte .code2 {width: 640px;}
+
+@media screen {
+	.code2, .citation2, .spoiler2, .spoiler2_hidden /* Contenu du code, de la citation et du spoiler */
+	{
+       [if ! IE] max-height: 700px;
+	}
+}
+
+.syntaxtable {width: 90%;}
+.syntaxtable .linenos {width: 30px;}
+.syntaxtable, .syntaxtable tr, .syntaxtable td, .syntaxtable tbody
+{
+	margin: 0px;
+	padding: 0px;
+	padding-left: 10px;
+	border-collapse: collapse;
+	border: none;
+}
+.code2 pre, .code2
+{
+	font-family:  'DejaVu Sans Mono', 'Lucida Console', 'Courier', monospace;
+	font-size:1.0em;
+	line-height: 110%;
+}
+.ln-xtra { color: #880; background-color: #FFB; }
+
+@media screen {
+    div.console, .console table, .console td, .console tr
+    {
+        background-color:black;
+        color:white;
+        border:none;
+    }
+}
+
+.console .linenos {display: none;}
+.code_lien_numerotation {font-size:0.8em;}
+.smilies {vertical-align: middle;}
+
+/* Les tableaux zCode */
+.tab_user
+{
+	border-collapse:collapse;
+	border:2px solid #2C485C;
+	margin: 0px auto 0px auto;
+}
+.tab_user td
+{
+	border:1px solid #2C485C;
+	background-color:#E9F0F5;
+	padding:2px;
+}
+.tab_user th
+{
+	padding:2px;
+}
+span.console
+{
+    background-color: black;
+    color: white;
+    padding: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.rmq /* Style des "remarques" : information, erreur, question et attention */
+{
+	background-position: left;
+	background-repeat: no-repeat;
+	padding: 4px 0 4px 50px;
+}
+.erreur     {color: #BE0B0B;background-image: url('../images/zcode/zcode_erreur.png');}
+.erreur2     {color: #145AC1;background-image: url('../images/zcode/zcode_erreur.png');}
+.question   {color: #145AC1;background-image: url('../images/zcode/zcode_question.png');}
+.attention  {color: #DA5E0F;background-image: url('../images/zcode/zcode_attention.png');}
+.information{color: #7D9B0A;background-image: url('../images/zcode/zcode_info.png');}
+
+.information, .attention, .question, .erreur
+{
+	height:30px; /* On fixe la hauteur, que IE interprÃ¨te comme une "hauteur minimale" */
+	text-align:left;
+}
+/* Petit arrangement CSS pour une diffÃ©rence entre IE et Firefox. On rÃ©tablit en fait la hauteur en auto (par dÃ©faut), et on utilise min-height pour dÃ©finir une hauteur minimale sous Firefox et autres navigateurs comprenant le CSS 2. */
+html>body .information, html>body .attention, html>body .question, html>body .erreur, html>body .erreur2
+{
+	height:auto;
+	min-height:30px;
+}
+
+.flot_gauche, .flot_droite { margin:1em; }
+
+span.code, span.citation, span.spoiler, span.spoiler_hidden /* Titre du code, de la citation et du spoiler */
+{
+	font-weight: bold;
+	display:block;
+	margin-left: 40px;
+}
+
+div.code2, .citation2, .spoiler2, .spoiler2_hidden /* Contenu du code, de la citation et du spoiler */
+{
+	border:2px solid #DEE5F0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #F6F8FC;
+	padding: 8px;
+	overflow: auto;
+}
+
+.message .code2 {width: 600px;}
+.boite_message .code2, div#prev_final_texte .code2 {width: 640px;}
+
+@media screen {
+	.code2, .citation2, .spoiler2, .spoiler2_hidden /* Contenu du code, de la citation et du spoiler */
+	{
+       [if ! IE] max-height: 700px;
+	}
+}
+
+.syntaxtable {width: 90%;}
+.syntaxtable .linenos {width: 30px;}
+.syntaxtable, .syntaxtable tr, .syntaxtable td, .syntaxtable tbody
+{
+	margin: 0px;
+	padding: 0px;
+	padding-left: 10px;
+	border-collapse: collapse;
+	border: none;
+}
+.code2 pre, .code2
+{
+	font-family:  'DejaVu Sans Mono', 'Lucida Console', 'Courier', monospace;
+	font-size:1.0em;
+	line-height: 110%;
+}
+.ln-xtra { color: #880; background-color: #FFB; }
+
+@media screen {
+    div.console, .console table, .console td, .console tr
+    {
+        background-color:black;
+        color:white;
+        border:none;
+    }
+}
+
+.console .linenos {display: none;}
+.code_lien_numerotation {font-size:0.8em;}
+.smilies {vertical-align: middle;}
+
+/* Les tableaux zCode */
+.tab_user
+{
+	border-collapse:collapse;
+	border:2px solid #2C485C;
+	margin: 0px auto 0px auto;
+}
+.tab_user td
+{
+	border:1px solid #2C485C;
+	background-color:#E9F0F5;
+	padding:2px;
+}
+.tab_user th
+{
+	padding:2px;
+}
+span.console
+{
+    background-color: black;
+    color: white;
+    padding: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.tab_user td.code, .tab_user td.linenos /* Correction bug #1556 */
+{
+	border: 0;
+	background-color: #F6F8FC;
+}
+
+
+
+.tab_user td.code, .tab_user td.linenos /* Correction bug #1556 */
+{
+	border: 0;
+	background-color: #F6F8FC;
+}

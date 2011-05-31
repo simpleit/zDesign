@@ -277,6 +277,7 @@
 
 .sf_admin_list table
 {
+	width:50%;
 	margin-top: 10px;
 	border-collapse: collapse;
 	border: 1px solid #C7D6E0;
@@ -288,8 +289,7 @@
 
 .sf_admin_list th
 {
-	width: 200px;
-	background: #808080 url("../images/homepage/bg_infobox_titre.png") repeat-x bottom;
+	background: #808080 url("../../images/designs/2/homepage/bg_infobox_titre.png") repeat-x bottom;
 	padding: 5px 3px;
 	color: #FFF;
 	text-align: center;

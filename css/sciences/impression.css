@@ -1,0 +1,433 @@
+/*
+impression.css
+--------------		Par M@teo21
+
+Créé le 11 Octobre 2005
+
+
+Description : feuille de style destinée aux imprimantes.
+Elle supprime les menus et ne conserve qu'un corps de page
+dépouillé, idéal pour l'impression.
+
+*/
+
+body
+{
+	font-family: 'Trebuchet MS', Tahoma, Verdana, 'Times New Roman', Times, serif;
+	font-size:0.8em;
+}
+
+table.fct, table.fct td, table.fct th
+{
+	border:solid 2px #a3c0d5;
+	border-collapse:collapse;
+}
+
+div.fctli li
+{
+	list-style-type:none;
+}
+
+.fctsiret
+{
+	font-size:xx-small;
+}
+
+.fctdblock
+{
+	display: block;
+	margin-bottom:0px;
+	margin-top:-15px;
+}
+
+#acces_rapide, #entete, #speedbarre, #menu, #arbre, #pied_de_page, .barre_msg, .barre_att, .intersites, .stats_sites, .header_gauche, .header_droit, .onglets_tutos, #footer, #tuto_details,
+.cadre_auteur_date .conteneur_infobox img, .addthis_toolbox, .liens_bas_tuto, .printnone /* On vire ce qui sert à rien */
+{
+	display: none;
+}
+
+/* Quelques styles globaux issus du CSS global */
+
+img
+{
+	border: none;
+	vertical-align:middle;
+}
+
+label
+{
+	font-size:0.9em;
+}
+
+h2.fcth2
+{
+	color:#5D9098;
+	font-size:1em;
+	letter-spacing:0;
+	margin-bottom:20px;
+	margin-top:0;
+}
+
+.centre
+{
+	text-align:center;
+}
+
+.clearer
+{
+	clear:both;
+}
+
+a
+{
+	color: #5D90B5;
+}
+
+#arbre
+{
+	font-family: 'Trebuchet MS', Verdana, Arial, "Times New Roman", Times, serif;
+	font-size:0.85em;
+}
+
+h1
+{
+	text-align: center;
+	margin-top:5px;
+	margin-bottom:35px;
+	font-family:Arial, 'Times New Roman', Times, serif;
+	color: #2C485C;
+}
+
+/* On ne peut pas afficher les icônes zCode : information, question, attention et erreur
+car ce sont des images de fond. Pour y remédier, on emploie... LA RUSE ! :D
+Elle consiste ici à insérer l'image en CSS avec le pseudo-élément :before.
+Défauts : ça ne marche pas sous IE, et la présentation n'est pas la même qu'à l'affichage.
+Avantages : ça permet de garder l'icône à l'impression et, surtout, de conserver la
+possibilité d'avoir des icônes différentes pour chaque design */
+
+
+.souligne { text-decoration: underline; }
+.barre { text-decoration: line-through; }
+.italique { font-style: italic; }
+.gras { font-weight:bold; }
+
+
+/* Petit arrangement CSS pour une diff�rence entre IE et Firefox. On r�tablit en fait la
+hauteur en auto (par d�faut), et on utilise min-height pour d�finir une hauteur minimale
+sous Firefox et autres navigateurs comprenant le CSS 2. */
+html>body .information, html>body .attention, html>body .question, html>body .erreur
+{
+	height:auto;
+	min-height:30px;
+}
+
+.orange { color: rgb(236, 118, 0); }
+.noir { color: black; }
+.marron { color: maroon; }
+.vertf { color: green; }
+.noirprint { color: black; }
+.olive { color: olive; }
+.marine { color: navy; }
+.violet { color: purple; }
+.bleugris { color: teal; }
+.argent { color: silver; }
+.gris { color: rgb(100, 100, 100); }
+.rouge{ color: red; }
+.vertc { color: lime; }
+.jaune { color: yellow; }
+.bleu { color: blue; }
+.rose { color: fuchsia; }
+.turquoise { color: aqua; }
+.blanc { color: white; }
+
+.arial { font-family: Arial, serif; }
+.times { font-family: Times, serif; }
+.courrier { font-family: 'DejaVu Sans Mono', Courier, monospace; }
+.impact { font-family: Impact, serif; }
+.geneva { font-family: Geneva, serif; }
+.optima { font-family: Optima, serif; }
+
+.ttpetit { font-size: xx-small; }
+.tpetit { font-size: x-small; }
+.petit { font-size: small; }
+.gros { font-size: large; }
+.tgros { font-size: x-large; }
+.ttgros { font-size: xx-large; }
+
+.vcentre { vertical-align: middle !important; }
+
+.centre { text-align: center; }
+.gauche { text-align: left; }
+.droite { text-align: right; }
+.justifie { text-align: justify; }
+
+.fl, .flot_gauche { float: left; } /*.flot_gauche sert pour le zCode */
+.fr, .flot_droite { float: right;} /*.flot_droite sert pour le zCode */
+
+.margin_1em { margin: 1em; }
+
+.liste_i { list-style-type: lower-roman; }
+.liste_I { list-style-type: upper-roman; }
+.liste_a { list-style-type: lower-latin; }
+.liste_A { list-style-type: upper-latin; }
+.liste_1 { list-style-type: decimal; }
+.liste_rectangle { list-style-type: square; }
+.liste_cercle { list-style-type: circle; }
+.liste_disque { list-style-type: disc; }
+
+span.code, span.citation, span.spoiler, span.spoiler_hidden /* Titre du code, de la citation et du spoiler */
+{
+	font-weight: bold;
+	display:block;
+	margin-left: 40px;
+}
+
+div.code2, .citation2, .spoiler2, .spoiler2_hidden /* Contenu du code, de la citation et du spoiler */
+{
+	border:2px solid #dee5f0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+
+	background-color: #f6f8fc;
+
+	padding: 8px;
+	width:95%;
+	margin: auto;
+	overflow: auto;
+}
+
+.boite_message .code2
+{
+    width: 700px;
+    margin-left: 10px;
+}
+
+@media screen {
+	.code2, .citation2, .spoiler2, .spoiler2_hidden /* Contenu du code, de la citation et du spoiler */
+	{
+	max-height: 700px;
+	}
+}
+
+.syntaxtable
+{
+	width: 90%;
+}
+
+.syntaxtable .linenos
+{
+	width: 30px;
+}
+
+.syntaxtable, .syntaxtable tr, .syntaxtable td, .syntaxtable tbody
+{
+	margin: 0px;
+	padding: 0px;
+	padding-left: 10px;
+	border-collapse: collapse;
+	border: none;
+}
+
+.code2 pre, .code2
+{
+	font-family:'Courier New', 'DejaVu Sans Mono', monospace;
+	font-size:1.0em;
+	line-height: 110%;
+}
+
+.ln-xtra { color: #880; background-color: #ffb; }
+
+@media screen { 
+    div.console, .console table, .console td, .console tr
+    {
+        background-color:black;
+        color:white;
+        border:none;
+    }
+}
+
+.console .linenos
+{
+	display: none;
+}
+
+.code_lien_numerotation
+{
+	font-size:0.8em;
+}
+
+.smilies
+{
+	vertical-align: middle;
+}
+
+/* Les tableaux zCode */
+
+.tab_user 
+{
+	border-collapse:collapse;
+	border:2px solid #2C485C;
+	margin: 0px auto 0px auto;
+}
+
+.tab_user caption
+{
+	font-weight:bold;
+}
+
+.tab_user td
+{
+	border:1px solid #2C485C;
+	background-color:#E9F0F5;
+	padding:2px;
+}
+
+.tab_user th
+{
+	padding:2px;
+}
+
+
+
+h3, .conteneur_infobox h3 /* Balise sémantique "Sous-titre 1" */
+{
+	font-size:1.5em;
+	margin: 0;
+	margin-left:20px;
+	color: #E8A22B;
+	font-weight: bold;
+	background: transparent;
+}
+
+h4 /* Balise sémantique "Sous-titre 2" */
+{
+	font-weight:bold;
+	font-size:1.2em;
+	font-style:italic;
+	color: #1877D5;
+	margin: 0;
+	margin-left:50px;
+}
+
+span.console {
+    background-color: black;
+    color: white;
+    padding: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.information:before
+{
+	content:url('../../images/designs/2/zcode/zcode_info.png');
+}
+
+.erreur:before
+{
+	content:url('../../images/designs/2/zcode/zcode_erreur.png');
+}
+
+.attention:before
+{
+	content:url('../../images/designs/2/zcode/zcode_attention.png');
+}
+
+.question:before
+{
+	content:url('../../images/designs/2/zcode/zcode_question.png');
+}
+
+.spoiler3
+{
+        visibility: visible;
+}
+
+.spoiler3_hidden
+{
+	display: block;
+}
+
+#menu_pub_tuto
+{
+	display: none;
+}
+
+/* Pygmentize */
+
+.code2 .hll { background-color: #ffffcc }
+.code2 .c { color: #408080; font-style: italic } /* Comment */
+.code2 .err { border: 1px solid #FF0000 } /* Error */
+.code2 .k { color: #008000; font-weight: bold } /* Keyword */
+.code2 .o { color: #666666 } /* Operator */
+.code2 .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.code2 .cp { color: #BC7A00 } /* Comment.Preproc */
+.code2 .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.code2 .cs { color: #408080; font-style: italic } /* Comment.Special */
+.code2 .gd { color: #A00000 } /* Generic.Deleted */
+.code2 .ge { font-style: italic } /* Generic.Emph */
+.code2 .gr { color: #FF0000 } /* Generic.Error */
+.code2 .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.code2 .gi { color: #00A000 } /* Generic.Inserted */
+.code2 .go { color: #808080 } /* Generic.Output */
+.code2 .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.code2 .gs { font-weight: bold } /* Generic.Strong */
+.code2 .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.code2 .gt { color: #0040D0 } /* Generic.Traceback */
+.code2 .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.code2 .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.code2 .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.code2 .kp { color: #008000 } /* Keyword.Pseudo */
+.code2 .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.code2 .kt { color: #B00040 } /* Keyword.Type */
+.code2 .m { color: #666666 } /* Literal.Number */
+.code2 .s { color: #BA2121 } /* Literal.String */
+.code2 .na { color: #7D9029 } /* Name.Attribute */
+.code2 .nb { color: #008000 } /* Name.Builtin */
+.code2 .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.code2 .no { color: #880000 } /* Name.Constant */
+.code2 .nd { color: #AA22FF } /* Name.Decorator */
+.code2 .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.code2 .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.code2 .nf { color: #0000FF } /* Name.Function */
+.code2 .nl { color: #A0A000 } /* Name.Label */
+.code2 .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.code2 .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.code2 .nv { color: #19177C } /* Name.Variable */
+.code2 .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.code2 .w { color: #bbbbbb } /* Text.Whitespace */
+.code2 .mf { color: #666666 } /* Literal.Number.Float */
+.code2 .mh { color: #666666 } /* Literal.Number.Hex */
+.code2 .mi { color: #666666 } /* Literal.Number.Integer */
+.code2 .mo { color: #666666 } /* Literal.Number.Oct */
+.code2 .sb { color: #BA2121 } /* Literal.String.Backtick */
+.code2 .sc { color: #BA2121 } /* Literal.String.Char */
+.code2 .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.code2 .s2 { color: #BA2121 } /* Literal.String.Double */
+.code2 .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.code2 .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.code2 .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.code2 .sx { color: #008000 } /* Literal.String.Other */
+.code2 .sr { color: #BB6688 } /* Literal.String.Regex */
+.code2 .s1 { color: #BA2121 } /* Literal.String.Single */
+.code2 .ss { color: #19177C } /* Literal.String.Symbol */
+.code2 .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.code2 .vc { color: #19177C } /* Name.Variable.Class */
+.code2 .vg { color: #19177C } /* Name.Variable.Global */
+.code2 .vi { color: #19177C } /* Name.Variable.Instance */
+.code2 .il { color: #666666 } /* Literal.Number.Integer.Long */
+
+
+
+/* Empêcher le code de dépasser sur la droite de la feuille à l'impression : force le retour à la ligne.
+Marche dans la plupart des cas, mais pas 100% des cas */
+
+.code2 .linenos
+{
+	visibility: hidden;
+}
+
+.code2 pre span
+{	
+	white-space: normal;
+}
+

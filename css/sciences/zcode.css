@@ -94,11 +94,11 @@
 	background-repeat: no-repeat;
 	padding: 4px 0 4px 50px;
 }
-.erreur     {color: #BE0B0B;background-image: url('../images/zcode/zcode_erreur.png');}
-.erreur2     {color: #145AC1;background-image: url('../images/zcode/zcode_erreur.png');}
-.question   {color: #145AC1;background-image: url('../images/zcode/zcode_question.png');}
-.attention  {color: #DA5E0F;background-image: url('../images/zcode/zcode_attention.png');}
-.information{color: #7D9B0A;background-image: url('../images/zcode/zcode_info.png');}
+.erreur     {color: #BE0B0B;background-image: url('../../images/designs/2/zcode/zcode_erreur.png');}
+.erreur2     {color: #145AC1;background-image: url('../../images/designs/2/zcode/zcode_erreur.png');}
+.question   {color: #145AC1;background-image: url('../../images/designs/2/zcode/zcode_question.png');}
+.attention  {color: #DA5E0F;background-image: url('../../images/designs/2/zcode/zcode_attention.png');}
+.information{color: #7D9B0A;background-image: url('../../images/designs/2/zcode/zcode_info.png');}
 
 .information, .attention, .question, .erreur
 {
@@ -196,11 +196,11 @@ span.console
 	background-repeat: no-repeat;
 	padding: 4px 0 4px 50px;
 }
-.erreur     {color: #BE0B0B;background-image: url('../images/zcode/zcode_erreur.png');}
-.erreur2     {color: #145AC1;background-image: url('../images/zcode/zcode_erreur.png');}
-.question   {color: #145AC1;background-image: url('../images/zcode/zcode_question.png');}
-.attention  {color: #DA5E0F;background-image: url('../images/zcode/zcode_attention.png');}
-.information{color: #7D9B0A;background-image: url('../images/zcode/zcode_info.png');}
+.erreur     {color: #BE0B0B;background-image: url('../../images/designs/2/zcode/zcode_erreur.png');}
+.erreur2     {color: #145AC1;background-image: url('../../images/designs/2/zcode/zcode_erreur.png');}
+.question   {color: #145AC1;background-image: url('../../images/designs/2/zcode/zcode_question.png');}
+.attention  {color: #DA5E0F;background-image: url('../../images/designs/2/zcode/zcode_attention.png');}
+.information{color: #7D9B0A;background-image: url('../../images/designs/2/zcode/zcode_info.png');}
 
 .information, .attention, .question, .erreur
 {

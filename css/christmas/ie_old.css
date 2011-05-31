@@ -1,0 +1,113 @@
+#logbox .bloc_connexion
+{
+	padding-left: 0px !important;
+}
+
+#header
+{
+	margin-top: 0;
+}
+
+#logbox .avatar_membre 
+{ 
+	width: 45px;
+}
+
+ul#speedbarre li a 
+{
+	_height: auto;
+}
+
+.stats_site
+{
+    _height:20px;
+}
+
+#popup_amis ul
+{
+    margin-left:-130px;
+}
+
+.popup_menu ul
+{
+    margin-top: 1.45em;
+}
+
+.popup_menu ul li
+{
+    _margin-bottom:-18px;
+}
+
+#popup_menu_compte ul
+{
+    margin-left: -95px;
+}
+
+#logbox .avatar_membre 
+{ 
+    width:45px;
+    height:45px;
+}
+
+#menu_notepad .corpsmenu
+{
+    overflow:hidden;
+}
+
+#publicite_banniere { _left: 400px; }
+
+.liste_cours_menu
+{
+    margin-top: -20px;
+}
+
+/* bulle */
+#arrow_border_error, #arrow_border_att, #arrow_border_info, #arrow_border_info_zozor{
+	_border-right: 0px solid white;
+	_border-top: 14px solid white;
+	_right: -22px;
+	_top: 18px;
+}
+#arrow_inner_error, #arrow_inner_att, #arrow_inner_info, #arrow_inner_info_zozor{
+	_border-right: 0px solid white;
+	_border-top: 12px solid white;
+	_right: -19px;
+	_top: 18px;
+}
+#arrow_border_error{
+	_border-left: 20px solid #b22222;
+}
+#arrow_inner_error{
+	_border-left: 18px solid #ffe7e7;
+}
+#arrow_border_att{
+	_border-left: 20px solid #cfb99f;
+}
+#arrow_inner_att{
+	_border-left: 18px solid #fff0de;
+}
+#arrow_border_info{
+	_border-left: 20px solid #9ece9e;
+}
+#arrow_inner_info{
+	_border-left: 18px solid #defdde;
+}
+#arrow_border_info_zozor{
+	_border-left: 20px solid #5D5B5C;
+}
+#arrow_inner_info_zozor{
+	_border-left: 18px solid #E9E9E9;
+}
+#zozor_position{
+	_margin-right: 50px;
+}
+
+
+/* divers */
+#speed_accueil a{
+	_margin-bottom:-3px;	
+}
+#header{
+	_margin-top:-7px;
+}
+
