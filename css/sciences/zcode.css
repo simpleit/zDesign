@@ -291,6 +291,8 @@ div.code2, .citation2, .spoiler2, .spoiler2_hidden /* Contenu du code, de la cit
 .tab_user th
 {
 	padding:5px;
+        background: url("../../images/designs/2/homepage/bg_infobox_titre.png") repeat-x scroll center bottom #808080;
+        color: #FFFFFF;
 }
 span.console
 {
