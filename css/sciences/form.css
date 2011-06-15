@@ -1,0 +1,260 @@
+.form
+{
+    background-color: #fdfdfd;
+    border: 2px solid #e3e7ec;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.form fieldset
+{
+    background: url('/images/designs/2/form/fieldset_background.png') repeat-x top center;
+    border: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 10px 3px 14px 3px;
+    padding: 0;
+    position: relative;
+}
+
+.form legend
+{
+    background: none;
+    color: #2677c9;
+    font-size: 15px;
+    padding: 10px 0 0 9px;
+    position: absolute;
+    text-shadow: 1px 1px 1px #e9eaec;
+}
+
+.form .legend_required
+{
+    background: url('/images/designs/2/form/decoupe_formulaire.png') no-repeat -35px -331px;
+    margin: 0 0 0 503px;
+    padding: 12px 0 13px 17px;
+}
+
+.form .form_row
+{
+    min-height: 25px;
+}
+
+.form .form_row_error
+{
+    background: #ffe7e7;
+    border-bottom: 1px solid #b22222;
+    border-top: 1px solid #b22222;
+    margin: 1px 0;
+}
+
+.form .form_fields
+{
+    float: left;
+    max-width: 507px;
+    min-height: 25px;
+}
+
+.form .form_fields_zform
+{
+    float: left;
+    min-height: 25px;
+}
+
+.form .form_fields_zform .boutons_zform
+{
+    margin-top: 25px;
+}
+
+.form .form_info
+{
+    background:  url('/images/designs/2/form/decoupe_formulaire.png') no-repeat -25px -49px;
+    color: #004d83;
+    margin-left: 506px;
+    min-height: 25px;
+    padding: 0 0 0 24px;
+    position: absolute;
+}
+
+.form .form_tooltip_background
+{
+    background: url('/images/designs/2/form/decoupe_formulaire.png') no-repeat -38px -248px;
+    display: none;
+    padding: 0 0 0 10px;
+}
+
+.form .form_info:hover .form_tooltip_background
+{
+    display: block;
+}
+
+.form .form_tooltip
+{
+    background-color: #ffffff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 1px 1px 3px #666666;
+    -moz-box-shadow: 1px 1px 3px #666666;
+    -webkit-box-shadow: 1px 1px 3px #666666;
+}
+
+.form ul.error_list
+{
+    background:  url('/images/designs/2/form/decoupe_formulaire.png') no-repeat right -150px;
+    padding: 10px 28px 0 0;
+}
+
+.form ul.error_list li
+{
+    color: #b22222;
+}
+
+.form label
+{
+    float: left;
+    font-weight: bold;
+    line-height: 25px;
+    margin-right: 5px;
+    text-align: right;
+    width: 166px;
+}
+
+.form label.required
+{
+    background:  url('/images/designs/2/form/decoupe_formulaire.png') no-repeat right -338px;
+    color: #004d83;
+    padding: 0 15px 0 0;
+    width: 151px;
+}
+
+.form .form_row_error label
+{
+    color: #b22222;
+}
+
+.form label.multiline
+{
+    line-height: normal;
+}
+
+.form label span.small
+{
+    font-size: 12px;
+    font-weight: normal;
+    line-height: normal;
+}
+
+.form label.intermediate
+{
+    float: none;
+    width: auto;
+}
+
+.form ul.checkbox_list
+{
+    padding-left: 166px;
+}
+
+.form ul.checkbox_list label
+{
+    float: right;
+    font-weight: normal;
+    text-align: left;
+}
+
+.form ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+.form li
+{
+    list-style: none;
+}
+
+.form p, .form li, div.information_block p
+{
+    margin: 0;
+    padding: 3px 6px;
+}
+
+.form input, .form textarea, .form select
+{
+    background: #ffffff;
+    border: 2px solid #e3e7ec;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 2px 5px 2px 0;
+}
+
+.form input[type=text], .form input[type=file]
+{
+    width: 326px;
+}
+
+.form textarea
+{
+    width: 322px;
+}
+
+.form .form_fields_zform textarea
+{
+    width: 95%;
+}
+
+.form select
+{
+    width: 326px;
+}
+
+.form input[type=checkbox]
+{
+    margin: 5px 0 0 0;
+}
+
+.form input[type=submit]
+{
+    background: url("../../images/designs/2/buttoncut.png") repeat-x left -99px !important;
+    border: 0px !important;
+    color: white;
+    height: 23px;
+    padding: 3px 10px;
+}
+
+.form input[type=submit]:hover
+{
+    background: url("../../images/designs/2/buttoncut.png") repeat-x left -124px !important;
+}
+
+.form textarea.small
+{
+    height: auto;
+}
+
+.form input.autosize, .form select.autosize
+{
+    width: auto;
+}
+
+div.information_block
+{
+    background: #f8fafd url('/images/designs/2/zcode/zcode_info_bleu.png') no-repeat scroll 5px center;
+    border: 1px solid #71a6e1;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 5px 1px;
+    padding: 6px 39px;
+}
+
+.form div.information_block
+{
+    margin: 5px 9px;
+}
+
+.form .submit_block
+{
+    margin: 12px 0;
+    padding-left: 166px;
+    text-align: center;
+    width: 326px;
+}
