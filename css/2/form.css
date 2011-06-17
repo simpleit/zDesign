@@ -176,19 +176,19 @@
     float: left;
 }
 
-.form ul
+.form .checkbox_list, .form .error_list
 {
     margin: 0;
     padding: 0;
 }
 
-.form li
+.form .checkbox_list li, .form .error_list li
 {
     list-style: none;
     list-style-image: none;
 }
 
-.form p, .form li, div.information_block p
+.form p, .form .checkbox_list li, .form .error_list li, div.information_block p
 {
     margin: 0;
     padding: 3px 6px;
