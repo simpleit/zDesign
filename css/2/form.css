@@ -34,6 +34,9 @@
     background: url('/images/designs/2/form/decoupe_formulaire.png') no-repeat -35px -331px;
     margin: 0 0 0 503px;
     padding: 12px 0 13px 17px;
+} .form .no_legend_required
+{
+    height: 34px;
 }
 
 .form .form_row
