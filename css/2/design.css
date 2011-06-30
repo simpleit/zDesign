@@ -9,12 +9,40 @@ Description : feuille de style du site reprenant notamment l'ensemble des ancien
 /* ---------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------->>> CSS DES BALISES GENERIQUES <<<---------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------- */
+/*@font-face
+{
+    font-family: TrebuchetMS;
+    src: url('../../fonts/trebuc.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: TrebuchetMS;
+    font-weight: bold;
+    src: url('../../fonts/trebucbd.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: TrebuchetMS;
+    font-style: italic;
+    src: url('../../fonts/trebucit.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: TrebuchetMS;
+    font-weight: bold;
+    font-style: italic;
+    src: url('../../fonts/trebucbi.ttf') format('truetype');
+}*/
+
 body
 {
 	margin: 0;
 	padding: 0;
 	background-color: #FFF;
-	font-family: 'Trebuchet MS', Verdana, Tahoma, sans-serif;
+	font-family: TrebuchetMS, "Trebuchet MS", Verdana, Tahoma, sans-serif;
 	font-size: 0.8em;
 	color: #1F1F1F;
 	min-width: 1000px;
@@ -3686,7 +3714,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     left:218px;
     z-index: 4;
     max-width:760px;
-    font-family: 'Trebuchet MS', Tahoma, 'DejaVu sans','sans-serif';
+    font-family: TrebuchetMS, "Trebuchet MS", Tahoma, 'DejaVu sans','sans-serif';
      box-shadow: 1px 2px 12px #555;
     -moz-box-shadow: 1px 2px 12px #555;
     -webkit-box-shadow: 1px 2px 12px #555;
