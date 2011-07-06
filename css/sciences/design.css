@@ -3854,7 +3854,11 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 }
 
 #speedbarre .menuh ul{
-    margin: 0 0 0 0px;
+    margin: 0 0 0 0;
+}
+
+#speedbarre #menuh_forum ul{
+    margin: 0 0 0 35px;
 }
 
 .menuh h6{
@@ -3870,6 +3874,10 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 .menuh_content .menu_princi{
     width:522px;
     float:left;
+}
+
+.menuh_content #menuh_forum .menu_princi{
+    min-height:374px;
 }
 
 .menuh_content #menuh_study .menu_princi{
@@ -3902,6 +3910,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     position:absolute;
     background-position:0 bottom;
     background-repeat:repeat-x;
+    height:100%;
     left:-214px;
     top:0px;
 }
@@ -4112,6 +4121,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     clear:both;
     display:block;
     text-align:right;
+    position:absolute;
     bottom:0px;
     right:0px;
 }
