@@ -12,21 +12,21 @@ Description : feuille de style du site reprenant notamment l'ensemble des ancien
 /*@font-face
 {
     font-family: TrebuchetMS;
-    src: url('../../fonts/trebuc.ttf') format('truetype');
+    src: local('Trebuchet MS'), url('../../fonts/trebuc.ttf') format('truetype');
 }
 
 @font-face
 {
     font-family: TrebuchetMS;
     font-weight: bold;
-    src: url('../../fonts/trebucbd.ttf') format('truetype');
+    src: local('Trebuchet MS'), url('../../fonts/trebucbd.ttf') format('truetype');
 }
 
 @font-face
 {
     font-family: TrebuchetMS;
     font-style: italic;
-    src: url('../../fonts/trebucit.ttf') format('truetype');
+    src: local('Trebuchet MS'), url('../../fonts/trebucit.ttf') format('truetype');
 }
 
 @font-face
@@ -34,7 +34,7 @@ Description : feuille de style du site reprenant notamment l'ensemble des ancien
     font-family: TrebuchetMS;
     font-weight: bold;
     font-style: italic;
-    src: url('../../fonts/trebucbi.ttf') format('truetype');
+    src: local('Trebuchet MS'), url('../../fonts/trebucbi.ttf') format('truetype');
 }*/
 
 body

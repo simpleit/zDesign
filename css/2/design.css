@@ -12,21 +12,21 @@ Description : feuille de style du site reprenant notamment l'ensemble des ancien
 /*@font-face
 {
     font-family: TrebuchetMS;
-    src: url('../../fonts/trebuc.ttf') format('truetype');
+    src: local('Trebuchet MS'), url('../../fonts/trebuc.ttf') format('truetype');
 }
 
 @font-face
 {
     font-family: TrebuchetMS;
     font-weight: bold;
-    src: url('../../fonts/trebucbd.ttf') format('truetype');
+    src: local('Trebuchet MS'), url('../../fonts/trebucbd.ttf') format('truetype');
 }
 
 @font-face
 {
     font-family: TrebuchetMS;
     font-style: italic;
-    src: url('../../fonts/trebucit.ttf') format('truetype');
+    src: local('Trebuchet MS'), url('../../fonts/trebucit.ttf') format('truetype');
 }
 
 @font-face
@@ -34,7 +34,7 @@ Description : feuille de style du site reprenant notamment l'ensemble des ancien
     font-family: TrebuchetMS;
     font-weight: bold;
     font-style: italic;
-    src: url('../../fonts/trebucbi.ttf') format('truetype');
+    src: local('Trebuchet MS'), url('../../fonts/trebucbi.ttf') format('truetype');
 }*/
 
 body
@@ -4562,4 +4562,178 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 .tutorial_wanted .link_redaction
 {
     margin-top: 20px;
+}
+
+
+/*
+JOB TRANSITION  CSS
+*/
+
+.job_offer
+{
+    width:  330px;
+    float:  left;
+}
+.zozor_job_offer, .job_offer hr, .job_offer .header, .job_offer .header h2.free,
+.job_offer .header h2.fee, .job_offer .content, .job_offer .price, .job_offer .price span.fee_price, .job_offer .price span.free_price,
+.job_offer .footer, .job_offer .button, .job_offer .button a, .job_offer .content ul li, .job_offer .content ul li.fade,
+.job_offer .button .fadin, .job_offer  .promotion, .job_offer .decoration, .job_offer .button a:hover, .job_offer div.equal
+{
+    background: url('../../images/static/job_offer_transition.png');
+}
+
+.job_offer_first
+{
+    margin:0 0 0 40px;
+}
+.zozor_job_offer
+{
+    width:  46px;
+    height: 450px;
+    float:  left;
+    background-position:0 4px;
+}
+.job_offer hr
+{
+    margin:0;
+    width: 100%;
+    height: 20px;
+    border:0;
+    position:relative;
+    bottom: -15px;
+    margin-top: -15px;
+    background-position:-54px -176px;
+    z-index: 2;
+}
+.job_offer .header
+{
+    width:100%;
+    min-height: 65px;
+    padding-top: 15px;
+    background-position:-396px 0 ;
+}
+.job_offer .header h2
+{
+    display:block;
+    height: 52px;
+    margin: 0 auto 0 auto;
+}
+.job_offer .header h2.free
+{
+    width: 300px;
+    background-position:-1094px 0 ;
+}
+.job_offer .header h2.fee
+{
+    width: 300px;
+    height: 52px;
+    background-position:-1094px -84px ;
+}
+.job_offer .content_header
+{
+    margin-top:-14px;
+}
+.job_offer .content
+{
+    width:100%;
+    min-height: 100px;
+    background-position:-736px;
+    position:relative;
+}
+
+.job_offer .content ul
+{
+    width:100%;
+    margin:0;
+    padding:0;
+    list-style: disc;
+}
+
+.job_offer .content ul li
+{
+    display:block;
+    background-position:-1752px;
+    padding:10px;
+    text-align:justify;
+    line-height: 12pt;
+}
+.job_offer div.equal
+{
+    height: 20px;
+    background-position:-2090px;
+}
+.job_offer .content ul li.fade
+{
+    background-position:-2090px;
+}
+.job_offer .promotion
+{
+    width:100%;
+    background-position:-1078px -158px;
+    height: 92px;
+}
+.job_offer .price
+{
+    width:100%;
+    background-position:-1752px;
+}
+.job_offer .decoration
+{
+    width:50px;
+    height:40px;
+    position:absolute;
+    margin:0 0 0 140px;
+    background-position:-396px -168px;
+    z-index: 3;
+    top:80px;
+}
+.job_offer .price span.fee_price
+{
+    width: 240px;
+    height: 48px;
+    padding-top: 10px;
+    background-position:-1456px -76px;
+    margin:auto;
+    display:block;
+}
+
+.job_offer .price span.free_price
+{
+    width: 240px;
+    height: 48px;
+    padding-top: 20px;
+    background-position:-1456px 10px;
+    margin:auto;
+    display:block;
+}
+
+.job_offer .footer
+{
+    width:100%;
+    height: 30px;
+    background-position:-396px -226px ;
+}
+
+.job_offer .button
+{
+    width:100%;
+    background-position:-736px;
+}
+.job_offer .button a
+{
+    margin:auto;
+    width:236px;
+    height:56px;
+    display:block;
+    background-position:-104px 0;
+}
+.job_offer .button a:hover
+{
+    background-position:-104px -66px;
+}
+.job_offer .button .fadin
+{
+    padding: 20px 0 5px 0;
+    background-position:-2090px 50%;
+    width:100%;
 }
