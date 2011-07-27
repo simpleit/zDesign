@@ -12,7 +12,7 @@
     border: none;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    margin: 10px 3px 14px 3px;
+    margin: 1px 3px 14px 3px;
     padding: 0;
     position: relative;
 }
@@ -22,9 +22,11 @@
     background: none;
     color: #2677c9;
     font-size: 15px;
+    left: 0;
     padding: 10px 0 0 9px;
     position: absolute;
     text-shadow: 1px 1px 1px #e9eaec;
+    top: 0;
 }
 
 .form .legend_required
@@ -32,6 +34,9 @@
     background: url('/images/designs/2/form/decoupe_formulaire.png') no-repeat -35px -331px;
     margin: 0 0 0 503px;
     padding: 12px 0 13px 17px;
+} .form .no_legend_required
+{
+    height: 34px;
 }
 
 .form .form_row
@@ -50,8 +55,8 @@
 .form .form_fields
 {
     float: left;
-    max-width: 507px;
     min-height: 25px;
+    width: 508px;
 }
 
 .form .form_fields_zform
@@ -73,6 +78,7 @@
     min-height: 25px;
     padding: 0 0 0 24px;
     position: absolute;
+    z-index: 50;
 }
 
 .form .form_tooltip_background
@@ -114,6 +120,7 @@
     font-weight: bold;
     line-height: 25px;
     margin-right: 5px;
+    min-height: 25px;
     text-align: right;
     width: 166px;
 }
@@ -149,30 +156,43 @@
     width: auto;
 }
 
-.form ul.checkbox_list
+.form ul.checkbox_list, .form ul.radio_list
 {
     padding-left: 166px;
 }
 
-.form ul.checkbox_list label
+.form ul.checkbox_list li, .form ul.radio_list li
 {
-    float: right;
+    display: block;
+    height: 25px;
+}
+
+.form ul.checkbox_list label, .form ul.radio_list label
+{
+    float: none;
     font-weight: normal;
+    margin: 0 0 0 5px;
     text-align: left;
 }
 
-.form ul
+.form ul.checkbox_list input[type=checkbox], .form ul.radio_list input[type=checkbox]
+{
+    float: left;
+}
+
+.form .checkbox_list, .form .error_list, .form .radio_list
 {
     margin: 0;
     padding: 0;
 }
 
-.form li
+.form .checkbox_list li, .form .error_list li, .form .radio_list li
 {
     list-style: none;
+    list-style-image: none;
 }
 
-.form p, .form li, div.information_block p
+.form p, .form .checkbox_list li, .form .error_list li, div.information_block p, .form .radio_list li
 {
     margin: 0;
     padding: 3px 6px;
@@ -187,7 +207,7 @@
     margin: 2px 5px 2px 0;
 }
 
-.form input[type=text], .form input[type=file]
+.form input[type=text], .form input[type=password], .form input[type=file]
 {
     width: 326px;
 }
@@ -209,6 +229,7 @@
 
 .form input[type=checkbox]
 {
+    border: none;
     margin: 5px 0 0 0;
 }
 
@@ -234,6 +255,7 @@
 .form input.autosize, .form select.autosize
 {
     width: auto;
+    max-width: 159px;
 }
 
 div.information_block
@@ -257,4 +279,9 @@ div.information_block
     padding-left: 166px;
     text-align: center;
     width: 326px;
+}
+
+#ui-datepicker-div
+{
+    z-index: 60;
 }

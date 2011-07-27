@@ -120,6 +120,7 @@
     font-weight: bold;
     line-height: 25px;
     margin-right: 5px;
+    min-height: 25px;
     text-align: right;
     width: 166px;
 }
@@ -155,18 +156,18 @@
     width: auto;
 }
 
-.form ul.checkbox_list
+.form ul.checkbox_list, .form ul.radio_list
 {
     padding-left: 166px;
 }
 
-.form ul.checkbox_list li
+.form ul.checkbox_list li, .form ul.radio_list li
 {
     display: block;
     height: 25px;
 }
 
-.form ul.checkbox_list label
+.form ul.checkbox_list label, .form ul.radio_list label
 {
     float: none;
     font-weight: normal;
@@ -174,24 +175,24 @@
     text-align: left;
 }
 
-.form ul.checkbox_list input[type=checkbox]
+.form ul.checkbox_list input[type=checkbox], .form ul.radio_list input[type=checkbox]
 {
     float: left;
 }
 
-.form .checkbox_list, .form .error_list
+.form .checkbox_list, .form .error_list, .form .radio_list
 {
     margin: 0;
     padding: 0;
 }
 
-.form .checkbox_list li, .form .error_list li
+.form .checkbox_list li, .form .error_list li, .form .radio_list li
 {
     list-style: none;
     list-style-image: none;
 }
 
-.form p, .form .checkbox_list li, .form .error_list li, div.information_block p
+.form p, .form .checkbox_list li, .form .error_list li, div.information_block p, .form .radio_list li
 {
     margin: 0;
     padding: 3px 6px;
@@ -206,7 +207,7 @@
     margin: 2px 5px 2px 0;
 }
 
-.form input[type=text], .form input[type=file]
+.form input[type=text], .form input[type=password], .form input[type=file]
 {
     width: 326px;
 }

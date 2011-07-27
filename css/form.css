@@ -1,0 +1,107 @@
+.form li{
+    list-style: none;
+}
+
+.form fieldset{
+    background: #fdfdfd;
+    border: 2px solid #e3e7ec;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    position: relative;
+
+}
+.form h2{
+    color: #2677c9;
+/*    background: -moz-linear-gradient(100% 100% 90deg, #f5f6f8, #2677c9);*/
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-align: inherit;
+/*    clear: both;*/
+}
+
+.form fieldset p{
+/*    clear: left;*/
+    position: relative;
+    margin: 3px 0;
+}
+
+.form fieldset .legend_required_field{
+    margin-top: 1px;
+    margin-right: 5px;
+    padding-left: 15px;
+    background: url('/images/designs/2/form/decoupe_formulaire.png') no-repeat scroll -12px -343px transparent;
+    float: right;
+}
+
+.form fieldset h2{
+     margin-top: 0;
+}
+
+.form label{
+    cursor: pointer;
+    float: left;
+    margin-right: 5px;
+    text-align: right;
+    width: 166px;
+}
+
+.form .label_required_field{
+    color: #2677c9;
+    background:  url("../images/form/decoupe_formulaire.png") no-repeat scroll right -343px transparent;
+    margin-left: -15px;
+    padding: 0 15px 0 0;
+    font-weight: bold;
+}
+
+.form ul{
+    margin: 0;
+}
+
+.form li {
+    margin-left: 131px;
+}
+
+.form li label{
+    cursor: pointer;
+    float: inherit;
+    font-weight: bold;
+    margin-right: 5px;
+    text-align: right;
+    width: inherit;
+}
+
+.form li input{
+/*    float: left;
+    clear: left;*/
+}
+.form input[type=checkbox]{
+    margin: 0;
+}
+
+.form input[type=text], .form textarea /*, select*/ {
+    width: 326px;
+    margin: 0 5px 0 0;
+/*    float: left;*/
+}
+
+.form select, .form input, .form textarea{
+    background: #ffffff;
+    border: #e3e7ec solid 2px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+.form .form_info{
+    display: block;
+    height: 23px;
+    width: 23px;
+    background:  url("../images/form/decoupe_formulaire.png") no-repeat scroll right -50px transparent;
+    float: left;
+    position: absolute;
+    left: 507px;
+}
+
+.form #job_xp_min, .form #job_xp_max, .form #job_study_min_id, .form #job_study_max_id{
+    width: 158px;
+    font-size: 0.8em;
+}

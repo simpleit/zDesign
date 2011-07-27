@@ -582,7 +582,7 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("../../images
 .box_menu .corpsmenu ul li.last_idem_liste {border: 0;}
 #formations_similaires ul li, #my_contributions ul li{border-bottom:0;padding:2px 0;}
 
-.box_menu .corpsmenu ul li
+#menu_cours.box_menu .corpsmenu ul li
 {
     background: url("../../images/bg-menu.gif") repeat-x;
 }
@@ -1048,6 +1048,17 @@ img.petite_icone_news {	float: left; margin: 0 0 0 18px; }
 .grosse_icone_news_edit { margin-left:170px; }
 
 #services_sdz .row_module_index { padding: 3px 10px }
+
+.element_more
+{
+    display: inline-block;
+    background: url("../../images/designs/2/homepage/bg.png");
+    width: 6px;
+    height: 8px;
+    background-position: 7px 560px;
+    font-style: normal;
+}
+
 #sondage .row_module_index { padding: 12px 17px 0 17px }
 
 #corps #sondage ul.liste_reponses { list-style: none; padding-left: 0; }
@@ -1075,10 +1086,11 @@ img.petite_icone_news {	float: left; margin: 0 0 0 18px; }
 #corps #evenements td.event .eventslist a { color: #2677C9 }
 #evenements .eventslist {
 	position: absolute;
-	visibility: hidden;
+	display: none;
 	width: 150px;
 	background-color: #D2E3F4;
 	opacity: .9;
+        margin-left: -100px;
 }
 #evenements .eventslist ul
 {
@@ -1877,6 +1889,75 @@ a.bookmarklet_link
 	padding-left:8px;
 	padding-right:8px;
 	color:#2C485C;
+}
+
+/* Connection */
+.connection_header
+{
+    padding: 2px 0 15px 70px;
+    background: url('/images/designs/2/connection/zozor.png') no-repeat left top;
+}
+.connection_header p
+{
+    margin: 6px 0;
+}
+
+#connection_form
+{
+    background: url('/images/designs/2/form/fieldset_background.png') repeat-x top center;
+}
+#connection_form fieldset
+{
+    background: none;
+}
+#connection_form input[type="text"], #connection_form input[type="password"]
+{
+    width: 250px;
+}
+#connection_form .submit_block
+{
+    padding-left: 0;
+    text-align: right;
+    width: 100%;
+}
+#connection_form .legend_required
+{
+    background: none;
+    margin: 0 10px 0 0;
+    text-align: right;
+} #connection_form .legend_required span
+{
+    background: url('/images/designs/2/form/decoupe_formulaire.png') no-repeat -35px -343px;
+    padding: 0 0 0 15px;
+}
+#connection_form .form_fields
+{
+    width: 100%;
+}
+
+.connection_block
+{
+    float: right;
+}
+
+#connection_separator
+{
+    background: url('/images/designs/2/connection/separator.png') no-repeat center center;
+    line-height: 205px;
+    padding-right: 3px;
+    text-align: center;
+    width: 36px;
+}
+
+/* registration */
+#registration_recaptcha
+{
+    margin: 20px 0 30px 0;
+}
+
+#registration_submit
+{
+    margin: 10px 0 20px 0;
 }
 
 /* Membres */
@@ -3450,7 +3531,7 @@ div.comm_pack {
 
 
 /* JOB MODULE*/
-#connection_form .error_list{list-style:none;margin-top:0;padding-left:10px;}
+#connection_form .error_list{list-style:none;margin-top:0;padding-left:10px;width:390px;}
 #connection_form .error_list li{list-style:none;}
 .interlabel{margin:0 0 3px 0;} /* Classe permettant les interlignes entre les input de formulaire */
 .interlabel input{width:287px;margin:0;}
@@ -3695,7 +3776,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     background-image: url("../../images/designs/sciences/speedbarre/speed_barre_decoupe.png");
     position: relative;
     height: 29px;
-    padding: 0 0 0 218px;
+    padding: 0;
     z-index: 1000;
 }
 
@@ -3708,9 +3789,6 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     margin:0px;
  }
 
- #speedbarre ul.smenu{
-     position: absolute;
-}
 #speedbarre .smenu>li{
     background: url("../../images/designs/sciences/speedbarre/speed_barre_decoupe.png") no-repeat scroll 0 -87px transparent;
     float: left;
@@ -3983,8 +4061,8 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 }
 
 .icoforum{
-    width:40px;
-    height:40px;
+    width:47px;
+    height:42px;
     position:absolute;
     right:5px;
     top:5px;
@@ -4710,4 +4788,168 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 }
 
 .auteur_date_commentaires { clear:both; }
+
+
+#switcher, #speedbarre .ardswitch, #switcher .location, #switcher .separator, #switcher .arrow, #switcher .arrow:hover, #switcher_expand ul
+, #switcher_expand li.computing, #switcher_expand li.sciences, #switcher_expand li.computing a, #switcher_expand li.sciences a,
+#switcher_expand .border-left, #switcher_expand .border-right
+{
+    background: url("../../images/designs/2/speedbarre/speed_barre_decoupe.png");
+    background-repeat: no-repeat;
+}
+#switcher
+{
+    background-position:0 -58px;
+    background-repeat: repeat-x;
+    padding:0 10px 0 35px;
+    height:29px;
+    float:left;
+    text-shadow: 0 1px 0#343434;
+}
+#switcher:hover .arrow, #switcher .location:focus + div + div + .arrow
+{
+    background-position:-5px -256px;
+}
+#switcher .arrow
+{
+    height:29px;
+    width:18px;
+    background-position:-5px -227px;
+    float:left;
+    cursor:pointer;
+}
+#switcher .arrow:hover
+{
+    background-position:-5px -256px;
+}
+#switcher .separator
+{
+    height:29px;
+    width:2px;
+    background-position:0 -197px;
+    margin:0 0 0 8px;
+    float:left;
+}
+#switcher .separator-last
+{
+    margin:0 0 0 0;
+}
+#switcher .location
+{
+    width:90px;
+    height:24px;
+    color:white;
+    padding:4px 0 0 27px;
+    font-size:15px;
+    float:left;
+    cursor:pointer;
+    background-position:0 -316px;
+}
+#speedbarre .ardswitch{
+    background-position:0 -401px;
+    float: left;
+    height: 29px;
+    width: 27px;
+    z-index: 10;
+ }
+#speed_cours
+{
+    background:none !important;
+}
+#switcher_expand
+{
+    position:absolute;
+    top:29px;
+    left:29px;
+    display:none;
+}
+#switcher_expand ul
+{
+    padding:0 0 8px 0;
+    width:142px;
+    margin:0 7px 0 4px;
+    text-indent:0;
+    list-style:none;
+    display:block;
+    background-position:0 -835px;
+    background-repeat:repeat-x;
+}
+#switcher_expand li a
+{
+    display:block;
+    padding:1px 8px 2px 27px;
+    margin-bottom:1px;
+    color:white;
+    font-size:15px;
+}
+#switcher_expand li.computing
+{
+    border-left:2px solid #80bbfd;
+    background:none;
+}
+#switcher_expand li.computing:hover
+{
+    border:0;
+    padding-left:2px;
+    background: url("../../images/designs/2/speedbarre/speed_barre_decoupe.png");
+    background-position:0 -348px;
+    background-repeat:no-repeat;
+}
+#switcher_expand li.computing a
+{
+    background-position:0 -288px;
+}
+#switcher_expand li.sciences
+{
+    border-left:2px solid #99dde6;
+    background:none;
+}
+#switcher_expand li.sciences:hover
+{
+    border:0;
+    padding-left:2px;
+    background: url("../../images/designs/2/speedbarre/speed_barre_decoupe.png");
+    background-position:0 -376px;
+    background-repeat:no-repeat;
+}
+#switcher_expand li.sciences a
+{
+    background-position:0 -319px;
+}
+#switcher_expand .border-left
+{
+    float:left;
+    width:4px;
+    height:52px;
+    background-position:-20px -531px;
+}
+#switcher_expand .border-right
+{
+    float:right;
+    width:7px;
+    background-position:0 -683px;
+    height:52px;
+}
+#switcher:hover  #switcher_expand, #switcher_expand:hover, #switcher.nojs > .location:focus + #switcher_expand, #switcher_expand a:focus
+{
+    display:block;
+}
+#switcher.JQ:hover  #switcher_expand
+{
+    display:none;
+}
+#switcher .location
+{
+  display:block;
+  color:white;
+}
+#switcher .location:hover
+{
+  text-decoration:none;
+}
+.tutolist li
+{
+    background: none !important;
+}
+
 
