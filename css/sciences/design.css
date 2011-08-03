@@ -2281,6 +2281,7 @@ hr.bas_onglets {border: 0;	margin-bottom:30px;}
 .infobox td > img:first-child {display:block;}
 
 .boite_avatar_100px {width: 100px;height: 100px;}
+.boite_avatar_100px img {max-width: 100px;max-height: 100px;}
 
 .icone_chap /* L'ensemble icône + titre chapitre */
 {
@@ -4675,7 +4676,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 
 .tutorial_wanted .bloc_headline
 {
-    border-top: 1px solid #FAFAFA;
+    border-bottom: 1px solid #DEDEDE;
     background: none;
     margin: 0;
     padding: 0;
@@ -4782,10 +4783,18 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     background:none;
     font-weight:bold;
 }
-#menuh_collaborate ul
+
+#speedbarre #menuh_collaborate ul, #speedbarre #menuh_collaborate h6
 {
-    margin:0 0 0 40px !important;
+    margin: 0 0 0 50px;
 }
+
+#menuh_collaborate .ico
+{
+    width: 45px;
+    height: 45px;
+}
+
 
 .auteur_date_commentaires { clear:both; }
 
@@ -4827,19 +4836,16 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     height:29px;
     width:2px;
     background-position:0 -197px;
-    margin:0 0 0 8px;
-    float:left;
-}
-#switcher .separator-last
-{
     margin:0 0 0 0;
+    float:left;
+    cursor:pointer;
 }
 #switcher .location
 {
     width:90px;
     height:24px;
     color:white;
-    padding:4px 0 0 27px;
+    padding:4px 8px 0 27px;
     font-size:15px;
     float:left;
     cursor:pointer;
@@ -4947,9 +4953,64 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 {
   text-decoration:none;
 }
+
+#goodies_comments .block_admin
+{
+    margin: 10px auto auto;
+    padding: 5px 10px;
+    background-color: #F8FAFD;
+    border: solid 1px #E2E2E2;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+#goodies_comments .block_admin .block_title
+{
+    color: #1877D5;
+    padding: 3px 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+
 .tutolist li
 {
     background: none !important;
 }
 
+#goodies_comments ul
+{
+    list-style-image: none;
+    list-style: none;
+}
 
+#goodies_comments table ul
+{
+    padding: 0;
+}
+
+#goodies_comments thead a
+{
+    color: #FFFFFF;
+}
+
+#goodies_comments thead a:hover
+{
+    text-decoration: underline;
+}
+
+.action_edit a, .action_delete a
+{
+    padding-left: 20px;
+}
+
+.action_edit a
+{
+    background : url("../../images/designs/2/forum/editer.png") no-repeat left;
+}
+
+.action_delete a
+{
+    background : url("../../images/designs/2/forum/supprimer.png") no-repeat left;
+}
+    

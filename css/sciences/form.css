@@ -285,3 +285,13 @@ div.information_block
 {
     z-index: 60;
 }
+
+#connection_form .error_list
+{
+    background: none;
+}
+
+#connection_form ul.error_list
+{
+    color: #b22222;
+}

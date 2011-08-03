@@ -15,6 +15,7 @@ body
 {
 	font-family: 'Trebuchet MS', Tahoma, Verdana, 'Times New Roman', Times, serif;
 	font-size:0.8em;
+        page-break-after: always; 
 }
 
 table.fct, table.fct td, table.fct th
@@ -41,9 +42,9 @@ div.fctli li
 }
 
 #acces_rapide, #entete, #speedbarre, #menu, #arbre, #pied_de_page, .barre_msg, .barre_att, .intersites, .stats_sites, .header_gauche, .header_droit, .onglets_tutos, #footer, #tuto_details,
-.cadre_auteur_date .conteneur_infobox img, .liens_bas_tuto, .printnone /* On vire ce qui sert à rien */
+.cadre_auteur_date .conteneur_infobox img, .liens_bas_tuto, .printnone, .tut_partager, .tut_popularite, #pave_pub_tuto, #tuto_details_moins, #tuto_details_plus, #pre_liste_parties, #liste_parties, .liste_parties_btut /* On vire ce qui sert à rien */
 {
-	display: none;
+	display: none !important;
 }
 
 /* Quelques styles globaux issus du CSS global */
@@ -342,9 +343,9 @@ span.console {
         visibility: visible;
 }
 
-.spoiler3_hidden
+.spoiler3_hidden, .img_licence
 {
-	display: block;
+	display: block !important;
 }
 
 #menu_pub_tuto
@@ -418,8 +419,7 @@ span.console {
 
 
 
-/* Empêcher le code de dépasser sur la droite de la feuille à l'impression : force le retour à la ligne.
-Marche dans la plupart des cas, mais pas 100% des cas */
+/* Empêcher le code de dépasser sur la droite de la feuille à l'impression : force le retour à la ligne. */
 
 .code2 .linenos
 {
@@ -431,3 +431,16 @@ Marche dans la plupart des cas, mais pas 100% des cas */
 	white-space: normal;
 }
 
+pre
+{
+     white-space: pre-wrap;       /* css-3 */
+     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+     white-space: -pre-wrap;      /* Opera 4-6 */
+     white-space: -o-pre-wrap;    /* Opera 7 */
+     word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.cadre_auteur_date
+{
+    margin-left: 40px;
+}
