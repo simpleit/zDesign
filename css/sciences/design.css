@@ -5013,4 +5013,15 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 {
     background : url("../../images/designs/2/forum/supprimer.png") no-repeat left;
 }
+
+.info_tooltip
+{
+    background:  url('/images/designs/2/form/decoupe_formulaire.png') no-repeat -25px -49px;
+    color: #004d83;
+    margin-left: 506px;
+    min-height: 25px;
+    padding: 0 0 0 24px;
+    position: absolute;
+    z-index: 50;
+}
     

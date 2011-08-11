@@ -1873,7 +1873,7 @@ a.bookmarklet_link
 }
 #connection_form input[type="text"], #connection_form input[type="password"]
 {
-    width: 250px;
+    width: 160px;
 }
 #connection_form .submit_block
 {
@@ -5113,4 +5113,41 @@ a.titre_section_index:hover { color: #1F1F1F;}
 {
     background : url("../../images/designs/2/forum/supprimer.png") no-repeat left;
 }
-    
+
+.info_tooltip
+{
+    background:  url('/images/designs/2/form/decoupe_formulaire.png') no-repeat -25px -49px;
+    color: #004d83;
+    min-height: 25px;
+    padding: 0 0 0 24px;
+    z-index: 50;
+    position: relative;
+    left: 145px;
+    top: -8px;
+}
+
+.info_tooltip_background
+{
+    background: url('/images/designs/2/form/decoupe_formulaire.png') no-repeat -38px -248px;
+    display: none;
+    padding: 0 0 0 10px;
+    position: absolute;
+    top: 20px;
+    left: -90px;
+    width: 175px;
+}
+
+.info_tooltip:hover .info_tooltip_background
+{
+    display: block;
+}
+
+.tooltip_in_info
+{
+    background-color: #ffffff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 1px 1px 3px #666666;
+    -moz-box-shadow: 1px 1px 3px #666666;
+    -webkit-box-shadow: 1px 1px 3px #666666;
+}

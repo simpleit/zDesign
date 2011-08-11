@@ -1,0 +1,22 @@
+body {
+  font-family: TrebuchetMS, "Trebuchet MS", Verdana, Tahoma, sans-serif;
+  color: #1F1F1F;
+  /*padding: 15px 10px;*/
+  padding: 3px
+}
+
+h1, h3, h4, h5, h6 {
+  color: #1877D5;
+}
+
+h2 {
+  color: #E8A22B;
+}
+
+a:link, a:visited {
+  color: #2677C9;
+}
+
+a:active {
+  color: #C87B02;
+}
