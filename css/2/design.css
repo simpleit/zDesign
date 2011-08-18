@@ -2566,11 +2566,9 @@ a.infobulle:hover span
 	font-weight: normal;
 }
 
-#my_contributions ul a.suppr {padding-left: 10px;background: transparent url(../../images/designs/2/forum/supprimer.png) no-repeat scroll;visibility: hidden;}
-#my_contributions li:hover {visibility: visible;}
-
 #mes_tuto_favoris ul a.suppr {padding-left: 10px;background: transparent url(../../images/designs/2/forum/supprimer.png) no-repeat scroll;visibility: hidden;}
 #mes_tuto_favoris li:hover {visibility: visible;}
+
 
 /* Diff */
 ins {font-weight: bold;color: green;text-decoration:none;white-space:pre-wrap;}
@@ -3492,7 +3490,7 @@ div.comm_pack {
 
 
 /* JOB MODULE*/
-#connection_form .error_list{list-style:none;margin-top:0;padding-left:10px;width:390px;}
+#connection_form .error_list{list-style:none;margin-top:0;padding-left:10px;}
 #connection_form .error_list li{list-style:none;}
 .interlabel{margin:0 0 3px 0;} /* Classe permettant les interlignes entre les input de formulaire */
 .interlabel input{width:287px;margin:0;}
@@ -5151,3 +5149,36 @@ a.titre_section_index:hover { color: #1F1F1F;}
     -moz-box-shadow: 1px 1px 3px #666666;
     -webkit-box-shadow: 1px 1px 3px #666666;
 }
+
+/** FAVORITE TOPIC BUTTON **/
+.fav_icon
+{
+    background: url("../../images/ico_fav_bouton.png") no-repeat;
+    width:22px;
+    height:18px;
+    display: block;
+    float:left;
+    margin-right:3px;
+}
+.boutons_saut_forum_new .bouton_action
+{
+    background: url("../../images/designs/2/buttoncut.png") repeat-x scroll left -99px transparent !important;
+    cursor:pointer;
+    padding:5px;
+    height:15px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width:140px;
+}
+.boutons_saut_forum_new .bouton_action:hover
+{
+    background:url("../../images/designs/2/buttoncut.png") repeat-x left -124px !important;
+}
+#my_contributions ul li a.favshow
+{
+    background: url("../../images/ico_fav.png") no-repeat center center;
+    padding-left:12px;
+}
+#my_contributions ul a.suppr {padding-left: 12px;}
+#my_contributions ul li:hover a.suppr {background: transparent url(../../images/designs/2/forum/supprimer.png) no-repeat scroll;}
