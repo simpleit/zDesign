@@ -3555,6 +3555,7 @@ div.button_link_job_search_result a.centerlink span.textlink{padding:9px 0 0 16p
 div.button_link_job_search_result:hover a.centerlink span.textlink{color:#000000; text-shadow:none;}
 div.button_link_job_search_result a.centerlink span.already{}
 div.button_link_job_search_result a.centerlink span.arrowlink{height:30px;width:33px;max-width:550px;background:url("../../images/designs/2/buttoncut.png") no-repeat left -742px !important; margin: 3px 0 0 -2px;}
+div.button_link_job_search_result a.centerlink .spaceTextLink{letter-spacing:-0.02em;}
 
 div.button_link_job_search_result:hover a.leftlink{background:url("../../images/designs/2/buttoncut.png") repeat-x left -289px !important;}
 div.button_link_job_search_result:hover a.rightlink{background:url("../../images/designs/2/buttoncut.png") repeat-x right -327px !important;}
