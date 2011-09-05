@@ -656,7 +656,7 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("../../images
 #corps {margin-left: 212px;}
 #corps ul {	list-style-image: url("../../images/designs/2/zcode/liste_img.png");}
 
-#arbre {font-size: 0.8em;}
+#arbre {font-size: 0.8em; margin-bottom: 30px;}
 #arbre img { margin: 0 3px 0 5px }
 #arbre img.first_puce { margin-left: 0 }
 
