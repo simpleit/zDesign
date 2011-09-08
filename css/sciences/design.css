@@ -734,7 +734,7 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("../../images
 #corps {margin-left: 212px;}
 #corps ul {	list-style-image: url("../../images/designs/sciences/zcode/liste_img.png");}
 
-#arbre {font-size: 0.8em;margin-bottom:30px;}
+#arbre {font-size: 0.8em;}
 #arbre img { margin: 0 3px 0 5px }
 #arbre img.first_puce { margin-left: 0 }
 
@@ -1894,8 +1894,8 @@ a.bookmarklet_link
 /* Connection */
 .connection_header
 {
-    padding: 2px 0 15px 70px;
-    background: url('/images/designs/2/connection/zozor.png') no-repeat left top;
+    padding: 2px 0 15px 130px;
+    background: url('/images/designs/2/zozor_connex.png') no-repeat 30px top;
 }
 .connection_header p
 {
