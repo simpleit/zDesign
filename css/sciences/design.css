@@ -2279,6 +2279,13 @@ hr.bas_onglets {border: 0;	margin-bottom:30px;}
 .scrollable {overflow: auto;max-height: 400px;}
 .infobox img.avatar {display:none;}
 .infobox td > img:first-child {display:block;}
+.infobox #auteurs{
+    float:left;
+}
+.infobox #auteurs_liste{
+    list-style: none outside none;
+    margin-left: 20px;
+}
 
 .boite_avatar_100px {width: 100px;height: 100px;}
 .boite_avatar_100px img {max-width: 100px;max-height: 100px;}
