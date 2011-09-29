@@ -1,15 +1,26 @@
-@import "UiUIKit/stylesheets/iphone.css";
 @import "2/zcode.css";
 
 body {
   font-family: TrebuchetMS, "Trebuchet MS", Verdana, Tahoma, sans-serif;
   color: #1F1F1F;
   /*padding: 15px 10px;*/
-  padding: 3px
+  padding: 0px;
+  margin:0;
+  width:100%;
+}
+
+*
+{
+    font-size:12px;
+}
+
+img, table{
+    max-width:270px;
 }
 
 h1, h3, h4, h5, h6 {
   color: #1877D5;
+  font-size:13px;
 }
 
 h2 {
@@ -23,3 +34,93 @@ a:link, a:visited {
 a:active {
   color: #C87B02;
 }
+
+.linenos
+{
+    display:none;
+}
+
+div.code2, .citation2, .spoiler2, .spoiler2_hidden {
+    background: none;
+    border:none;
+    padding:0;
+    overflow:visible;
+}
+
+.section {
+    text-align:justify;
+    padding:0 2px;
+}
+
+.syntaxtable, .syntaxtable tr, .syntaxtable td, .syntaxtable tbody {
+    padding:0;
+}
+
+.qcmBlock
+{
+    padding:10px 0;
+    background: url('../../images/mobile/navigation.png') repeat-x 0 -100px;
+    border-top: 1px solid #c3c3c3;
+}
+
+    .qcmBlock a
+    {
+        display:block;
+        background: url('../../images/mobile/navigation.png') no-repeat 0 0;
+        padding:5px 0 7px 40px;
+        width:100%;
+        margin-left: 16px;
+        font-size:20px;
+        text-decoration:none;
+    }
+
+.separatorBlock
+{
+    margin-top:1px;
+    height: 18px;
+    background: url('../../images/mobile/navigation.png') repeat-x 0 -200px;
+    border-top: 1px solid #c3c3c3;
+    border-bottom: 1px solid #7f7f7f;
+}
+
+.navigationBlock
+{
+    height: 42px;
+    border-top: 1px solid #c3c3c3;
+    background: url('../../images/mobile/navigation.png') repeat-x 0 -600px;
+}
+    .arrowLeft, .arrowRight, .home
+    {
+        display:block;
+        height: 41px;
+        border: 1px solid #c3c3c3;
+        float:left;
+        width:33%;
+        border-bottom:none;
+        border-top:none;
+    }
+
+    .arrowLeft
+    {
+        border-left:none;
+        background: url('../../images/mobile/navigation.png') no-repeat center -290px;
+    }
+
+    .arrowRight
+    {
+        border-right:none;
+        background: url('../../images/mobile/navigation.png') no-repeat center -390px;
+    }
+
+    .home
+    {
+        border-right:none;
+        border-left:none;
+        width:33%;
+        background: url('../../images/mobile/navigation.png') no-repeat center -490px;
+    }
+
+    .linkDisabled
+    {
+       opacity:0.2;
+    }

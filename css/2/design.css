@@ -46,6 +46,7 @@ body
     font-size: 0.8em;
     color: #1F1F1F;
     min-width: 1000px;
+    overflow-x: hidden; /*for internet explorer 8 and later*/
 }
 
 h1
@@ -5601,3 +5602,133 @@ div.legendmargin
         margin:0 0 10px 0;
     }
 }
+
+
+/* CC tutorial inputs */
+
+.config_CC
+{
+    float:left;
+    width:38%;
+    min-width:409px;
+}
+
+.separator_CC
+{
+    float:left;
+    border-right:4px solid #E3E7EC;
+    position:relative;
+    margin-bottom: -33px;
+    top: -25px;
+    height:249px;
+}
+
+.separator_icon_CC
+{
+    background: url("../../images/CC/fleche.gif") no-repeat center center;
+    width:10px;
+    height:13px;
+    position:absolute;
+    top:51%;
+    left:0;
+
+}
+
+.legend_CC
+{
+    float: left;
+    margin-left: 10px;
+    width:43%;
+}
+
+#box_CC p
+{
+    margin:0 0 1px 25px;
+}
+
+#box_CC input
+{
+    position:absolute;
+}
+
+.description_CC
+{
+    margin:2px 0 2px 25px!important;
+    font-size:11px;
+}
+
+.autorization_CC .description_CC
+{
+    display:block;
+    margin-left:0 !important;
+}
+
+.autorization_CC label
+{
+    display:inline;
+    float:left;
+    width:212px;
+    min-height:35px;
+}
+
+.autorization_CC .choice_CC span
+{
+    display:block;
+}
+.autorization_CC .choice_CC label
+{
+    display:inline;
+    margin:0;
+    float:none;
+    width:auto;
+    height:auto;
+}
+
+.autorization_CC div
+{
+    margin:20px 0 0 0;
+}
+
+.autorization_CC div div
+{
+    margin:0 0 0 0;
+}
+
+    .legend_CC p
+    {
+        margin:0 0 0 62%;
+    }
+
+    .legend_CC a
+    {
+        font-weight:bold;
+    }
+
+    .legend_CC .licenceBlock_CC
+    {
+        margin:8px 0 8px 0;
+        padding:2px 0 0 40px;
+    }
+
+    .legend_CC .licenceBlock_CC p
+    {
+        margin:1px 0;
+    }
+
+    .legend_CC .licence_BY
+    {
+        background: url("../../images/CC/ccby.png") no-repeat left center;
+    }
+    .legend_CC .licence_NC
+    {
+        background: url("../../images/CC/ccnc.png") no-repeat left center;
+    }
+    .legend_CC .licence_ND
+    {
+        background: url("../../images/CC/ccnd.png") no-repeat left center;
+    }
+    .legend_CC .licence_SA
+    {
+        background: url("../../images/CC/ccsa.png") no-repeat left center;
+    }
+
