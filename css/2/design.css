@@ -46,7 +46,6 @@ body
     font-size: 0.8em;
     color: #1F1F1F;
     min-width: 1000px;
-    overflow-x: hidden; /*for internet explorer 8 and later*/
 }
 
 h1
