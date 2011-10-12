@@ -46,6 +46,7 @@ body
     font-size: 0.8em;
     color: #1F1F1F;
     min-width: 1000px;
+    margin-right: 3px\9;
 }
 
 h1
@@ -1446,6 +1447,72 @@ td.nom_forum { padding-left: 15px; }
 .boutons_saut_forum { padding: 12px 0;}
 .boutons_saut_forum p { margin: 0; }
 .aucun_sujet, .pas_de_message {text-align: center;font-size: 1.3em;}
+
+.switch_forum
+{
+    width: 99%;
+    height: 21px;
+}
+
+#wrapper
+{
+    float: right;
+    position: relative;
+    top: 11px;
+}
+
+#actif
+{
+    color: #ffffff;
+    text-shadow: 0px 1px #5a5a5a;
+    padding-right: 10px;
+    margin-left: 5px;
+}
+
+#inactif
+{
+    font-weight:normal;
+    color: #1f1f1f;
+    text-shadow: 0px 1px #f8f8f8;
+    margin-left: 5px;
+    padding-right: 10px;
+}
+
+.switch_forum #onglet_forum_actif
+{
+    float: left;
+    background: url("../../images/designs/sciences/forum/onglet.png") no-repeat;
+    padding-left: 21px;
+    line-height: 21px;
+}
+
+.switch_forum #onglet_forum_actif_repeat
+{
+    float: left;
+    background: url("../../images/designs/sciences/forum/onglet.png") repeat-x;
+    height: 21px;
+    background-position: 0 -65px;
+    -moz-border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+    -o-border-radius: 0 5px 0 0;
+    -khtml-border-radius: 0 5px 0 0;
+    -ms-border-radius: 0 5px 0 0;
+    border-radius: 0 5px 0 0;
+}
+
+.switch_forum #onglet_forum_science_repeat
+{
+    float: left;
+    background: url("../../images/designs/sciences/forum/onglet.png") repeat-x;
+    background-position: 0 -107px;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+    -khtml-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    line-height: 21px;
+}
 
 .dernier_msg
 {

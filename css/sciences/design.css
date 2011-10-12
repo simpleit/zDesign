@@ -1455,6 +1455,7 @@ code {margin-left: 25px; font-size: 0.9em;}
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
+        margin-top: 10px;
 }
 .liste_cat th
 {
@@ -1488,12 +1489,96 @@ td.nom_forum { padding-left: 15px; }
 .boutons_saut_forum p { margin: 0; }
 .aucun_sujet, .pas_de_message {text-align: center;font-size: 1.3em;}
 
+.switch_forum
+{
+    width: 99%;
+    height: 21px;
+}
+
+#wrapper
+{
+    float: right;
+    position: relative;
+    top: 11px;
+    right: 3px;
+    width: 300px;
+}
+
+#actif
+{
+    color: #ffffff;
+    text-shadow: 0px 1px #5a5a5a;
+    padding-right: 10px;
+    margin-left: 5px;
+}
+
+#inactif
+{
+    color: #1f1f1f;
+    text-shadow: 0px 1px #f8f8f8;
+    margin-left: 5px;
+    padding-right: 10px;
+}
+
+.switch_forum #onglet_forum_actif
+{
+    float: left;
+    background: url("../../images/designs/sciences/forum/onglet.png") no-repeat;
+    padding-left: 21px;
+    line-height: 21px;
+    position: absolute;
+    right: 1px;
+    width: 122px;
+}
+
+.switch_forum #onglet_forum_actif_repeat
+{
+    float: left;
+    background: url("../../images/designs/sciences/forum/onglet.png") repeat-x;
+    height: 21px;
+    background-position: 0 -65px;
+    -moz-border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+    -o-border-radius: 0 5px 0 0;
+    -khtml-border-radius: 0 5px 0 0;
+    -ms-border-radius: 0 5px 0 0;
+    border-radius: 0 5px 0 0;
+    width: 125px;
+}
+
+.switch_forum #onglet_forum_computing_inactif
+{
+    float: left;
+    background: url("../../images/designs/sciences/forum/onglet.png") no-repeat;
+    padding-left: 21px;
+    line-height: 21px;
+    background-position: 0 -22px;
+    margin-right: 42%;
+}
+
+.switch_forum #onglet_forum_computing_repeat
+{
+    float: left;
+    background: url("../../images/designs/sciences/forum/onglet.png") repeat-x;
+    background-position: 0 -86px;
+    -moz-border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+    -o-border-radius: 0 5px 0 0;
+    -khtml-border-radius: 0 5px 0 0;
+    -ms-border-radius: 0 5px 0 0;
+    border-radius: 0 5px 0 0;
+    line-height: 21px;
+    height: 21px;
+    width: 151px;
+}
+
 .dernier_msg
 {
 	font-size: 0.85em;
 	font-style: italic;
 	padding: 2px 2px 2px 5px;
 }
+
 .message_edite
 {
 	margin-top: 15px;

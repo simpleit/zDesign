@@ -1,7 +1,7 @@
 @import "2/zcode.css";
 
 body {
-  font-family: TrebuchetMS, "Trebuchet MS", Verdana, Tahoma, sans-serif;
+  font-family: TrebuchetMS, "Trebuchet MS", Helvetica, Verdana, Tahoma, sans-serif;
   color: #1F1F1F;
   /*padding: 15px 10px;*/
   padding: 0px;
@@ -20,11 +20,22 @@ img, table{
 
 h1, h3, h4, h5, h6 {
   color: #1877D5;
-  font-size:13px;
+  font-size:16px;
 }
 
-h2 {
+h1 {
   color: #E8A22B;
+  font-size:24px;
+}
+
+h2 a{
+  color: #E8A22B;
+  font-size:20px;
+}
+
+h3{
+  color: #E8A22B;
+  font-size:18px;
 }
 
 a:link, a:visited {
@@ -52,27 +63,89 @@ div.code2, .citation2, .spoiler2, .spoiler2_hidden {
     padding:0 2px;
 }
 
+.gros *
+{
+    font-size: large;
+}
+
+.syntax *
+{
+    font-size:12px !important;
+}
+
+span.code
+{
+    background:#f7f7f7;
+    margin:0;
+    padding:8px 8px 0 8px;
+    border-top:1px solid #808080;
+}
+
+div.code2
+{
+    background:#f7f7f7;
+    margin:0;
+    border-bottom:1px solid #808080;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    padding:0 8px 8px 8px;
+}
+
+.author
+{
+    margin-top:30px;
+}
+.author span.label
+{
+    font-weight: bold;
+}
+.author ul
+{
+    padding-left:20px;
+    margin:5px 0 25px 0;
+}
+.author ul li
+{
+    text-indent: 2px;
+}
+
 .syntaxtable, .syntaxtable tr, .syntaxtable td, .syntaxtable tbody {
     padding:0;
 }
 
-.qcmBlock
+.listBlock
 {
-    padding:10px 0;
-    background: url('../../images/mobile/navigation.png') repeat-x 0 -100px;
-    border-top: 1px solid #c3c3c3;
+    padding:0;
+    margin:10px 0 0 0;
 }
-
-    .qcmBlock a
+    .listBlock li
     {
-        display:block;
-        background: url('../../images/mobile/navigation.png') no-repeat 0 0;
-        padding:5px 0 7px 40px;
-        width:100%;
-        margin-left: 16px;
-        font-size:20px;
-        text-decoration:none;
+        padding:3px 0;
+        background: url('../../images/mobile/navigation.png') repeat-x 0 -100px;
+        border-top: 1px solid #c3c3c3;
     }
+
+        .listBlock li a
+        {
+            display:block;
+            background: url('../../images/mobile/navigation.png') no-repeat right -727px;
+            padding:5px 40px 7px 0;
+            margin-left: 16px;
+            font-size:20px;
+            text-decoration:none;
+        }
+
+        .listBlock li a.lastQcm
+        {
+            background: url('../../images/mobile/navigation.png') no-repeat right -832px;
+        }
+
+        .listBlock li a.listQcm
+        {
+            background: url('../../images/mobile/navigation.png') no-repeat 0 0;
+            padding:5px 0 7px 40px;
+        }
 
 .separatorBlock
 {
