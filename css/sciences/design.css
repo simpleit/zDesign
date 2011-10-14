@@ -5145,3 +5145,17 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 }
 #my_contributions ul a.suppr {padding-left: 12px;}
 #my_contributions ul li:hover a.suppr {background: transparent url(../../images/designs/2/forum/supprimer.png) no-repeat scroll;}
+
+
+/* Pub menu */
+.pub_menu_120
+{
+    width:120px;
+    margin:10px auto 14px auto;
+}
+
+.pub_menu_160
+{
+    width:160px;
+    margin:10px auto 14px auto;
+}

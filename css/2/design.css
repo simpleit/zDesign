@@ -5798,3 +5798,16 @@ div.legendmargin
         background: url("../../images/CC/ccsa.png") no-repeat left center;
     }
 
+/* Pub menu */
+.pub_menu_120
+{
+    width:120px;
+    margin:10px auto 14px auto;
+}
+
+.pub_menu_160
+{
+    width:160px;
+    margin:auto;
+    margin:10px auto 14px auto;
+}
