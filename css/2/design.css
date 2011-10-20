@@ -4642,6 +4642,8 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     padding: 0;
 }
 
+/* Tutorial wanted */
+
 .tutorial_wanted .demand
 {
     float: left;
@@ -4679,7 +4681,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     -webkit-box-shadow: inset 0 1px #FAFAFA, inset 0 -1px #FAFAFA;
     box-shadow: inset 0 1px #FAFAFA, inset 0 -1px #FAFAFA;
     text-shadow: 0px 1px white;
-    min-height: 90px;
+    min-height: 110px;
     padding: 8px;
     color: #696969;
     background: url('../../images/designs/2/buttoncut.png') repeat-x -2006px #ffe5e5;
@@ -4689,7 +4691,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 
 .tutorial_wanted .bloc_others .element
 {
-    min-height: 90px;
+    min-height: 110px;
     padding: 8px;
     background: url('../../images/designs/2/buttoncut.png') repeat-x -2006px;
     background-position: bottom;
@@ -4730,7 +4732,189 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 .tutorial_wanted .link_redaction
 {
     margin-top: 20px;
+    display:block;
+    margin-bottom:5px;
 }
+
+.tutorial_wanted .redactBlock
+{
+    float:right;
+    border: 1px solid #FFFFFF;
+    border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    cursor:pointer;
+    position:absolute;
+    right:15px;
+    margin-top: 11px;
+}
+
+.tutorial_wanted .bloc_headline .redactBlock
+{
+    border: 1px solid #FFE5E5;
+}
+
+
+.tutorial_wanted .element2 .redactBlock
+{
+    border: 1px solid #FAFAFA;
+}
+
+.tutorial_wanted .blockOfList
+{
+    height:20px;
+    padding:8px 0 0 0;
+}
+
+.tutorial_wanted .redactBlock .text
+{
+    height:20px;
+    padding-left:8px;
+    float:left;
+}
+
+.tutorial_wanted .linkDeleteUnlink
+{
+    letter-spacing: -1px;
+}
+
+.tutorial_wanted .linkDeleteUnlink img
+{
+    margin:0 2px 0 0;
+    padding:0px;
+    float:left;
+}
+
+
+.tutorial_wanted .redactBlock .arrow
+{
+    display:block;
+    background: url('../../images/tutorialWanted/ico.png')  no-repeat 0px 5px ;
+    width:20px;
+    height:20px;
+    border:2px solid #E9E9E9;
+    border-bottom:none;
+    border-top:none;
+    float:right;
+    margin-left:8px;
+}
+
+.tutorial_wanted .redactBlock:hover
+{
+    border: 1px solid #E9E9E9;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 4px 4px -3px #000000;
+    -moz-box-shadow: 0 4px 4px -3px #000000;
+    -webkit-box-shadow: 0 4px 4px -3px #000000;
+    z-index:1000;
+    background:white;
+}
+
+.tutorial_wanted .endBlockWanted
+{
+    height:8px;
+}
+.tutorial_wanted .redactBlock:hover .endBlockWanted
+{
+    background:url("../../images/designs/2/buttoncut.png") #ffffff repeat-x scroll center bottom;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.tutorial_wanted .redactBlock:hover .arrow
+{
+    border-right:2px solid #FFFFFF;
+}
+
+.tutorial_wanted .redactBlock .button
+{
+    text-align:center;
+}
+
+.tutorial_wanted .redactBlock input
+{
+    float:left;
+    margin-right:8px;
+    margin-top:2px;
+}
+
+.tutorial_wanted .redactBlock .button_submit
+{
+    float:none;
+    margin:auto;
+    font-size: 12px;
+}
+
+.tutorial_wanted .dropDownList
+{
+    display:none;
+    border-top:1px solid #E9E9E9;
+    margin-top:8px;
+    padding:0;
+    cursor:auto;
+}
+
+    .tutorial_wanted .dropDownList p
+    {
+        padding:0 8px;
+        margin:5px 0;
+    }
+
+    .tutorial_wanted .dropDownList ul, .tutorial_wanted .dropDownList li
+    {
+        padding:0;
+        margin:0;
+        text-indent:0;
+        display:block;
+    }
+
+    .tutorial_wanted .dropDownList li
+    {
+        padding:4px 8px;
+        border-bottom:1px solid #E9E9E9;
+        width:auto;
+        min-height:30px;
+        line-height:15px;
+    }
+
+    .tutorial_wanted .dropDownList .avatar_membre
+    {
+        float:left;
+        margin:0px 4px 4px 0;
+        width:21px;
+    }
+
+.tutorial_wanted .redactBlock:hover .dropDownList
+{
+    display:block;
+    position:relative;
+}
+
+.tutorial_wanted .redactBlock:hover .dropDownListJS
+{
+    display:none;
+}
+
+.tutorial_wanted .listVersion li .mp
+{
+    background: url('../../images/tutorialWanted/ico.png')  no-repeat 0px -24px;
+    float:right;
+    width:20px;
+    height:25px;
+    margin: 0 0 0 0;
+}
+
+.tutorial_wanted .dropDownList a
+{
+    font-size: 12px;
+}
+
 
 /* Tutorial wanted for speedbar */
 #speedbarre #menuh_collaborate ul, #speedbarre #menuh_collaborate h6
