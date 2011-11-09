@@ -439,7 +439,7 @@ input[disabled] { background-color:#DDD; cursor:default; }
 
 
 /** CSS Employments **/
-#field_employment_search
+#field_employment_search, .fieldsHot
 {
     color: #717171;
     border: 0px solid #71A6E1;
@@ -782,6 +782,7 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("../../images
 
 
 /*	Page d'accueil	*/
+
 .infobox
 {
     background-color: #F8FAFD;
@@ -833,6 +834,15 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("../../images
 .infobox h3 a {	color: #B1D8FC; }
 .infobox h3 a.blanc {	color: white; }
 .infobox h3 a.fonce {	color: #1877D5; }
+
+/*Test pub cote droit*/
+#pave_pub_tuto_idem_without_border, #pave_pub_tuto_bottom_without_border
+{
+    border: none;
+    background-color: white;
+}
+
+
 
 .cadre_photo
 {
@@ -1062,7 +1072,7 @@ img.petite_icone_news {	float: left; margin: 0 0 0 18px; }
 #evenements .row_module_index {text-align: center; padding: 10px 17px; }
 #evenements td.event {background: url("../../images/designs/2/homepage/bg_infobox_titre.png") repeat-x scroll center center;}
 
-#derniers_tutos .row_module_index { padding: 12px 0 /* ; border-top: 1px solid #dee7f4 */ }
+#derniers_tutos .row_module_index { padding: 12px 0 /* ; border-top: 1px solid #dee7f4 */; clear: both;}
 #dernieres_news .row_module_index { padding: 12px 15px 7px 0 }
 #derniers_tutos .boutons_bloc, #dernieres_news .boutons_bloc { margin-left: 70px }
 
@@ -5817,7 +5827,7 @@ div.searchline
     margin: 0 7px;
 }
 
-input#field_employment_search
+input#field_employment_search, .fieldsHot
 {
     height:27px !important;
     width:85% !important;
@@ -6121,43 +6131,154 @@ div.legendmargin
     margin:0 0 0 0;
 }
 
-    .legend_CC p
-    {
-        margin:0 0 0 62%;
-    }
+.legend_CC p
+{
+    margin:0 0 0 62%;
+}
 
-    .legend_CC a
-    {
-        font-weight:bold;
-    }
+.legend_CC a
+{
+    font-weight:bold;
+}
 
-    .legend_CC .licenceBlock_CC
-    {
-        margin:8px 0 8px 0;
-        padding:2px 0 0 40px;
-    }
+.legend_CC .licenceBlock_CC
+{
+    margin:8px 0 8px 0;
+    padding:2px 0 0 40px;
+}
 
-    .legend_CC .licenceBlock_CC p
-    {
-        margin:1px 0;
-    }
+.legend_CC .licenceBlock_CC p
+{
+    margin:1px 0;
+}
 
-    .legend_CC .licence_BY
-    {
-        background: url("../../images/CC/ccby.png") no-repeat left center;
-    }
-    .legend_CC .licence_NC
-    {
-        background: url("../../images/CC/ccnc.png") no-repeat left center;
-    }
-    .legend_CC .licence_ND
-    {
-        background: url("../../images/CC/ccnd.png") no-repeat left center;
-    }
-    .legend_CC .licence_SA
-    {
-        background: url("../../images/CC/ccsa.png") no-repeat left center;
-    }
+.legend_CC .licence_BY
+{
+    background: url("../../images/CC/ccby.png") no-repeat left center;
+}
+.legend_CC .licence_NC
+{
+    background: url("../../images/CC/ccnc.png") no-repeat left center;
+}
+.legend_CC .licence_ND
+{
+    background: url("../../images/CC/ccnd.png") no-repeat left center;
+}
+.legend_CC .licence_SA
+{
+    background: url("../../images/CC/ccsa.png") no-repeat left center;
+}
+
+
+.tutorial_awaiting .head
+{
+    background-image: url("../../images/designs/2/speedbarre/speed_barre_decoupe.png");
+    height: 29px;
+    color: white;
+    border-radius: 10px 10px 0px 0;
+    -webkit-border-radius: 10px 10px 0px 0;
+    -moz-border-radius: 10px 10px 0px 0;
+}   
+
+.tutorial_awaiting tbody tr .second
+{
+    border-left: solid 1px #E9E9E9;
+}
+
+.tutorial_awaiting .element
+{
+    background: url('../../images/designs/2/buttoncut.png') repeat-x -2006px;
+    background-position: bottom;
+    border: 1px solid white;
+    border-bottom: 1px solid #FAFAFA;
+    color: #696969;
+}
+
+.tutorial_awaiting .element2
+{
+    background:url('../../images/designs/2/buttoncut.png') repeat-x bottom -2006px;
+    background-color: #FAFAFA;
+    border-top:1px solid #FAFAFA;
+    border-bottom:1px solid white;
+}
+
+.tutorial_awaiting .intro
+{
+    background: #E2F0FF;
+    border: 1px solid #2677C9;
+    width: 100%;
+    margin: 45px 0 10px 0;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 0px 0px 0px 0px;
+    height: 90px;
+}
+
+.tutorial_awaiting .intro_zozor
+{
+    background: url('../../images/designs/2/zozor_bg.png') no-repeat;
+    min-height: 67px;
+    padding: 20px 10px 0px 80px;
+    background-position: 1px -196px;
+    position: relative;
+    top: -23px;
+}
+
+.tutorial_awaiting td img
+{
+    padding: 5px 5px 5px 0px;
+}
+
+.tutorial_awaiting .mp
+{
+    background: url('../../images/speedconnexion/speedconnexion.png') no-repeat;
+    background-position: -9px -147px;
+    width: 15px;
+    height: 15px;
+    display: block;
+    text-indent: -1000px;
+    overflow: hidden;
+}
+
+.tutorial_awaiting .link_author
+{
+    display: block;
+    min-height: 18px;
+}
+
+.tutorial_awaiting table
+{
+    border-collapse: collapse;
+    border-spacing: 0px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    width: 100%;
+}
+
+.tutorial_awaiting tbody td
+{
+    padding-left: 10px;
+}
+
+.tutorial_awaiting table td ul
+{
+    padding: 0;
+    list-style: none;
+}
+
+.tutorial_awaiting .author
+{
+    padding: 0;
+    float: left;
+    font-weight: bold;
+}
+
+.tutorial_awaiting th
+{
+    padding-left: 10px;
+}
 
 /* Pub menu */
 .pub_menu_160
@@ -6178,14 +6299,14 @@ div.legendmargin
     float: none !important;
 }
 
-.ui-widget-daredevel-checkboxTree li .expanded
+.ui-widget-daredevel-checkboxTree .expanded
 {
     background: url('../../images/designs/2/expanded.gif') no-repeat;
     background-position: 0px 7px;
     padding: 4px 0 0 15px;
 }
 
-.ui-widget-daredevel-checkboxTree li .collapsed
+.ui-widget-daredevel-checkboxTree .collapsed
 {
     background: url('../../images/designs/2/collapsed.gif') no-repeat;
     background-position: 0px 7px;
@@ -6209,4 +6330,506 @@ div.legendmargin
 .ui-widget-daredevel-checkboxTree .ui-icon
 {
     background: none;
+}
+
+/* Design for tab pdf*/
+#TabsBySupport
+{
+    padding:2px;
+    margin-bottom:10px;
+    margin-right:510px;
+    display:none;
+}
+
+    #TabsBySupport *
+    {
+        font-size:11px;
+    }
+
+    #TabsBySupport ul
+    {
+        margin:0px;
+        padding:0px;
+        position:relative;
+        border-bottom:1px solid #E6EAEE;
+        top:-20px;
+        padding-bottom:2px;
+    }
+
+    #TabsBySupport ul li
+    {
+        display:inline-block;
+        font-size:12px;
+        min-width:100px;
+        background:url('../../images/designs/2/forum/onglet.png') repeat-x center -244px #B0DAFE;
+        text-align:center;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        position:relative;
+        bottom:-3px;
+        margin-left:3px;
+    }
+
+    #TabsBySupport ul li:first-child
+    {
+        margin:0;
+    }
+
+    #TabsBySupport ul li a
+    {
+        color:black;
+        padding:4px 5px;
+        display:block;
+    }
+
+    #TabsBySupport ul li  span.pdfBook, #TabsBySupport ul li span.sdzBook
+    {
+        display:block;
+        float:left;
+        margin:0 4px 0 0;
+        height:15px;
+        width:17px;
+        background:url('../../images/designs/2/forum/onglet.png') no-repeat center -223px;
+    }
+
+    #TabsBySupport ul li span.sdzBook
+    {
+        background:url('../../images/ico_livre.png') no-repeat;
+    }
+
+    #TabsBySupport .selectedTab
+    {
+        background:url('../../images/designs/2/forum/onglet.png') repeat-x center -187px #fff;
+        position:relative;
+        bottom:-3px;
+        padding:3px 0px;
+        border-radius: 0px;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        margin:0;
+    }
+
+    #TabsBySupport .selectedTab a
+    {
+        display:block;
+    }
+
+    #TabsBySupport .leftBorder, #TabsBySupport .rightBorder
+    {
+        height: 30px;
+        margin: 0;
+        min-width: 0;
+        position:relative;
+        bottom:-14px;
+        width:6px;
+        margin:0;
+    }
+
+    #TabsBySupport .leftBorder
+    {
+        background: url("../../images/designs/2/forum/onglet.png") repeat-x scroll left -128px #FFFFFF;
+    }
+    
+    #TabsBySupport .rightBorder
+    {
+        background: url("../../images/designs/2/forum/onglet.png") repeat-x scroll right -157px #FFFFFF;
+        margin-right:-3px;
+    }
+
+    #previewPage .searchline
+    {
+        float:left;
+        width:340px;
+    }
+
+    #previewPage .fieldsHot
+    {
+        width:260px !important;
+        font-size:12px;
+    }
+
+    #previewPage form input[type=submit]
+    {
+        background: url("../../images/designs/2/buttoncut.png") repeat-x left -99px !important;
+        border: 0px !important;
+        color: white;
+        height: 23px;
+        padding: 3px 10px;
+    }
+
+@media screen and (max-width:1200px)
+{
+    #previewPage .searchline
+    {
+        width:200px;
+    }
+
+    #previewPage .fieldsHot
+    {
+        width:125px !important;
+        font-size:12px;
+        letter-spacing:-1px;
+    }
+
+    #TabsBySupport
+    {
+        margin-right:360px;
+    }
+
+    #TabsBySupport ul li span.sdzBook, #TabsBySupport ul li span.pdfBook
+    {
+        display:none;
+    }
+}
+    
+
+#speedConnection
+{
+    width:100%;
+    height:24px;
+    background:url('../../images/speedconnection/speedconnection.png') repeat-x;
+    margin:0;
+    padding:0px;
+}
+    #speedConnection .dblock
+    {
+        display:block !important;
+    }
+
+    #speedConnection li
+    {
+        list-style:none;
+        float:left;
+        height:24px;
+    }
+
+    #speedConnection li:first-child a
+    {
+        background:none;
+    }
+
+    #speedConnection li.other, #speedConnection li.listed
+    {
+        position:relative;
+    }
+
+    #speedConnection li.other
+    {
+        float:right;
+    }
+
+    #speedConnection li
+    {
+       background:url('../../images/speedconnection/speedconnection.png') 0 -38px no-repeat;
+    }
+
+    #speedConnection li a
+    {
+        color:white;
+        background:url('../../images/speedconnection/speedconnection.png') 0 -38px no-repeat;
+        padding:3px 13px 3px 12px;
+        display:block;
+        height: 16px;
+    }
+
+    #speedConnection li.arrow a, #speedConnection li.listed a
+    {
+        padding-right:3px;
+    }
+
+    #speedConnection li:hover a, #speedConnection li:hover form.logoutBack
+    {
+        background: url("../../images/designs/2/speedbarre/speed_barre_decoupe.png") repeat-x 0 0;
+    }
+
+    #speedConnection li form.logoutBack
+    {
+        height:22px;
+    }
+
+    #speedConnection li span.arrow
+    {
+       background:url('../../images/speedconnection/speedconnection.png') -12px -206px no-repeat;
+       width:15px;
+       height:15px;
+       display:block;
+       float:right;
+       margin:0 0 0 4px;
+    }
+
+    #speedConnection li input.logout
+    {
+       background:url('../../images/speedconnection/speedconnection.png') center -181px no-repeat;
+       width:15px;
+       height:15px;
+       border:none;
+       padding:11px 20px;
+       
+    }
+
+    #speedConnection li a.mp
+    {
+        padding-right:12px;
+    }
+
+    #speedConnection li a.mpNew
+    {
+        background:url("../../images/speedconnection/speedconnection.png") no-repeat scroll center -70px transparent;
+        position:relative;
+        height:30px;
+        padding: 3px 7px 3px 10px;
+        text-align: center;
+        font-size: 11px;
+        font-weight: bold;
+        z-index: 1000;
+    }
+
+    #speedConnection li a span.mp
+    {
+       background:url('../../images/speedconnection/speedconnection.png') center -114px no-repeat;
+       width:12px;
+       height:14px;
+       border:none;
+       padding:1px 4px;
+       display:block;
+
+    }
+
+    #speedConnection li:hover span.arrow
+    {
+       background:url('../../images/speedconnection/speedconnection.png') -12px -241px no-repeat;
+    }
+
+    #speedConnection li ul.menu
+    {
+       display:block;
+       position:absolute;
+       right:0;
+       padding:7px 0 0 0;
+       z-index:2000;
+       background-position: center bottom;
+       background-color:#686868;
+       background-repeat: repeat-x;
+       color:white;
+       display:none;
+       top:22px;
+    }
+
+    #speedConnection .secondType .menu
+    {
+        right:auto;
+        left:0;
+        min-width:150px;
+    }
+
+    #speedConnection li:hover ul.menu
+    {
+        display:block;
+    }
+
+        #speedConnection li ul.menu a, #speedConnection li ul.menu a:hover
+        {
+            background:none;
+        }
+
+        #speedConnection li ul.menu li
+        {
+            display:block;
+            background:none;
+            float:none;
+            padding:0 15px 7px 15px;
+            height:auto;
+        }
+
+        #speedConnection li ul.menu li.bottom
+        {
+                background: url("../../images/designs/2/speedbarre/speed_barre_decoupe.png") bottom center;
+                background-repeat: repeat-x;
+                position:relative;
+                height:4px;
+                top:7px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                -moz-border-radius-bottomleft: 10px;
+                -moz-border-radius-bottomright: 10px;
+                -webkit-border-bottom-left-radius: 10px;
+                -webkit-border-bottom-right-radius: 10px;
+        }
+
+        #speedConnection li ul.menu li.simple
+        {
+            padding:0 10px 0 10px;
+            margin-left:0px;
+        }
+        
+        #speedConnection li ul.menu li.simpleForget
+        {
+            font-size:11px;
+            text-align:right;
+        }
+
+        #speedConnection li ul.menu li input[type="text"], #speedConnection li ul.menu li input[type="password"]
+        {
+            width:220px;
+            height:14px;
+            font-size:12px;
+            color:black;
+        }
+
+        #speedConnection li ul.menu li label
+        {
+            display:inline-block;
+            margin:0 15px 0 2px;
+        }
+
+        #speedConnection li ul.menu li input[type="checkbox"]
+        {
+            position: relative;
+            top:2px;
+        }
+
+        #speedConnection li ul.menu li input[type=submit]
+        {
+            background: url("../../images/designs/2/buttoncut.png") repeat-x left -99px !important;
+            color: white;
+            height: 23px;
+            padding: 3px 5px;
+            font-size:12px;
+            border:1px solid gray;
+        }
+
+        #speedConnection li ul.menu li input[type=submit]:hover
+        {
+            background: url("../../images/designs/2/buttoncut.png") repeat-x left -124px !important;
+        }
+
+        #speedConnection li ul.menu li a.avatar_member
+        {
+            margin:0px 10px 0px 0px;
+            padding:0;
+            display:block;
+            float:left;
+            border:2px solid #686868;
+            height:auto;
+        }
+
+        #speedConnection li ul.menu li a.avatar_member img
+        {
+            width:45px;
+        }
+
+        #speedConnection li ul.menu li a.avatar_member:hover
+        {
+            border:2px solid white;
+        }
+
+            #speedConnection li ul.menu li ul.memberList
+            {
+                margin-left:60px;
+                padding:0;
+            }
+
+            #speedConnection li ul.menu li ul.memberList li
+            {
+                padding:1px 4px;
+                margin:0;
+                height:auto;
+            }
+
+            #speedConnection li ul.menu li ul.memberList li:hover
+            {
+                background:#404040;
+            }
+
+            #speedConnection li ul.menu li ul.memberList li a
+            {
+                margin:0;
+                height:auto;
+                padding:0;
+            }
+
+            #speedConnection li ul.menu li span.editAvatarmember
+            {
+                background:url("../../images/designs/2/forum/editer.png") no-repeat left center white;
+                width:16px;
+                height:16px;
+                position:absolute;
+                top:9px;
+                right:101px;
+                display:none;
+                border:1px solid white;;
+            }
+
+            #speedConnection li ul.menu li a.avatar_member:hover span.editAvatarmember
+            {
+                display:block;
+            }
+
+            #speedConnection li.secondType ul.menu li
+            {
+                padding:0 4px 7px;
+            }
+
+            #speedConnection li:first-child 
+            {
+                margin-left:7px;
+                background:none;
+            }
+
+            #speedConnection li:first-child a
+            {
+                padding-left:5px;
+            }
+
+            #speedConnection .friendsList img
+            {
+                width:30px;
+                display:inline-block;
+                height:30px;
+            }
+
+            #speedConnection .friendsList li
+            {
+                margin-left:0px;
+                position:relative;
+                height:30px !important;
+            }
+
+            #speedConnection .friendsList li.bottom
+            {
+                height:4px !important;
+            }
+
+            #speedConnection .friendsList li a
+            {
+                font-size:12px;
+            }
+
+            #speedConnection .friendsList li span.pseudo
+            {
+                position:absolute;
+                padding-left:4px;
+            }
+
+            #speedConnection .friendsList li a.mp
+            {
+                display:inline-block;
+                position:absolute;
+                width:8px;
+                height:6px;
+                top:21px;
+                left:36px;
+                background: url("../../images/speedconnection/speedconnection.png") no-repeat center -150px !important;
+            }
+#header
+{
+    margin:0;
+    height:116px;
+}
+
+
+.link_dl_pdf .info_tooltip_background
+{
+    background:none;
 }
