@@ -912,7 +912,12 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("../../images
 .infobox h3 a {	color: #B1D8FC; }
 .infobox h3 a.blanc {	color: white; }
 .infobox h3 a.fonce {	color: #13525c; }
-
+/*Test pub cote droit*/
+#pave_pub_tuto_idem_without_border
+{
+    border: none;
+    background-color: white;
+}
 .cadre_photo
 {
 }
@@ -5568,6 +5573,9 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     #speedConnection li a.mp
     {
         padding-right:12px;
+        text-indent:-60000px;
+        outline:none;
+
     }
 
     #speedConnection li a.mpNew
@@ -5580,6 +5588,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
         font-size: 11px;
         font-weight: bold;
         z-index: 1000;
+        outline:none;
     }
 
     #speedConnection li a span.mp
@@ -5590,7 +5599,8 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
        border:none;
        padding:1px 4px;
        display:block;
-
+       text-indent:-60000px;
+       outline:none;
     }
 
     #speedConnection li:hover span.arrow

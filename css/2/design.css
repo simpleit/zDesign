@@ -836,7 +836,7 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("../../images
 .infobox h3 a.fonce {	color: #1877D5; }
 
 /*Test pub cote droit*/
-#pave_pub_tuto_idem_without_border, #pave_pub_tuto_bottom_without_border
+#pave_pub_tuto_idem_without_border
 {
     border: none;
     background-color: white;
@@ -3763,6 +3763,24 @@ div.comm_pack {
 .content_middle{
     margin-right:298px;
 }
+
+@media screen and (max-width:1149px)
+{
+    #applyJob_right
+    {
+        display: none;
+    }
+    
+    #applyJob_middle
+    {
+        margin-right: 0;
+    }
+}
+
+
+
+
+
 .content_right{width:298px; float:right;margin:0 0 0 10px;}
 .content_right .infobox p{padding:5px 5px 5px 16px;background:url("../../images/bg-menu.gif") repeat-x transparent; margin:1px 0 3px 0; border: 1px solid #fff; position:relative;}
 label.label_cote_mini{width:100px !important;}
@@ -6571,6 +6589,8 @@ div.legendmargin
     #speedConnection li a.mp
     {
         padding-right:12px;
+        text-indent:-60000px;
+        outline:none;
     }
 
     #speedConnection li a.mpNew
@@ -6583,6 +6603,7 @@ div.legendmargin
         font-size: 11px;
         font-weight: bold;
         z-index: 1000;
+        outline:none;
     }
 
     #speedConnection li a span.mp
@@ -6593,7 +6614,8 @@ div.legendmargin
        border:none;
        padding:1px 4px;
        display:block;
-
+       text-indent:-60000px;
+       outline:none;
     }
 
     #speedConnection li:hover span.arrow
@@ -6832,4 +6854,14 @@ div.legendmargin
 .link_dl_pdf .info_tooltip_background
 {
     background:none;
+}
+
+.job_partner_imaginove
+{
+    background-color: #FAFAFA;
+    width:99%;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -o-border-radius:5px;
 }
