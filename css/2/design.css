@@ -351,30 +351,41 @@ input[disabled] { background-color:#DDD; cursor:default; }
 
 #header
 {
-    height: 93px;
+    height: 130px;
     /* overflow: hidden; */
     background: #79B6FC url("../../images/designs/2/bg_header.png") repeat-x top;
-    margin-top:1.5em;
+    margin:0;
     clear:both;
+    background-position: 0 14px;
 }
-#header .header_gauche {width: 208px;float: left;padding-left: 5px; padding-top: 8px; text-align: center;}
+#header .header_gauche
+{
+    width: 208px;
+    height: 92px;
+    float: left;
+    padding-left: 5px;
+    padding-top: 14px;
+    text-align: center;
+}
+
 #header .header_droit {margin-left: 218px; position: relative; height:122px;/* overflow: hidden; */}
 
 #publicite_header
 {
-    height : 76px; /* taille du header */
-    margin : 0 300px 0 0;
-    padding-top : 17px;
+    height : 106px; /* taille du header */
+    display: table;
+    width: 100%;
 }
 
 #publicite_banniere
 {
-    height:60px;
-    width:468px;
-    margin : 0 auto;
-}
-
-/*	Recherche et logbox	*/
+    text-align: center;
+    height: 106px;
+    display: table-cell;
+    vertical-align: middle;
+} 
+    
+/* Recherche et logbox */
 
 #logbox
 {
@@ -6844,11 +6855,6 @@ div.legendmargin
                 left:36px;
                 background: url("../../images/speedconnection/speedconnection.png") no-repeat center -150px !important;
             }
-#header
-{
-    margin:0;
-    height:116px;
-}
 
 
 .link_dl_pdf .info_tooltip_background
