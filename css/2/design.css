@@ -386,6 +386,7 @@ input[disabled] { background-color:#DDD; cursor:default; }
     vertical-align: middle;
 }
 
+
 /*	Recherche et logbox	*/
 #logbox
 {
@@ -1465,7 +1466,7 @@ td.nom_forum { padding-left: 15px; }
 
 /* Forums */
 .btn_supprimer_msg { text-align: right;	margin-top: 10px;}
-.boutons_saut_forum { padding:  32px 0 12px 0;}
+.boutons_saut_forum { padding: 12px 0;}
 .boutons_saut_forum p { margin: 0; }
 .aucun_sujet, .pas_de_message {text-align: center;font-size: 1.3em;}
 

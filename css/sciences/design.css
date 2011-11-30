@@ -551,15 +551,97 @@ ul#speedbarre li a:hover, ul#speedbarre li a.last_item:hover { background-positi
 ul#speedbarre li a.last_item { padding-right: 44px;background: url("../../images/designs/sciences/speedbarre/bg_right_speed.png") no-repeat right top; }
 
 /*	Menus	*/
+#menu_cours .rediger
+{
+    padding-top: 5px;
+}
+
 #menu
 {
     float:left;
     width: 202px;
     color: #707070;
 }
+
+.menu
+{
+    border: 2px solid #D8D8D8;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+}
+
+.menu ul
+{
+    margin:0;
+    width: 100%;
+    padding-left: 0px;
+    min-height: 40px;
+}
+
+.tutoJour
+{
+    color: #1F8394;
+    position:relative;
+    right: 5px;
+}
+
+.menu ul li ul li   
+{
+    /*width: 100%;*/
+    padding:0 0 0 45px;
+}
+
+.menu ul li.titreCategorie
+{
+    width: 150px;
+}
+
+.menu ul li.titleMenu
+{
+    padding: 8px 0px;
+}
+
+    .menu ul ul li a{
+      display:block;
+    }
+
+.menu ul li.with_bar
+{
+    border-bottom: 1px solid #D8D8D8;	
+}
+
+
+.liens_favoris
+{
+    padding:0 5px 0 55px !important;
+    /*width: 135px !important;*/
+}
+
+
+.menu ul, #menu ul li ul, #menu ul li ul li ul
+{
+    list-style-type: none;
+}
+
+.menu_cours_section:hover{
+    color: #42C2D7;
+}
+
+
+.tutolist li{
+    position:relative;
+    left: 10px;
+    max-width:140px !important;
+}
+
 .ml
 {
-	margin: 20px;
+
 }
 .mleft
 {
@@ -668,8 +750,9 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("../../images
 }
 
 
-.box_menu .liste_cours_menu h5 > a, .box_menu .liste_cours_menu h5 {font-size: 1em; color: #707070;}
-.box_menu .liste_cours_menu h5 {margin:0; background : none; padding: 0;}
+.box_menu .liste_cours_menu h5 > a, .box_menu .liste_cours_menu h5 {font-size: 1em;}
+.box_menu .liste_cours_menu h5 > a, .box_menu .liste_cours_menu h5:hover {color: #42C2D7;}
+.box_menu .liste_cours_menu h5 {margin:0; background : none; padding: 0; color: #1f8394}
 
 .img_etu_similaires
 {
@@ -1502,7 +1585,7 @@ td.nom_forum { padding-left: 15px; }
 
 /* Forums */
 .btn_supprimer_msg { text-align: right;	margin-top: 10px;}
-.boutons_saut_forum { padding: 32px 0 12px 0;}
+.boutons_saut_forum { padding: 12px 0;}
 .boutons_saut_forum p { margin: 0; }
 .aucun_sujet, .pas_de_message {text-align: center;font-size: 1.3em;}
 
