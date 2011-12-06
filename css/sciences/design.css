@@ -1874,6 +1874,7 @@ li.evt-infos { padding: 0; margin: 2px;}
 	float:left;
 	text-align: center;
     width: 330px;
+    min-height: 300px;
 }
 .bouton_boutique .image_objet
 {
