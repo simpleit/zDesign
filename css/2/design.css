@@ -6913,3 +6913,41 @@ div.legendmargin
     -moz-border-radius:5px;
     -o-border-radius:5px;
 }
+
+/** BIG TUTO COMMENT **/
+
+form.checkboxShow
+{
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+form.checkboxShow input[type=checkbox]
+{
+    margin:0;
+    position:absolute;
+    top:1px;
+}
+
+form.checkboxShow label
+{
+    margin-right:10px;
+    padding: 0 0 0 20px;
+    color: #2677C9;
+}
+
+form.checkboxShow label:hover
+{
+    color: #C87B02;
+}
+
+.chapterComment
+{
+    color: #154F8A;
+    display:block;
+    float:right;
+    margin:0 10px 0 0;
+}
