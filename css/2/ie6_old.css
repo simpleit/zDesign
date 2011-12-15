@@ -1,0 +1,54 @@
+/* IE6 SPEEDBARRE  */
+ul#speedbarre_title li#smenu ul li
+{
+    line-height: 29px;
+    height: 29px;
+    position: relative;
+}
+
+ul#speedbarre_title li#smenu ul li a.smenu_hover, ul#speedbarre_title li#smenu ul li a
+{
+    display: inline;
+    position: relative;
+    line-height: 29px;
+    padding-bottom: 5px;
+    background-image: url("../../images/speedbarre/bgs_speedbarre.png");
+    background-position: right -29px;
+}
+
+ul#speedbarre_title li#smenu ul li a, ul#speedbarre_title li#switcher a.location
+{
+    background: none;
+}
+
+/* IE6 SPEEDCONNEXION  */
+ul#speedConnection li, ul#speedConnection li a, ul#speedConnection li span.arrow
+{
+    background-image: none;
+}
+
+ul#speedConnection li.listed, ul#speedConnection li.listed a
+{
+    max-height: 20px;
+}
+
+ul#speedConnection li.listed form
+{
+    position: absolute;
+}
+
+ul#speedconnection li, ul#speedconnection li a
+{
+    height: 22px;
+}
+
+ul#speedConnection li.other
+{
+    height: 22px;
+    overflow: hidden;
+}
+
+ul#speedConnection li.other form.logoutBack
+{
+    width: 20px;
+}

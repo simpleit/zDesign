@@ -369,7 +369,7 @@ input[disabled] { background-color:#DDD; cursor:default; }
     text-align: center;
 }
 
-#header .header_droit {margin-left: 218px; position: relative; height:122px;/* overflow: hidden; */}
+#header .header_droit {margin-left: 218px; position: relative; height:106px;/* overflow: hidden; */}
 
 #publicite_header
 {
@@ -458,17 +458,8 @@ input[disabled] { background-color:#DDD; cursor:default; }
 }
 
 
-#search_bar {
-    background-image: url("../../images/designs/2/speedbarre/speed_barre_decoupe.png");
-    background-position: 0 -58px;
-    float: left;
-    height: 29px;
-    padding-right: 5px;
-    position: absolute;
-    right: 0;
-    width: 326px;
-}
-#recherche { margin: 0 0 0 20px; text-align: center; z-index:2100; position: relative; }
+
+#recherche { margin: 0 0 0 20px; text-align: center; position: relative; }
 #recherche input#champ_recherche {
     width: 119px;
     color: #717171;
@@ -494,7 +485,7 @@ input[disabled] { background-color:#DDD; cursor:default; }
     margin:2px 8px 0 0;
 
 }
-#recherche p { margin: 2px 0 0; float:right;}
+#recherche p { margin: 0; float:right;}
 #recherche input[type=image]{ height:22px; margin-top:-3px }
 #recherche img.icon_avancee, #logbox img.icone_more, input[type=image] { vertical-align: middle; }
 
@@ -985,14 +976,16 @@ div.contenu_a_la_une
 }
 
 img.icone_services_sdz { float: left; margin-right: 10px;}
-img.petite_icone_tutos { float: left; width: 35px; margin: 0 0 0 18px; }
-img.petite_icone_news {	float: left; margin: 0 0 0 18px; }
+img.petite_icone_tutos { float: left; width: 35px; margin: 0 0 0 10px; }
+img.petite_icone_news {	float: left; margin: 0 0 0 10px; }
 
 .grosse_icone_news_edit { margin-left:170px; }
 
-#services_sdz .row_module_index strong.titre_section_index { font-size: 15px; font-weight: bold;}
+#services_sdz .row_module_index strong.titre_section_index, #derniers_tutos .row_module_index strong.titre_section_index { font-size: 15px; font-weight: bold;}
 
-#services_sdz .row_module_index
+#dernieres_news .row_module_index,
+#services_sdz .row_module_index,
+#derniers_tutos .row_module_index
 {
     padding: 10px;
     border-top: 1px solid #E3E7EC;
@@ -1001,17 +994,22 @@ img.petite_icone_news {	float: left; margin: 0 0 0 18px; }
     background-repeat: no-repeat;
 }
 
-#services_sdz .row_module_index:hover
+#services_sdz .row_module_index:hover, #derniers_tutos .row_module_index:hover, #dernieres_news .row_module_index:hover
 {
     background-color: #FFF;
 }
 
-#services_sdz .first
+#derniers_tutos .row_module_index_more:hover, #dernieres_news .row_module_index_more:hover
+{
+    background-color: #F8FAFD !important;
+}
+
+#services_sdz .first, #derniers_tutos .first
 {
     background-image: none;
 }
 
-#services_sdz .last
+#services_sdz .last, #derniers_tutos .last
 {
     border-radius: 0px 0px 7px 7px;
     -moz-border-radius: 0px 0px 7px 7px;
@@ -1021,6 +1019,33 @@ img.petite_icone_news {	float: left; margin: 0 0 0 18px; }
 #services_sdz .row_module_index .margin_grande_icone ul li
 {
     display: inline;
+}
+
+#derniers_tutos img.petite_icone_tutos
+{
+    margin: 0 0 0 10px;
+}
+
+#derniers_tutos p.margin_petite_icone
+{
+    margin: 0 0 0 60px !important;
+}
+
+.derniers_tutos_beta
+{
+    margin-top: 10px;  
+}
+
+.derniers_tutos_beta h3
+{
+    position: relative;
+}
+
+.derniers_tutos_beta .icone
+{
+    position: absolute;
+    right: 2%;
+    top: -5px;
 }
 
 .element_more
@@ -1033,7 +1058,7 @@ img.petite_icone_news {	float: left; margin: 0 0 0 18px; }
     font-style: normal;
 }
 
-#services_sdz .row_module_index .margin_grande_icone ul
+#services_sdz .row_module_index .margin_grande_icone ul, #derniers_tutos .row_module_index .margin_grande_icone ul
 {
     list-style-type: disc;
     list-style-image: none;
@@ -1085,8 +1110,7 @@ img.petite_icone_news {	float: left; margin: 0 0 0 18px; }
 #evenements td.event {background: url("../../images/designs/2/homepage/bg_infobox_titre.png") repeat-x scroll center center;}
 
 #derniers_tutos .row_module_index { padding: 12px 0 /* ; border-top: 1px solid #dee7f4 */; clear: both;}
-#dernieres_news .row_module_index { padding: 12px 15px 7px 0 }
-#derniers_tutos .boutons_bloc, #dernieres_news .boutons_bloc { margin-left: 70px }
+#dernieres_news .row_module_index { padding: 10px 15px 7px 0; clear:both;}
 
 .row_module_index strong.titre_section_index { font-size: 1.4em; font-weight: 100;}
 .row_module_index p.margin_grande_icone { margin-left: 60px; padding: 0;}
@@ -1212,6 +1236,11 @@ a.bouton_action_petit {font-size: 0.85em;}
 }
 #news_accroche + p + br{
     clear: both;
+}
+
+#comments_news_table{
+    float: left;
+    width: 100%;
 }
 
 /* Cadres */
@@ -4028,7 +4057,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     position: relative;
     height: 29px;
     padding: 0;
-    z-index: 1000;
+    z-index: 10;
 }
 
 #speedbarre_expand{
@@ -5376,22 +5405,8 @@ JOB TRANSITION  CSS
     width:100%;
 }
 
-#switcher, #speedbarre .ardswitch, #switcher .location, #switcher .separator, #switcher .arrow, #switcher .arrow:hover, #switcher_expand ul
-, #switcher_expand li.computing, #switcher_expand li.sciences, #switcher_expand li.computing a, #switcher_expand li.sciences a,
-#switcher_expand .border-left, #switcher_expand .border-right
-{
-    background: url("../../images/designs/2/speedbarre/speed_barre_decoupe.png");
-    background-repeat: no-repeat;
-}
-#switcher
-{
-    background-position:0 -58px;
-    background-repeat: repeat-x;
-    padding:0 10px 0 35px;
-    height:29px;
-    float:left;
-    text-shadow: 0 1px 0#343434;
-}
+
+
 #switcher:hover .arrow, #switcher .location:focus + div + div + .arrow
 {
     background-position:-5px -256px;
@@ -5417,17 +5432,7 @@ JOB TRANSITION  CSS
     float:left;
     cursor:pointer;
 }
-#switcher .location
-{
-    width:90px;
-    height:24px;
-    color:white;
-    padding:4px 8px 0 27px;
-    font-size:15px;
-    float:left;
-    cursor:pointer;
-    background-position:0 -286px;
-}
+
 #speedbarre .ardswitch{
     background-position:0 -401px;
     float: left;
@@ -5448,23 +5453,16 @@ JOB TRANSITION  CSS
 }
 #switcher_expand ul
 {
-    padding:0 0 8px 0;
+    padding:0 0 8px 0 !important;
     width:142px;
-    margin:0 7px 0 4px;
+    margin:0 7px 0 4px !important;
     text-indent:0;
     list-style:none;
     display:block;
     background-position:0 -835px;
-    background-repeat:repeat-x;
+    background-repeat:repeat-x !important;
 }
-#switcher_expand li a
-{
-    display:block;
-    padding:1px 8px 2px 27px;
-    margin-bottom:1px;
-    color:white;
-    font-size:15px;
-}
+
 #switcher_expand li.computing
 {
     border-left:2px solid #80bbfd;
@@ -5478,10 +5476,7 @@ JOB TRANSITION  CSS
     background-position:0 -348px;
     background-repeat:no-repeat;
 }
-#switcher_expand li.computing a
-{
-    background-position:0 -288px;
-}
+
 #switcher_expand li.sciences
 {
     border-left:2px solid #99dde6;
@@ -5495,10 +5490,7 @@ JOB TRANSITION  CSS
     background-position:0 -376px;
     background-repeat:no-repeat;
 }
-#switcher_expand li.sciences a
-{
-    background-position:0 -319px;
-}
+
 #switcher_expand .border-left
 {
     float:left;
@@ -5521,15 +5513,7 @@ JOB TRANSITION  CSS
 {
     display:none;
 }
-#switcher .location
-{
-    display:block;
-    color:white;
-}
-#switcher .location:hover
-{
-    text-decoration:none;
-}
+
 
 a.titre_section_index { font-size: 15px; font-weight: bold; color: #1F1F1F;}
 a.titre_section_index:hover { color: #1F1F1F;}
@@ -6531,7 +6515,7 @@ div.legendmargin
     #speedConnection li
     {
         list-style:none;
-        float:left;
+        float: left;
         height:24px;
     }
 
@@ -6548,6 +6532,7 @@ div.legendmargin
     #speedConnection li.other
     {
         float:right;
+        z-index: 1000;     
     }
 
     #speedConnection li
@@ -6590,9 +6575,9 @@ div.legendmargin
        background:url('../../images/speedconnection/speedconnection.png') -12px -207px no-repeat;
        width:15px;
        height:15px;
-       display:block;
-       float:right;
-       margin:0 0 0 4px;
+       display: inline-block;
+       vertical-align: middle;
+       margin-left: 4px;
     }
 
     #speedConnection li input.logout
@@ -6610,7 +6595,7 @@ div.legendmargin
         padding:3px 12px 3px 12px;
         text-indent:-60000px;
     }
-
+    
     #speedConnection li a.mpNew
     {
         background:url("../../images/speedconnection/speedconnection.png") no-repeat scroll center -70px transparent;
@@ -6630,13 +6615,13 @@ div.legendmargin
        height:14px;
        border:none;
        padding:1px 4px;
-       display:block;
+       display: block;
        text-indent:-60000px;
     }
     
     .mpoutline
     {
-       outline:none; 
+        outline: none;
     }
 
     #speedConnection li:hover span.arrow
@@ -6914,6 +6899,363 @@ div.legendmargin
     -o-border-radius:5px;
 }
 
+
+/*
+    gestion des news sciences dans le menu informatique
+*/
+
+.news_sciences
+{
+    padding-left: 10px !important;
+}
+
+div#dernieres_news .boutons_bloc a.bouton_action
+{
+    margin-left: 10px;
+}
+
+.news_sciences h4 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    margin: 10px 10px 10px 0 !important;
+    padding: 0;
+}
+
+.news_sciences .news{
+    width: 172px;
+    padding: 5px 5px 5px 0;
+    float:left;
+    /*display:inline-block;*/
+    position: relative;
+    margin: 0 0 30px 0;
+}
+
+.news_sciences .nbr_comments{
+    font-size: 0.9em;
+    height: 16px;
+    left: 3px;
+    padding: 3px 0 0;
+    position: absolute;
+    top: 38px;
+    width: 29px;
+}
+
+.news_sciences .illuNews{
+    height:35px;
+    width: 35px;
+    overflow: hidden;
+    display: block;
+}
+.news_sciences .news .image a img{
+    width: 35px;
+}
+
+.news_sciences .news h5{
+    position: absolute;
+    left: 55px;
+    top: -15px;
+}
+
+.news_sciences .news h5 a{
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+.news_sciences div a.comments_nonew {background: url("../../images/designs/2/homepage/fond_comments.png") no-repeat left -65px;}
+.news_sciences div a.comments_new {background: url("../../images/designs/2/homepage/fond_comments.png") no-repeat left -42px;}
+.news_sciences div a.nbr_comments:hover {background-position: left -86px; color: #FFF;}
+
+
+/* NEW SPEEDBARRE COMPATIBLE IE6 & 7*/
+/*   image de fond  */
+ul#speedbarre_title,
+ul#speedbarre_title li,
+ul#speedbarre_title li#switcher a,
+div.separator,
+div.arrow,
+div.ardswitch,
+div.ard,
+#switcher_expand .border-left, #switcher_expand .border-right,
+ul#speedbarre_title li#switcher #switcher_expand ul,
+ul#speedbarre_title li#switcher #switcher_expand li a,
+ul#speedbarre_title li#smenu a
+{
+    background-image: url("../../images/designs/2/speedbarre/speed_barre_decoupe.png");
+    background-repeat: no-repeat;
+}
+
+ul#speedbarre_title
+{
+    padding: 0;
+    margin: 0;
+    color: white;
+    height: 29px;
+    width: 100%;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    min-width: 1024px;
+}
+
+ul#speedbarre_title ul
+{
+    padding: 0;
+    margin: 0;
+}
+
+ul#speedbarre_title li
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    display: block;
+    height: 29px;
+    line-height: 29px;
+}
+
+ul#speedbarre_title li a
+{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* CHOIX UNIVERS */
+ul#speedbarre_title li#switcher
+{
+    padding-left: 35px;
+    background-repeat: repeat-x;
+    background-position: 0 -58px;
+    text-shadow: 0 1px 0 #343434;
+}
+
+ul#speedbarre_title li#switcher a.location
+{
+    display: block;
+    float: left;
+    width: 90px;
+    height: 29px;
+    font-size: 15px;
+    padding: 0px 8px 0 27px;
+    background-position: 0 -286px;
+    text-shadow: 0 1px 0 #343434;
+    color: white;
+    cursor: pointer;
+}
+
+div.separator
+{
+    display: block;
+    width: 2px;
+    background-position: 0 -197px;
+    cursor: pointer;
+    float: left;
+    height: 29px;    
+}
+
+div.arrow
+{
+    display: block;
+    cursor: pointer;
+    float: left;
+    height: 29px;
+    width: 18px;
+    background-position: -5px -227px;    
+}
+
+div.arrow:hover
+{
+    background-position: -5px -256px;    
+}
+
+div.ardswitch
+{
+    display: block;
+    float: left;
+    height: 29px;
+    width: 27px;
+    background-position: 0 -401px;
+    background-repeat: repeat-x;
+    margin-left: 10px;
+}
+
+ul#speedbarre_title li#switcher #switcher_expand
+{
+    display: none;
+    background-position: 0 -835px;
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 29px;
+    left: 29px;
+    width: 152px;
+    height: 52px;
+    padding: 0 0 8px;
+}
+
+ul#speedbarre_title li#switcher #switcher_expand li
+{
+    display:block;
+    float:none;
+    line-height:22px;
+    height: auto;
+    margin: 0 0 1px 0;
+}
+
+ul#speedbarre_title li#switcher #switcher_expand li a
+{
+    font-size: 15px;
+    margin: 0 0 1px 0;
+    padding: 0px 8px 0px 27px;
+}
+
+ul#speedbarre_title li#switcher #switcher_expand li.computing a
+{
+    background-position:0 -288px;
+}
+
+ul#speedbarre_title li#switcher #switcher_expand li.sciences a
+{
+    background-position:0 -319px;
+}
+
+ul#speedbarre_title li#switcher #switcher_expand .border-left
+{
+    float:left;
+    width:4px;
+    height:52px;
+    background-position:-20px -531px;
+}
+
+ul#speedbarre_title li#switcher #switcher_expand .border-right
+{
+    float:right;
+    width:7px;
+    background-position:0 -683px;
+    height:52px;
+}
+
+/* SOUS MENU */
+ul#speedbarre_title li#smenu ul li
+{
+    height: 29px;
+    line-height: 29px;
+    position: relative;
+}
+
+ul#speedbarre_title li#smenu ul li a
+{
+    font-size: 12px;
+    background-position: right 0px;
+    background-image: url("../../images/speedbarre/bgs_speedbarre.png");
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    display: block;
+    height: 16px;
+    line-height: 16px;
+    padding: 3px 22px 7px 6px;
+    margin: 3px 0 0;
+}
+
+#speedbarre li#smenu ul li a.smenu_hover {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-position: right -28px;
+    background-repeat: no-repeat;
+    border-color: #656565 #656565 -moz-use-text-color;
+    border-radius: 5px 5px 0 0;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    color: #595859;
+    display: block;
+    height: 19px;
+    margin-top: 3px;
+    padding: 3px 21px 3px 5px;
+    position: relative;
+    z-index: 10;
+}
+
+
+/* BARRE RECHERCHE */
+ul#speedbarre_title li#search_bar
+{
+    float: right;
+    background-position: 0 -58px;
+    background-repeat: repeat-x;
+}
+
+ul#speedbarre_title li#search_bar form#recherche
+{
+    float: left;
+    height: 29px;
+    line-height: 29px;
+}
+
+ul#speedbarre_title li#search_bar form#recherche input#champ_recherche
+{
+    border: 1px solid #B9B9BE;
+    border-radius: 4px 4px 4px 4px;
+    color: #717171;
+    height: 15px;
+    margin: 4px 7px 0 1px;
+    padding: 2px 5px 2px 2px;
+    width: 119px;
+    vertical-align: top;
+}
+
+ul#speedbarre_title li#search_bar form#recherche select {
+    background-color: #FFFFFF;
+    border: 1px solid #B9B9BE;
+    border-radius: 4px 4px 4px 4px;
+    font-size: 13px;
+    margin: 4px 8px 0 0;
+    padding: 0 1px 1px 2px;
+    width: 90px;
+    vertical-align: top;
+}
+
+ul#speedbarre_title li#search_bar form#recherche input.button_go_search {
+    -moz-border-bottom-colors: none !important;
+    -moz-border-image: none !important;
+    -moz-border-left-colors: none !important;
+    -moz-border-right-colors: none !important;
+    -moz-border-top-colors: none !important;
+    background: url("../../images/designs/2/speedbarre/speed_barre_decoupe.png") no-repeat scroll left -116px #646464 !important;
+    border-color: #7B7B7B !important;
+    border-style: solid !important;
+    border-width: 0 0 1px !important;
+    color: white !important;
+    font-size: 12px;
+    height: 22px;
+    margin-top: 4px;
+    padding-bottom: 1px;
+    width: 27px;
+    vertical-align: top;
+}
+
+ul#speedbarre_title li#search_bar form#recherche a.button_more_search
+{
+    display: inline;
+    float: none;
+    color: white !important;
+    font-weight: bold;
+    margin: 0px 10px 0 2px;
+    width: 13px;
+}
+
+div.ard
+{
+    float: left;
+    height: 29px;
+    width: 27px;
+    background-position: 0 -29px;
+    background-repeat: repeat-x;
+    margin-right: 10px;
+}
+
 /** BIG TUTO COMMENT **/
 
 form.checkboxShow
@@ -6951,3 +7293,186 @@ form.checkboxShow label:hover
     float:right;
     margin:0 10px 0 0;
 }
+
+/* Boutigue*/
+.zozor_boutique
+{
+    width: 340px;
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+}
+
+.zozor_boutique .zozor_image, .zozor_boutique .zozor_message
+{
+    float: left;
+}
+
+.zozor_boutique .zozor_image
+{
+    display:block;
+    background-image: url('/images/boutique/zozor.png');
+    background-position: 0 0;
+    width: 86px;
+    height: 88px;
+}
+
+.zozor_boutique .zozor_message
+{
+    display:block;
+    background-color: #9fcbfb;
+    background-image: url('/images/boutique/zozor.png');
+    background-position: 0 -108px;
+    height: 43px;
+    padding: 10px;
+    width: 234px;
+    background-repeat: repeat-x;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    text-shadow: 0 1px 0 #d8ecfe;
+    line-height: 13px;
+}
+
+.zozor_boutique .zozor_message
+{
+    color: #000000 !important;
+}
+
+.zozor_boutique .zozor_message .zozor_titre
+{
+    font-size: 1.1em;
+}
+
+/* HARDWARE TUTO PUB MATERIEL.NET  */
+a#hardware_pub1_tuto
+{
+    display: block;
+    height: 134px;
+    width: 763px;
+    border-radius: 5px;
+}
+
+a#hardware_pub2_tuto
+{
+    display: block;
+    height: 134px;
+    width: 763px;
+    border-radius: 5px;
+}
+
+/** admin menu **/
+
+#menu_admin .corpsmenu 
+{
+    padding: 15px 2px; 
+}
+
+#menu_admin .corpsmenu p
+{
+    padding: 0 0 0 10px; 
+}
+
+#TutorialHeadlineCategory
+{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding:0 10px;
+}
+
+#TutorialHeadlineCategory li
+{
+    background: url("/images/designs/2/form/fieldset_background.png") repeat-x center top;
+    background-color: #FDFDFD;
+    border: 2px solid #E3E7EC;
+    padding:8px;
+    display: block;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -o-border-radius:5px;
+}
+
+#TutorialHeadlineCategory li.categoryName
+{
+    color: #2677C9;
+    font-weight: bold;
+}
+
+#TutorialHeadlineCategory ul
+{
+    margin-bottom: 20px;    
+}
+
+#TutorialHeadlineCategory ul li
+{
+    border-top: none;
+    padding: 5px 8px;
+}
+
+#TutorialHeadlineCategory ul li a
+{
+   display:block;
+   float:right;
+   margin-left:10px;
+}
+
+#TutorialHeadlineCategory ul li a.up
+{
+    background: url("/images/designs/2/fleche_haut.png") no-repeat center center;
+    width:16px;
+    height:26px;
+}
+
+#TutorialHeadlineCategory ul li a.down
+{
+    background: url("/images/designs/2/fleche_bas.png") no-repeat center center;
+    width:16px;
+    height:26px;
+}
+
+#TutorialHeadlineCategory ul li span.space
+{
+    margin-left:10px;
+    width:16px;
+    height:26px;
+    display: block;
+    float:right;
+}
+
+#TutorialHeadlineCategory ul li a.delete, #TutorialHeadlineCategory ul li a.edit
+{
+    padding: 5px 0 5px 22px;
+}
+
+#TutorialHeadlineCategory ul li a.delete
+{
+    background: url("/Templates/images/designs/2/forum/supprimer.png") no-repeat scroll left center transparent;
+    margin-right: 50px;
+}
+
+
+#TutorialHeadlineCategory ul li a.edit
+{
+    background: url("/Templates/images/designs/2/forum/editer.png") no-repeat scroll left center transparent;
+    margin-right: 20px;
+}
+
+#TutorialHeadlineCategory ul li input[type="text"]
+{
+    border: 1px solid #E3E7EC;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -o-border-radius:5px;
+    padding: 3px;
+    width: 300px;
+    margin-right: 20px;
+}
+
+#TutorialHeadlineCategory ul li input[type="checkbox"]
+{
+    position: relative;
+    top: 2px;
+}
+

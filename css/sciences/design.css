@@ -369,7 +369,7 @@ background-color: #98dce5;
     text-align: center;
 }
 
-#header .header_droit {margin-left: 218px; position: relative; height:122px;/* overflow: hidden; */}
+#header .header_droit {margin-left: 218px; position: relative; height:106px;/* overflow: hidden; */}
 
 #publicite_header
 {
@@ -464,17 +464,6 @@ background-color: #98dce5;
         -moz-border-radius: 4px;
 }
 
-
-#search_bar {
-    background-image: url("../../images/designs/sciences/speedbarre/speed_barre_decoupe.png");
-    background-position: 0 -58px;
-    float: left;
-    height: 29px;
-    padding-right: 5px;
-    position: absolute;
-    right: 0;
-    width: 326px;
-}
 #recherche { margin: 0 0 0 20px; text-align: center; z-index:2100; position: relative; }
 #recherche input#champ_recherche {
 	width: 119px;
@@ -563,7 +552,7 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("../../images
     color: #707070;
 }
 
-.menu
+#menu .menu
 {
     border: 2px solid #D8D8D8;
     border-top: none;
@@ -575,7 +564,7 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("../../images
     -webkit-border-bottom-right-radius: 10px;
 }
 
-.menu ul
+#menu .menu ul
 {
     margin:0;
     width: 100%;
@@ -584,7 +573,7 @@ ul#speedbarre li a.last_item { padding-right: 44px;background: url("../../images
     position: relative;
 }
 
-.menu ul .image_menu
+#menu .menu ul .image_menu
 {
     position: absolute;
     top: 0;
@@ -1157,6 +1146,68 @@ img.petite_icone_news {	float: left; margin: 0 0 0 18px; }
 
 #services_sdz .row_module_index { padding: 3px 10px }
 
+#derniers_tutos .row_module_index strong.titre_section_index { font-size: 15px; font-weight: bold;}
+
+#derniers_tutos .row_module_index
+{
+    padding: 10px;
+    border-top: 1px solid #E3E7EC;
+    background: url("../../images/designs/sciences/homepage/bg.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#derniers_tutos .row_module_index:hover
+{
+    background-color: #F8FAFD;
+}
+
+#derniers_tutos .row_module_index_more:hover
+{
+    background-color: #FFF !important;
+}
+
+#derniers_tutos .first
+{
+    background-image: none;
+}
+
+#derniers_tutos img.petite_icone_tutos
+{
+    margin: 0 0 0 10px;
+}
+
+#derniers_tutos p.margin_petite_icone
+{
+    margin: 0 0 0 60px !important;
+}
+
+.derniers_tutos_beta
+{
+    margin-top: 10px;
+}
+
+.derniers_tutos_beta h3
+{
+    position: relative;
+}
+
+.derniers_tutos_beta .icone
+{
+    position: absolute;
+    right: 2%;
+    top: -5px;
+}
+
+#derniers_tutos .row_module_index .margin_grande_icone ul
+{
+    list-style-type: disc;
+    list-style-image: none;
+    color: #B9B9BE;
+    margin: 0 0 0 57px;
+    padding: 0;
+}
+
 .element_more
 {
     display: inline-block;
@@ -1212,7 +1263,7 @@ img.petite_icone_news {	float: left; margin: 0 0 0 18px; }
 
 #derniers_tutos .row_module_index { padding: 12px 0 /* ; border-top: 1px solid #dee7f4 */ }
 #dernieres_news .row_module_index { padding: 12px 15px 7px 0 }
-#derniers_tutos .boutons_bloc, #dernieres_news .boutons_bloc { margin-left: 70px }
+#dernieres_news .boutons_bloc { margin-left: 70px }
 
 .row_module_index strong.titre_section_index { font-size: 1.4em; font-weight: 100; color: #13525c;}
 .row_module_index p.margin_grande_icone { margin-left: 60px; padding: 0;}
@@ -4153,7 +4204,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     position: relative;
     height: 29px;
     padding: 0;
-    z-index: 1000;
+    z-index: 10;
 }
 
 #speedbarre_expand{
@@ -4750,42 +4801,53 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     text-shadow: 0 1px 0 #d9f1fc;
 }
 
-#menu_tutorials ul li
+#menu_tutorials .menu_cours
 {
-    background: url("../../images/bg-menu.gif") repeat-x;
-}
-#menu_tutorials ul li a
-{
-    display:block;
-    height:36px;
-    padding:4px 8px;
-}
-#menu_tutorials ul li a img
-{
-    padding: 0 8px 0 0;
+    float:left;
 }
 
-#menu_tutorials .menu_princi, #menu_tutorials .menu_prim
+#menu_tutorials .menu_cours ul li.titre a
 {
-    width:200px;
-}
-#menu_tutorials ul li span.vcenter
-{
-    display:block;
-    padding: 9px 0 0 0;
-}
-
-#menu_tutorials .menu_princi ul li, #menu_tutorials .menu_prim ul li
-{
-    display:block;
+    display: block;
+    font-weight: bold;
+    position: relative;
+    right: -3px;
 }
 
 #menu_tutorials .titleMenu
 {
     color: #707070;
-    padding:2px 0 0 2px;
+    padding:2px 0 0 10px;
     height: 20px;
+    background:none;
+    font-weight:bold;
+    display: block;
+    position: relative;
 }
+
+#menu_tutorials .menu_cours ul.partie
+{
+    display: block;
+    margin: 10px 0 0 10px;
+    min-height: 40px;
+    position: relative;
+    min-width: 212px;
+}
+
+#menu_tutorials .menu_cours ul.partie li.liens
+{
+    display:block;
+    min-width: 165px;
+    padding: 0 0 0 57px;
+    color: #707070;
+}
+
+#menu_tutorials .menu_cours ul.partie li.titre
+{
+    padding: 0 0 0 45px;
+    max-width: 160px;
+}
+
 #speedbarre #my_favorites_tutorials ul li, #speedbarre #my_favorites_tutorials ul li a
 {
     display:block;
@@ -5150,14 +5212,6 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     min-height: 200px;
     padding: 10px 0;
 }
-#menu_tutorials .titleMenu
-{
-    color: #707070;
-    padding:2px 0 0 215px;
-    height: 20px;
-    background:none;
-    font-weight:bold;
-}
 
 #speedbarre #menuh_collaborate ul, #speedbarre #menuh_collaborate h6
 {
@@ -5220,7 +5274,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     width:90px;
     height:24px;
     color:white;
-    padding:4px 8px 0 27px;
+    padding: 5px 8px 0 27px;
     font-size:15px;
     float:left;
     cursor:pointer;
@@ -5246,14 +5300,14 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 }
 #switcher_expand ul
 {
-    padding:0 0 8px 0;
+    padding:0 0 8px 0 !important;
     width:142px;
-    margin:0 7px 0 4px;
+    margin:0 7px 0 4px !important;
     text-indent:0;
     list-style:none;
     display:block;
     background-position:0 -835px;
-    background-repeat:repeat-x;
+    background-repeat:repeat-x !important;
 }
 #switcher_expand li a
 {
@@ -5593,21 +5647,21 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 {
     width:100%;
     height:24px;
-    background:url('../../images/speedconnection/speedconnection.png') 0 -24px repeat-x;
+    background:url('../../images/speedconnection/speedconnection.png') repeat-x;
+    background-position: 0 -24px;
     margin:0;
     padding:0px;
 }
-
     .dblockspeed
     {
         display:block !important;
     }
-    
+
     #speedConnection li
     {
         list-style:none;
-        float:left;
-        height:22px;
+        float: left;
+        height:24px;
     }
 
     #speedConnection li:first-child a
@@ -5623,18 +5677,19 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     #speedConnection li.other
     {
         float:right;
+        z-index: 1000;     
     }
-    
+
     #speedConnection li
     {
        background:url('../../images/speedconnection/speedconnection.png') 0 -535px no-repeat;
     }
-    
+
     #speedConnection li a
     {
         color:white;
         background:url('../../images/speedconnection/speedconnection.png') 0 -535px no-repeat;
-        padding:5px 13px 1px 13px;
+        padding:5px 13px 1px 12px;
         display:inline-block;
         height: 16px;
         font-size: 0.85em;
@@ -5649,6 +5704,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     {
         background: url("../../images/designs/2/speedbarre/speed_barre_decoupe.png") repeat-x 0 0;
     }
+    
     .speedConnectionBack
     {
         background: url("../../images/designs/2/speedbarre/speed_barre_decoupe.png") repeat-x 0 0 !important;
@@ -5664,11 +5720,11 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
        background:url('../../images/speedconnection/speedconnection.png') -12px -207px no-repeat;
        width:15px;
        height:15px;
-       display:block;
-       float:right;
-       margin:0 0 0 4px;
+       display: inline-block;
+       vertical-align: middle;
+       margin-left: 4px;
     }
-
+    
     #speedConnection li input.logout
     {
        background:url('../../images/speedconnection/speedconnection.png') center -181px no-repeat;
@@ -5676,15 +5732,15 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
        height:15px;
        border:none;
        padding:11px 20px;
-
+       
     }
 
     #speedConnection li a.mp
     {
-        padding:3px 13px 3px 15px;
+        padding:3px 12px 3px 12px;
         text-indent:-60000px;
     }
-
+    
     #speedConnection li a.mpNew
     {
         background:url("../../images/speedconnection/speedconnection.png") no-repeat scroll center -70px transparent;
@@ -5704,15 +5760,15 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
        height:14px;
        border:none;
        padding:1px 4px;
-       display:block;
+       display: block;
        text-indent:-60000px;
     }
     
     .mpoutline
     {
-       outline:none; 
+        outline: none;
     }
-    
+
     #speedConnection li:hover span.arrow
     {
        background:url('../../images/speedconnection/speedconnection.png') -12px -243px no-repeat;
@@ -5731,6 +5787,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
        color:white;
        display:none;
        top:22px;
+       z-index: 2000;
     }
 
     #speedConnection .secondType .menu
@@ -5745,12 +5802,12 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
         display:block;
     }
 
+
     #speedConnection li ul.menu a, #speedConnection li ul.menu a:hover
     {
         background:none;
     }
 
-    
     #speedConnection li > a:focus,
     #speedConnection li > form input.logout:focus
     {
@@ -5765,7 +5822,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
         padding:0 15px 7px 15px;
         height:auto;
     }
-
+    
     #speedConnection li ul.menu li.bottom
     {
             background: url("../../images/designs/2/speedbarre/speed_barre_decoupe.png") bottom center;
@@ -5858,8 +5915,8 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
 
     #speedConnection li ul.menu li ul.memberList li
     {
-        padding:0;
-        margin:0 0 2px 0;
+        padding:1px 4px;
+        margin:0;
         height:auto;
     }
 
@@ -5867,17 +5924,6 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     #speedConnection li ul.menu li ul li > a:focus
     {
         background:#404040;
-    }
-
-    .fond_speed
-    {
-        background-color:#686868;
-    }
-
-    #speedConnection li > a:focus,
-    #speedConnection li > form input.logout:focus
-    {
-        background-color:#686868;
     }
 
     #speedConnection li ul.menu li ul.memberList li a
@@ -5888,7 +5934,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     }
 
     #speedConnection li ul.menu li span.editAvatarmember,
-    #speedConnection li ul.menu li a.avatar_member:focus span.editAvatarmember
+    #speedConnection li ul.menu li a.avatar_member:focus span.editAvatarmember  
     {
         background:url("../../images/designs/2/forum/editer.png") no-repeat left center white;
         width:16px;
@@ -5981,8 +6027,7 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     .listBack
     {
         background:repeat #404040;
-    }
-    
+    }    
 
 
 .link_dl_pdf .info_tooltip_background
@@ -5990,6 +6035,297 @@ span.span_label_cote /* Les labels sont placés sur une "colonne" à gauche  */
     background:none;
 }
 
+
+/* NEW SPEEDBARRE COMPATIBLE IE6 & 7*/
+/*   image de fond  */
+ul#speedbarre_title,
+ul#speedbarre_title li,
+ul#speedbarre_title li#switcher a,
+div.separator,
+div.arrow,
+div.ardswitch,
+div.ard,
+#switcher_expand .border-left, #switcher_expand .border-right,
+ul#speedbarre_title li#switcher ul#switcher_expand,
+ul#speedbarre_title li#switcher ul#switcher_expand li,
+ul#speedbarre_title li#switcher ul#switcher_expand li a,
+ul#speedbarre_title li#smenu a
+{
+    background-image: url("../../images/designs/2/speedbarre/speed_barre_decoupe.png");
+    background-repeat: no-repeat;
+}
+
+ul#speedbarre_title
+{
+    padding: 0;
+    margin: 0;
+    color: white;
+    height: 29px;
+    width: 100%;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    min-width: 1024px;
+}
+
+ul#speedbarre_title ul
+{
+    padding: 0;
+    margin: 0;
+}
+
+ul#speedbarre_title li
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    display: block;
+    height: 29px;
+    line-height: 29px;
+}
+
+ul#speedbarre_title li a
+{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* CHOIX UNIVERS */
+ul#speedbarre_title li#switcher
+{
+    padding-left: 35px;
+    background-repeat: repeat-x;
+    background-position: 0 -58px;
+    text-shadow: 0 1px 0 #343434;
+}
+
+ul#speedbarre_title li#switcher a.location
+{
+    display: block;
+    float: left;
+    width: 90px;
+    height: 29px;
+    font-size: 15px;
+    padding: 0px 8px 0 27px;
+    background-position: 0 -316px;
+    text-shadow: 0 1px 0 #343434;
+    color: white;
+    cursor: pointer;
+}
+
+div.separator
+{
+    display: block;
+    width: 2px;
+    background-position: 0 -197px;
+    cursor: pointer;
+    float: left;
+    height: 29px;    
+}
+
+div.arrow
+{
+    display: block;
+    cursor: pointer;
+    float: left;
+    height: 29px;
+    width: 18px;
+    background-position: -5px -227px;    
+}
+
+div.arrow:hover
+{
+    background-position: -5px -256px;    
+}
+
+div.ardswitch
+{
+    display: block;
+    float: left;
+    height: 29px;
+    width: 27px;
+    background-position: 0 -401px;
+    background-repeat: repeat-x;
+    margin-left: 10px;
+}
+
+ul#speedbarre_title li#switcher #switcher_expand
+{
+    display: none;
+    background-position: 0 -835px;
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 29px;
+    left: 29px;
+    width: 152px;
+    height: 52px;
+    padding: 0 0 8px;
+}
+
+ul#speedbarre_title li#switcher #switcher_expand li
+{
+    display:block;
+    float:none;
+    line-height:22px;
+    height: auto;
+    margin: 0 0 1px 0;
+}
+
+ul#speedbarre_title li#switcher #switcher_expand li a
+{
+    font-size: 15px;
+    margin: 0 0 1px 0;
+    padding: 0px 8px 0px 27px;
+}
+
+ul#speedbarre_title li#switcher #switcher_expand li.computing a
+{
+    background-position:0 -288px;
+}
+
+ul#speedbarre_title li#switcher #switcher_expand li.sciences a
+{
+    background-position:0 -319px;
+}
+
+ul#speedbarre_title li#switcher #switcher_expand .border-left
+{
+    float:left;
+    width:4px;
+    height:52px;
+    background-position:-20px -531px;
+}
+
+ul#speedbarre_title li#switcher #switcher_expand .border-right
+{
+    float:right;
+    width:7px;
+    background-position:0 -683px;
+    height:52px;
+}
+
+/* SOUS MENU */
+ul#speedbarre_title li#smenu ul li
+{
+    height: 29px;
+    line-height: 29px;
+    position: relative;
+}
+
+ul#speedbarre_title li#smenu ul li a
+{
+    font-size: 12px;
+    background-position: right 0px;
+    background-image: url("../../images/speedbarre/bgs_speedbarre.png");
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    display: block;
+    height: 16px;
+    line-height: 16px;
+    padding: 3px 22px 7px 6px;
+    margin: 3px 0 0;
+}
+
+#speedbarre li#smenu ul li a.smenu_hover {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-position: right -28px;
+    background-repeat: no-repeat;
+    border-color: #656565 #656565 -moz-use-text-color;
+    border-radius: 5px 5px 0 0;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    color: #595859;
+    display: block;
+    height: 19px;
+    margin-top: 3px;
+    padding: 3px 21px 3px 5px;
+    position: relative;
+    z-index: 10;
+}
+
+
+/* BARRE RECHERCHE */
+ul#speedbarre_title li#search_bar
+{
+    float: right;
+    background: url("../../images/designs/sciences/speedbarre/speed_barre_decoupe.png");
+    background-position: 0 -58px;
+    background-repeat: repeat-x;
+}
+
+ul#speedbarre_title li#search_bar form#recherche
+{
+    float: left;
+    height: 29px;
+    line-height: 29px;
+}
+
+ul#speedbarre_title li#search_bar form#recherche input#champ_recherche
+{
+    border: 1px solid #B9B9BE;
+    border-radius: 4px 4px 4px 4px;
+    color: #717171;
+    height: 15px;
+    margin: 4px 7px 0 1px;
+    padding: 2px 5px 2px 2px;
+    width: 119px;
+    vertical-align: top;
+}
+
+ul#speedbarre_title li#search_bar form#recherche select {
+    background-color: #FFFFFF;
+    border: 1px solid #B9B9BE;
+    border-radius: 4px 4px 4px 4px;
+    font-size: 13px;
+    margin: 4px 8px 0 0;
+    padding: 0 1px 1px 2px;
+    width: 90px;
+    vertical-align: top;
+}
+
+ul#speedbarre_title li#search_bar form#recherche input.button_go_search {
+    -moz-border-bottom-colors: none !important;
+    -moz-border-image: none !important;
+    -moz-border-left-colors: none !important;
+    -moz-border-right-colors: none !important;
+    -moz-border-top-colors: none !important;
+    background: url("../../images/designs/2/speedbarre/speed_barre_decoupe.png") no-repeat scroll left -116px #646464 !important;
+    border-color: #7B7B7B !important;
+    border-style: solid !important;
+    border-width: 0 0 1px !important;
+    color: white !important;
+    font-size: 12px;
+    height: 22px;
+    margin-top: 4px;
+    padding-bottom: 1px;
+    width: 27px;
+    vertical-align: top;
+}
+
+ul#speedbarre_title li#search_bar form#recherche a.button_more_search
+{
+    display: inline;
+    float: none;
+    color: white !important;
+    font-weight: bold;
+    margin: 0px 10px 0 2px;
+    width: 13px;
+}
+
+div.ard
+{
+    float: left;
+    height: 29px;
+    width: 27px;
+    background-position: 0 -29px;
+    background-repeat: repeat-x;
+    margin-right: 10px;
+}
 
 /** BIG TUTO COMMENT **/
 
@@ -6027,4 +6363,9 @@ form.checkboxShow label:hover
     display:block;
     float:right;
     margin:0 10px 0 0;
+}
+
+#comments_news_table{
+    float: left;
+    width: 100%;
 }

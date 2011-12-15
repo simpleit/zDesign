@@ -233,7 +233,7 @@
     margin: 5px 0 0 0;
 }
 
-.form input[type=submit]
+.form input[type=submit], .formuse input[type=submit]
 {
     background: url("../../images/designs/2/buttoncut.png") repeat-x left -99px !important;
     border: 0px !important;
@@ -242,7 +242,7 @@
     padding: 3px 10px;
 }
 
-.form input[type=submit]:hover
+.form input[type=submit]:hover, .formuse input[type=submit]:hover
 {
     background: url("../../images/designs/2/buttoncut.png") repeat-x left -124px !important;
 }

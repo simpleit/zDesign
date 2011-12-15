@@ -14,11 +14,6 @@
 	width: 45px;
 }
 
-ul#speedbarre li a 
-{
-	_height: auto;
-}
-
 .stats_site
 {
     _height:20px;
@@ -103,11 +98,54 @@ ul#speedbarre li a
 	_margin-right: 50px;
 }
 
-
 /* divers */
-#speed_accueil a{
+#speed_accueil a
+{
 	_margin-bottom:-3px;	
 }
-#header{
+
+#header
+{
 	_margin-top:-7px;
 }
+
+
+/* BUG IE7 CORRECTION LIEN CONNECTION SPEEDBARRE */
+ul#speedbarre_title li#smenu ul li a.smenu_hover
+{
+    border: 1px solid #656565;
+    border-bottom: 0px;
+    background-repeat: no-repeat;
+}
+
+
+/* BUG IE7 CORRECTION LIEN CONNECTION SPEEDCONNEXION */
+ul#speedConnection li ul.menu
+{
+    min-width: 150px;
+}
+
+ul#speedConnection li ul.menu li.bottom
+{
+    background-image: none;
+}
+
+/*Liste d'amis*/
+ul#speedConnection li ul.friendsList
+{
+    margin: 0;
+}
+
+ul#speedConnection li ul.friendsList li
+{
+    min-width: 150px;
+}
+
+/*Messages*/
+ul#speedConnection li a.mp, ul#speedConnection li input.logout
+{
+    display: block;
+    height: 22px;
+    width: 20px;
+}
+

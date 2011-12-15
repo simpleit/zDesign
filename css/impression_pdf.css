@@ -46,7 +46,7 @@ div.fctli li
 	display: block !important;
 }
 
-#acces_rapide, #entete, #speedbarre, .avatar, #menu, #zozor_position, #arbre, #pied_de_page, .barre_msg, .barre_att, .intersites, .stats_sites, .header_gauche, .header_droit, .onglets_tutos, #footer, #tuto_details, .liens_bas_tuto, .printnone, .tut_partager, .tut_popularite, #pave_pub_tuto, #tuto_details_moins, #tuto_details_plus, #pre_liste_parties, #liste_parties, .liste_parties_btut, .box_history, .link_dl_pdf /* On vire ce qui sert à rien */
+#speedConnection, #acces_rapide, #entete, #speedbarre, .avatar, #menu, #zozor_position, #arbre, #pied_de_page, .barre_msg, .barre_att, .intersites, .stats_sites, .header_gauche, .header_droit, .onglets_tutos, #footer, #tuto_details, .liens_bas_tuto, .printnone, .tut_partager, .tut_popularite, #pave_pub_tuto, #tuto_details_moins, #tuto_details_plus, #pre_liste_parties, #liste_parties, .liste_parties_btut, .box_history, .link_dl_pdf /* On vire ce qui sert à rien */
 {
 	display: none !important;
 }
